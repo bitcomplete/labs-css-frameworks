@@ -11,8 +11,9 @@
             "twitter bootstrap"
         ],
         "attributes": {
+            "directorySlug": "bootstrap-5",
             "ranking": {
-                "amongAll": 16
+                "amongAll": 1
             }
         },
         "properties": {
@@ -40,8 +41,412 @@
             "licenseKey": "mit",
             "licenseName": "MIT",
             "releaseDate": null,
-            "discontinuedDate": null,
             "publisher": "Twitter"
+        }
+    },
+    {
+        "id": "id:item:v2024.11.01:bootswatch",
+        "slug": "bootswatch",
+        "active": true,
+        "labels": {
+            "primary": "Bootswatch",
+            "secondary": "Bootswatch"
+        },
+        "tags": [
+            "twitter bootswatch"
+        ],
+        "attributes": {
+            "directorySlug": "bootswatch",
+            "ranking": {
+                "amongAll": 2
+            }
+        },
+        "properties": {
+            "version": null,
+            "components": [
+                {
+                    "key": "accordions",
+                    "label": "Accordions",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "alerts",
+                    "label": "Alerts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "badges",
+                    "label": "Badges",
+                    "comment": null,
+                    "see": null
+                }
+            ],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "releaseDate": null,
+            "publisher": "Bootswatch"
+        }
+    },
+    {
+        "id": "id:item:v2024.11.01:bulma",
+        "slug": "bulma",
+        "active": true,
+        "labels": {
+            "primary": "Bulma",
+            "secondary": "Bulma"
+        },
+        "tags": [
+            "twitter bulma"
+        ],
+        "attributes": {
+            "directorySlug": "bulma",
+            "ranking": {
+                "amongAll": 3
+            }
+        },
+        "properties": {
+            "version": null,
+            "components": [
+                {
+                    "key": "accordions",
+                    "label": "Accordions",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "alerts",
+                    "label": "Alerts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "badges",
+                    "label": "Badges",
+                    "comment": null,
+                    "see": null
+                }
+            ],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "releaseDate": null,
+            "publisher": "Bulma"
+        }
+    },
+    {
+        "id": "id:item:v2024.11.01:daisy-ui",
+        "slug": "daisy-ui",
+        "active": true,
+        "labels": {
+            "primary": "Daisy UI",
+            "secondary": "Daisy UI"
+        },
+        "tags": [
+            "twitter daisy-ui"
+        ],
+        "attributes": {
+            "directorySlug": "daisy-ui-4",
+            "ranking": {
+                "amongAll": 4
+            }
+        },
+        "properties": {
+            "version": null,
+            "components": [
+                {
+                    "key": "accordions",
+                    "label": "Accordions",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "alerts",
+                    "label": "Alerts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "badges",
+                    "label": "Badges",
+                    "comment": null,
+                    "see": null
+                }
+            ],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "releaseDate": null,
+            "publisher": "Daisy UI"
+        }
+    },
+    {
+        "id": "id:item:v2024.11.01:foundation-for-sites",
+        "slug": "foundation-for-sites",
+        "active": true,
+        "labels": {
+            "primary": "Foundation for Sites",
+            "secondary": "Foundation for Sites"
+        },
+        "tags": [
+            "twitter foundation-for-sites"
+        ],
+        "attributes": {
+            "directorySlug": "foundation-for-sites",
+            "ranking": {
+                "amongAll": 5
+            }
+        },
+        "properties": {
+            "version": null,
+            "components": [
+                {
+                    "key": "accordions",
+                    "label": "Accordions",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "alerts",
+                    "label": "Alerts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "badges",
+                    "label": "Badges",
+                    "comment": null,
+                    "see": null
+                }
+            ],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "releaseDate": null,
+            "publisher": "Foundation for Sites"
+        }
+    },
+    {
+        "id": "id:item:v2024.11.01:metro-ui",
+        "slug": "metro-ui",
+        "active": true,
+        "labels": {
+            "primary": "Metro UI",
+            "secondary": "Metro UI"
+        },
+        "tags": [
+            "twitter metro-ui"
+        ],
+        "attributes": {
+            "directorySlug": "metro-ui",
+            "ranking": {
+                "amongAll": 6
+            }
+        },
+        "properties": {
+            "version": null,
+            "components": [
+                {
+                    "key": "accordions",
+                    "label": "Accordions",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "alerts",
+                    "label": "Alerts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "badges",
+                    "label": "Badges",
+                    "comment": null,
+                    "see": null
+                }
+            ],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "releaseDate": null,
+            "publisher": "Metro UI"
+        }
+    },
+    {
+        "id": "id:item:v2024.11.01:pico",
+        "slug": "pico",
+        "active": true,
+        "labels": {
+            "primary": "Pico",
+            "secondary": "Pico"
+        },
+        "tags": [
+            "twitter pico"
+        ],
+        "attributes": {
+            "directorySlug": "pico",
+            "ranking": {
+                "amongAll": 7
+            }
+        },
+        "properties": {
+            "version": null,
+            "components": [
+                {
+                    "key": "accordions",
+                    "label": "Accordions",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "alerts",
+                    "label": "Alerts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "badges",
+                    "label": "Badges",
+                    "comment": null,
+                    "see": null
+                }
+            ],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "releaseDate": null,
+            "publisher": "Pico"
+        }
+    },
+    {
+        "id": "id:item:v2024.11.01:primer-css",
+        "slug": "primer-css",
+        "active": true,
+        "labels": {
+            "primary": "Prime CSS",
+            "secondary": "Prime CSS"
+        },
+        "tags": [
+            "twitter primer-css"
+        ],
+        "attributes": {
+            "directorySlug": "primer-css",
+            "ranking": {
+                "amongAll": 8
+            }
+        },
+        "properties": {
+            "version": null,
+            "components": [
+                {
+                    "key": "accordions",
+                    "label": "Accordions",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "alerts",
+                    "label": "Alerts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "badges",
+                    "label": "Badges",
+                    "comment": null,
+                    "see": null
+                }
+            ],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "releaseDate": null,
+            "publisher": "Prime CSS"
+        }
+    },
+    {
+        "id": "id:item:v2024.11.01:ui-kit",
+        "slug": "ui-kit",
+        "active": true,
+        "labels": {
+            "primary": "UI Kit",
+            "secondary": "UI Kit"
+        },
+        "tags": [
+            "twitter ui-kit"
+        ],
+        "attributes": {
+            "directorySlug": "ui-kit",
+            "ranking": {
+                "amongAll": 9
+            }
+        },
+        "properties": {
+            "version": null,
+            "components": [
+                {
+                    "key": "accordions",
+                    "label": "Accordions",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "alerts",
+                    "label": "Alerts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "badges",
+                    "label": "Badges",
+                    "comment": null,
+                    "see": null
+                }
+            ],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "releaseDate": null,
+            "publisher": "UI Kit"
+        }
+    },
+    {
+        "id": "id:item:v2024.11.01:united-states-web-design-system",
+        "slug": "united-states-web-design-system",
+        "active": true,
+        "labels": {
+            "primary": "United States Web Design System",
+            "secondary": "United States Web Design System"
+        },
+        "tags": [
+            "twitter united-states-web-design-system"
+        ],
+        "attributes": {
+            "directorySlug": "united-states-web-design-system",
+            "ranking": {
+                "amongAll": 10
+            }
+        },
+        "properties": {
+            "version": null,
+            "components": [
+                {
+                    "key": "accordions",
+                    "label": "Accordions",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "alerts",
+                    "label": "Alerts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "badges",
+                    "label": "Badges",
+                    "comment": null,
+                    "see": null
+                }
+            ],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "releaseDate": null,
+            "publisher": "United States Web Design System"
         }
     }
 ]
