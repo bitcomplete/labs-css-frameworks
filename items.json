@@ -53,7 +53,6 @@
             "secondary": "Bootswatch"
         },
         "tags": [
-            "twitter bootswatch"
         ],
         "attributes": {
             "directorySlug": "bootswatch",
@@ -98,7 +97,6 @@
             "secondary": "Bulma"
         },
         "tags": [
-            "twitter bulma"
         ],
         "attributes": {
             "directorySlug": "bulma",
@@ -143,7 +141,6 @@
             "secondary": "Daisy UI"
         },
         "tags": [
-            "twitter daisy-ui"
         ],
         "attributes": {
             "directorySlug": "daisy-ui-4",
@@ -188,7 +185,6 @@
             "secondary": "Foundation for Sites"
         },
         "tags": [
-            "twitter foundation-for-sites"
         ],
         "attributes": {
             "directorySlug": "foundation-for-sites",
@@ -233,7 +229,6 @@
             "secondary": "Metro UI"
         },
         "tags": [
-            "twitter metro-ui"
         ],
         "attributes": {
             "directorySlug": "metro-ui",
@@ -278,7 +273,6 @@
             "secondary": "Pico"
         },
         "tags": [
-            "twitter pico"
         ],
         "attributes": {
             "directorySlug": "pico",
@@ -323,7 +317,6 @@
             "secondary": "Prime CSS"
         },
         "tags": [
-            "twitter primer-css"
         ],
         "attributes": {
             "directorySlug": "primer-css",
@@ -368,7 +361,6 @@
             "secondary": "UI Kit"
         },
         "tags": [
-            "twitter ui-kit"
         ],
         "attributes": {
             "directorySlug": "ui-kit",
@@ -413,7 +405,6 @@
             "secondary": "United States Web Design System"
         },
         "tags": [
-            "twitter united-states-web-design-system"
         ],
         "attributes": {
             "directorySlug": "united-states-web-design-system",
