@@ -1,0 +1,47 @@
+[
+    {
+        "id": "id:item:v2024.11.01:bootstrap",
+        "slug": "bootstrap",
+        "active": true,
+        "labels": {
+            "primary": "Bootstrap",
+            "secondary": "Bootstrap"
+        },
+        "tags": [
+            "twitter bootstrap"
+        ],
+        "attributes": {
+            "ranking": {
+                "amongAll": 16
+            }
+        },
+        "properties": {
+            "version": "5.3.3",
+            "components": [
+                {
+                    "key": "accordions",
+                    "label": "Accordions",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "alerts",
+                    "label": "Alerts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "badges",
+                    "label": "Badges",
+                    "comment": null,
+                    "see": null
+                }
+            ],
+            "licenseKey": "mit",
+            "licenseName": "MIT",
+            "releaseDate": null,
+            "discontinuedDate": null,
+            "publisher": "Twitter"
+        }
+    }
+]
