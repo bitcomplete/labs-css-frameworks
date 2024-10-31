@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitches</title>
+    <script src="./vendor/v1.2.8/index.global.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      const { createStitches } = stitches;
+      // These key-value pairs are coming from Figma - Design Tokens
+      const colors = {
+        iuLnTransparentGray: "rgba(41, 40, 39, 0.38)",
+        iuLnWhite: "rgba(255, 255, 255, 1)",
+        iuLnAlertRed: "rgba(210, 0, 0, 1)",
+        iuLnBlue: "rgba(7, 113, 216, 1)",
+        iuLnLightGray: "rgba(231, 230, 226, 1)",
+        iuLnLighterGray: "rgba(246, 245, 241, 1)",
+        iuLnAlmostBlack: "rgba(41, 40, 39, 1)",
+        iuNaBackground: "rgba(245, 245, 245, 1)",
+        iuNaTransparentGray: "rgba(0, 0, 0, 0.38)",
+        iuNaWhite: "rgba(255, 255, 255, 1)",
+        iuNaAlertRed: "rgba(210, 0, 0, 1)",
+        iuNaBlue: "rgba(7, 113, 216, 1)",
+        iuNaLightGray: "rgba(227, 227, 227, 1)",
+        iuNaDarkGray: "rgba(112, 112, 112, 1)",
+        iuNaBlack: "rgba(0, 0, 0, 1)",
+        // Some examples
+        bgPrimary: "rgba(255, 255, 255, 1)",
+        bgPrimaryNa: "rgba(112, 112, 112, 1)",
+        bgPrimaryPluss: "darkblue",
+        ctaBgPrimary: "red",
+        ctaBgPrimaryHover: "darkred",
+        ctaBgSecondary: "rgba(255, 255, 255, 1)",
+        ctaBgSecondaryHover: "rgba(255, 255, 255, 1)",
+        ctaBgPrimaryNa: "green",
+        ctaBgPrimaryHoverNa: "lightgreen",
+        ctaBgSecondaryNa: "rgba(255, 255, 255, 1)",
+        ctaBgSecondaryHoverNa: "rgba(255, 255, 255, 1)",
+        ctaBgSecondaryPluss: "yellow"
+      };
+      const spacing = {
+        x0: "0.0625rem",
+        x05: "0.25rem",
+        x1: "0.5rem",
+        x2: "1rem",
+        x3: "1.5rem",
+        x4: "2rem",
+        x5: "2.5rem",
+        x6: "3rem",
+        x7: "3.5rem",
+        x8: "4rem",
+        x9: "4.5rem",
+        x10: "5rem",
+        x11: "5.5rem"
+      };
+
+      const radii = {
+        iuNa: "4px",
+        iuLn: "2px",
+        none: "0",
+        mini: "2",
+        max: "4"
+      };
+
+      const fontSizes = {
+        paragraph: "1rem",
+        paragraphS: "0.875rem",
+        headingM: "1.125rem",
+        headingL: "1.375rem",
+        primary: "1rem"
+      };
+
+      const fontFamilies = {
+        iuNaText: "Faktor Sans",
+        iuNaHeadline: "Faktor Sans Display",
+        iuLnText: "Open Sans",
+        iuLnHeadline: "Guardian Sans",
+        NaPrimary: `Helvetica, "Trebuchet MS", Verdana, sans-serif`,
+        NaSecondary: `Verdana, sans-serif`,
+        ctaText: `'Saira Condensed', sans-serif`
+      };
+      const fontWeights = {
+        normal: 400,
+        bold: 700,
+        bolder: 900
+      };
+      // Default theme using values from Figma
+      const { css, theme, createTheme } = createStitches({
+        prefix: "stitchesdemo-",
+        theme: {
+          colors: {
+            link: colors.iuLnBlue,
+            figcaptionLink: colors.iuLnBlue,
+            primary: "almostblack",
+            border: colors.iuLnLightGray,
+            figcaption: colors.iuLnBlack,
+            secondary: colors.iuLnTransparentGray,
+            ctaBorderPrimary: colors.iuLnBlack,
+            ctaBgPrimary: colors.ctaBgPrimary,
+            ctaBgPrimaryHover: colors.ctaBgPrimaryHover,
+            ctaBgSecondary: colors.ctaBgSecondary,
+            ctaBgSecondaryHover: "$ctaBgSecondaryHover",
+            bgPrimary: colors.bgPrimary,
+            boxDefault: "green",
+            nyttnavn: colors.iuLnAlmostBlack
+          },
+          // x1 = 8px - 0,5 rem
+          space: {
+            x0: "0rem",
+            x05: spacing.x05,
+            x1: spacing.x1,
+            x2: spacing.x2,
+            x3: spacing.x3,
+            x4: spacing.x4,
+            x5: spacing.x5,
+            "space-inset-2": `$x2 $x2 $x2 $x2`,
+            "space-inset-s": `$x1 $x1 $x1 $x1`,
+            "space-inset-xs": `$x05 $x05 $x05 $x05`,
+            "space-inset-m": `$x3 $x3 $x3 $x3`,
+            "space-stack-default": `0 0 $x2 0`,
+            "space-stack-s": `0 0 $x1 0`,
+            "space-stack-xs": `0 0 $x05 0`,
+            "space-stack-l": `0 0 $x3 0`,
+            "space-default": "$x2",
+            "space-s": "$x1",
+            "space-xs": "$x05",
+            "space-m": "$x2",
+            "space-l": "$x3"
+          },
+          sizes: {
+            x0: "0",
+            x05: spacing.x05,
+            x1: spacing.x1,
+            x2: spacing.x2,
+            x3: spacing.x3,
+            x4: spacing.x4,
+            x5: spacing.x5,
+            buttonSpacing: spacing.x5
+          },
+          lineHeights: {
+            // Todo
+            x0: "0px",
+            x1: "8px",
+            x2: "16px",
+            x3: "24px",
+            subTitle: "24px"
+          },
+          fontSizes: {
+            ctaText: "1.rem",
+            ctaTextSize2: fontSizes.headingL
+          },
+          fontWeights,
+          fonts: {
+            iuLnHeadline: fontFamilies.iuLnHeadline,
+            iuNaHeadline: fontFamilies.iuNaHeadline,
+            iuNaText: fontFamilies.iuNaText,
+            text: fontFamilies.iuLnText,
+            ctaText: fontFamilies.ctaText,
+            subtitle: "Arial"
+          },
+          radii: {
+            default: radii.max,
+            buttonPrimary: radii.mini,
+            boxPrimary: "8px"
+          }
+        },
+        utils: {
+          px: () => (value) => ({
+            paddingLeft: value,
+            paddingRight: value
+          }),
+          py: () => (value) => ({
+            paddingTop: value,
+            paddingBottom: value
+          }),
+          mx: () => (value) => ({
+            marginLeft: value,
+            marginRight: value
+          }),
+          subTitle: () => (value) => ({
+            //dette er en test
+            fontFamily: "$subtitle",
+            lineHeight: "$subTitle"
+          })
+        },
+        media: {
+          bp1: "(min-width: 640px)",
+          bp2: "(min-width: 768px)",
+          bp3: "(min-width: 1024px)"
+        }
+      });
+      //other Themes, with overrides for this theme
+      const nettavisen = createTheme({
+        colors: {
+          primary: colors.iuNaBlack,
+          border: colors.iuNaLightGray,
+          figcaption: colors.iuNaDarkGray,
+          figcaptionLink: colors.iuNaDarkGray,
+          link: colors.iuNaBlack,
+          secondary: colors.iuNaDarkGray,
+          ctaBorderPrimary: colors.iuNaDarkGray,
+          ctaBgPrimary: colors.ctaBgPrimaryNa,
+          ctaBgPrimaryHover: colors.ctaBgPrimaryHoverNa,
+          ctaBgSecondary: colors.ctaBgSecondaryNa,
+          ctaBgSecondaryHover: colors.ctaBgSecondaryHoverNa,
+          bgPrimary: "yellow",
+          ctaText: fontFamilies.iuNaText,
+          boxDefault: "red",
+          nyttnavn: "red"
+        },
+        fontSizes: {
+          ctaText: "1.3rem",
+          text: "$paragraph"
+        },
+        fonts: {
+          text: fontFamilies.iuNaHeadline,
+          title: fontFamilies.iuNaHeadline,
+          subtitle: fontFamilies.iuNaText
+        },
+        radii: {
+          default: "8px",
+          buttonPrimary: radii.mini,
+          compact2: "3",
+          boxPrimary: "2px"
+        },
+        space: {
+          "space-inset-2": `$x2 $x2 $x2 $x2`,
+          "space-inset-s": `$x1 $x1 $x1 $x1`,
+          "space-inset-xs": `$x05 $x05 $x05 $x05`,
+          "space-inset-m": `$x3 $x3 $x3 $x3`
+        },
+        sizes: {
+          buttonSize: spacing.x4,
+          buttonSizeSmall: spacing.x3,
+          x0: "0",
+          x05: spacing.x05,
+          x1: spacing.x1,
+          x2: spacing.x2,
+          x3: spacing.x4,
+          x4: spacing.x5
+        },
+        lineHeights: {
+          subTitle: "30px"
+        }
+      });
+
+      const plussalt = createTheme({
+        colors: {
+          primary: "orange",
+          border: colors.iuNaLightGray,
+          figcaption: colors.iuNaDarkGray,
+          figcaptionLink: colors.iuNaDarkGray,
+          link: colors.iuNaBlack,
+          secondary: "purple",
+          ctaBgPrimary: "purple",
+          ctaBgPrimaryHover: "darkviolet",
+          ctaBgSecondary: colors.ctaBgSecondaryPluss,
+          ctaBgSecondaryHover: colors.ctaBgSecondaryHoverPluss,
+          bgPrimary: colors.bgPrimaryPluss
+        },
+        space: {
+          "space-inset-2": `$x2 $x2 $x2 $x2`,
+          "space-inset-s": `$x4 $x4 $x4 $x4`,
+          "space-inset-xs": `$x05 $x05 $x05 $x05`,
+          "space-inset-m": `$x3 $x3 $x3 $x3`
+        },
+        fontSizes: {
+          ctaText: "1.rem",
+          text: "$paragraph"
+        },
+        fonts: {
+          text: fontFamilies.iuLnText,
+          title: fontFamilies.iuNaHeadline,
+          subtitle: "Verdana",
+          ctaText: fontFamilies.ctaText
+        },
+        radii: {
+          default: radii.iuNa,
+          boxPrimary: "2px 50px"
+        },
+        sizes: {
+          buttonSize: spacing.x4,
+          buttonSizeSmall: spacing.x3
+        },
+        lineHeights: {
+          subTitle: "18px"
+        }
+      });
+
+      const tabloid = createTheme({
+        colors: {
+          bgPrimary: "black",
+          primary: "white",
+          ctaBgPrimary: "#fe366a",
+          ctaBgPrimaryHover: "#d71346",
+          ctaBgSecondary: "brown"
+        },
+        fonts: {
+          ctaText: "Verdana",
+          subtitle: "Arial"
+        },
+        lineHeights: {
+          subTitle: "30px"
+        }
+      });
+            const divider = css({
+        borderTopWidth: "$sizes$x05",
+        borderTopStyle: "solid",
+        borderTopColor: "$nyttnavn"
+      });
+
+      const buttonStyle = css({
+        appearance: "none",
+        border: "1px solid $ctaBorder",
+        backgroundColor: "$nyttnavn",
+        lineHeight: 1,
+        borderRadius: "$default",
+        //px: "$x5",
+        fontFamily: "$ctaText",
+        //minHeight: "$x5",
+        minHeight: "$x3",
+
+        variants: {
+          size: {
+            normal: {
+              fontSize: "$ctaText",
+              minHeight: "25px"
+            },
+            loose: {
+              fontSize: "ctaTextSize2",
+              minHeight: "55px"
+            }
+          },
+          variant: {
+            accent: {
+              backgroundColor: "black",
+              textDecoration: "underline",
+              color: "white",
+              "&:hover": {
+                color: "$ctaBgPrimaryHover",
+                borderColor: "$ctaBgPrimaryHover"
+              }
+            },
+            primary: {
+              backgroundColor: "$ctaBgPrimary",
+              color: "white",
+              "&:hover": {
+                backgroundColor: "$ctaBgPrimaryHover"
+              }
+            }
+          },
+          outlined: {
+            true: {
+              backgroundColor: "transparent",
+              border: "1px solid $ctaBgPrimary",
+              textDecoration: "none"
+            }
+          }
+        },
+
+        defaultVariants: {
+          variant: "primary",
+          size: "normal"
+        },
+
+        compoundVariants: [
+          {
+            variant: "accent",
+            outlined: true,
+            css: {
+              "&:hover": {
+                color: "$ctaBgPrimaryHover"
+              }
+            }
+          },
+          {
+            variant: "primary",
+            outlined: true,
+            css: {
+              color: "$primary",
+              $$shadowColor: "$colors$ctaBgPrimaryHover",
+              "&:hover": {
+                backgroundColor: "transparent",
+                color: "$ctaBgPrimaryHover"
+              }
+            }
+          }
+        ]
+      });
+
+      const box = css({
+        color: "$primary",
+        backgroundColor: "$bgPrimary",
+        padding: "$space-inset-s",
+        borderRadius: "$boxPrimary",
+        margin: "$space-stack-s",
+        subTitle: "$x3",
+        border: "1px solid $boxDefault"
+      });
+
+      const themeArray = [theme, nettavisen, plussalt, tabloid];
+
+      const themeTemplate = `<h1>Theming and variants with stitches</h1>
+      <div><select class="theme-switcher">
+      <option value="">Select A Theme</option>
+      <option value=0>default</option>
+      <option value=1>nettavisen</option>
+      <option value=2>plussalt</option>
+      <option value=3>tabloid</option>
+      </select></div>
+      <hr class="${divider()}">`;
+
+      document.getElementById("app").innerHTML = `
+      ${themeTemplate}
+
+      <div class="${box()} ${css({
+        color: "red"
+      })}">This is a themed box where text color always is red across themes.</div>
+      <div class="${box()}">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+      <footer class="${box()}">
+      <div class="${divider}">Tada</div>
+        <button class="${buttonStyle()}">Default button</button>
+        <button class="${buttonStyle({
+          variant: { "@initial": "primary", "@bp3": "accent" }
+        })}">Responsive</button>
+      </footer>
+
+      <div class="${box()}">  
+        
+        <button class="${buttonStyle({
+          variant: "primary"
+        })}">Primary</button>
+        
+        <button class="${buttonStyle({
+          variant: "accent"
+        })}">Accent</button>
+      </div>
+      `;
+      const themeSwitcher = document.querySelector(".theme-switcher");
+
+      if (themeSwitcher) {
+        console.log("yo");
+        themeSwitcher.addEventListener("change", function () {
+          var themeName = this.value;
+          document.body.className = "";
+          document.body.classList.add(themeArray[themeName]);
+        });
+      }
+    </script>
+  </body>
+</html>

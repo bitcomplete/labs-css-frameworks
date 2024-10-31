@@ -1,0 +1,2638 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation For Sites</title>
+  <link rel="stylesheet" href="./vendor/v6.9.0/foundation.min.css">
+  <link rel="stylesheet" href="./vendor/v6.9.0/foundation-icons/foundation-icons.css">
+  <link rel="stylesheet" href="./vendor/v6.9.0/motion-ui.1.2.3.min.css">
+  <style>
+    #magellan-menu a.is-active {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container off-canvas-content" data-off-canvas-content>
+    <h1>Foundation For Sites (v6.9.0)</h1>
+
+    <!-- Accordion -->
+    <section>
+      <a name="accordion" class="h4">Accordion</a>
+      <br>
+      <h6>Basics</h6>
+      <ul class="accordion" data-accordion>
+        <li class="accordion-item is-active" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 1</a>
+          <div class="accordion-content" data-tab-content>
+            <p>Panel 1. Lorem ipsum dolor</p>
+            <a href="#">Nowhere to Go</a>
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 2</a>
+          <div class="accordion-content" data-tab-content>
+            <textarea></textarea>
+            <button class="button">I do nothing!</button>
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 3</a>
+          <div class="accordion-content" data-tab-content>
+            Type your name!
+            <input type="text"></input>
+          </div>
+        </li>
+      </ul>
+      <br>
+      <h6>Multi Expand</h6>
+      <ul class="accordion" data-accordion data-multi-expand="true">
+        <li class="accordion-item is-active" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 1</a>
+          <div class="accordion-content" data-tab-content>
+            <p>Panel 1. Lorem ipsum dolor</p>
+            <a href="#">Nowhere to Go</a>
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 2</a>
+          <div class="accordion-content" data-tab-content>
+            <textarea></textarea>
+            <button class="button">I do nothing!</button>
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 3</a>
+          <div class="accordion-content" data-tab-content>
+            Type your name!
+            <input type="text"></input>
+          </div>
+        </li>
+      </ul>
+      <br>
+      <h6>All closed</h6>
+      <ul class="accordion" data-accordion data-allow-all-closed="true">
+        <li class="accordion-item is-active" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 1</a>
+          <div class="accordion-content" data-tab-content>
+            <p>Panel 1. Lorem ipsum dolor</p>
+            <a href="#">Nowhere to Go</a>
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 2</a>
+          <div class="accordion-content" data-tab-content>
+            <textarea></textarea>
+            <button class="button">I do nothing!</button>
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 3</a>
+          <div class="accordion-content" data-tab-content>
+            Type your name!
+            <input type="text"></input>
+          </div>
+        </li>
+      </ul>
+      <br>
+      <h6>Disabled</h6>
+      <ul class="accordion" data-accordion disabled>
+        <li class="accordion-item is-active" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 1</a>
+          <div class="accordion-content" data-tab-content>
+            Panel 1. I'm open because I'm loaded that way, but you can't close me
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 2, you can't open me.</a>
+          <div class="accordion-content" data-tab-content>
+            Panel 2. Lorem ipsum dolor
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#" class="accordion-title">Accordion 3, you can't open me.</a>
+          <div class="accordion-content" data-tab-content>
+            Panel 3. Lorem ipsum dolor
+          </div>
+        </li>
+      </ul>
+      <br>
+      <h6>Deep Linking</h6>
+      <ul class="accordion" data-accordion data-deep-link="true" data-update-history="true" data-deep-link-smudge="true"
+        data-deep-link-smudge-delay="500" id="deeplinked-accordion">
+        <li class="accordion-item is-active" data-accordion-item>
+          <a href="#deeplink1" class="accordion-title">Accordion 1</a>
+          <div class="accordion-content" data-tab-content id="deeplink1">
+            Panel 1. Lorem ipsum dolor
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#deeplink2" class="accordion-title">Accordion 2</a>
+          <div class="accordion-content" data-tab-content id="deeplink2">
+            Panel 2. Lorem ipsum dolor
+          </div>
+        </li>
+        <li class="accordion-item" data-accordion-item>
+          <a href="#deeplink3" class="accordion-title">Accordion 3</a>
+          <div class="accordion-content" data-tab-content id="deeplink3">
+            Panel 3. Lorem ipsum dolor
+          </div>
+        </li>
+      </ul>
+      <br>
+      <h6>Responsive Accordion Tabs</h6>
+      <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+        <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+        <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
+        <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
+        <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
+      </ul>
+
+      <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+          <p>one</p>
+          <p>Check me out! I'm a super cool Tab panel with text content!</p>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <p>two</p>
+          <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
+        </div>
+        <div class="tabs-panel" id="panel3">
+          <p>three</p>
+          <p>Check me out! I'm a super cool Tab panel with text content!</p>
+        </div>
+        <div class="tabs-panel" id="panel4">
+          <p>four</p>
+          <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
+        </div>
+        <div class="tabs-panel" id="panel5">
+          <p>five</p>
+          <p>Check me out! I'm a super cool Tab panel with text content!</p>
+        </div>
+        <div class="tabs-panel" id="panel6">
+          <p>six</p>
+          <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Alerts / Callout -->
+    <section>
+      <a name="alerts" class="h4">Alerts / Callout</a>
+      <br>
+      <h6>Basics</h6>
+      <div class="callout">
+        <h5>This is a callout.</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+      </div>
+      <br>
+      <h6>Coloring</h6>
+      <div class="callout secondary">
+        <h5>This is a secondary callout</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+      </div>
+      <div class="callout primary">
+        <h5>This is a primary callout</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+      </div>
+      <div class="callout success">
+        <h5>This is a success callout</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+      </div>
+      <div class="callout warning">
+        <h5>This is a warning callout</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+      </div>
+      <div class="callout alert">
+        <h5>This is a alert callout</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+      </div>
+      <br>
+      <h6>Sizing</h6>
+      <div class="callout small">
+        <h5>This is a small callout</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+      </div>
+
+      <div class="callout large">
+        <h5>This is a large callout</h5>
+        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        <a href="#">It's dangerous to go alone, take this.</a>
+      </div>
+      <br>
+      <h6>Making Closable</h6>
+      <div class="callout alert" data-closable>
+        <h5>This is Important!</h5>
+        <p>But when you're done reading it, click the close button in the corner to dismiss this alert.</p>
+        <p>I'm using the default <code>data-closable</code> parameters, and simply fade out.</p>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="callout success" data-closable data-closable="slide-out-right">
+        <h5>This a friendly message.</h5>
+        <p>And when you're done with me, I can be closed using a Motion UI animation.</p>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="success callout" data-closable data-closable="scale-out-up">
+        <h5>This a friendly message.</h5>
+        <p>And when you're done with me, I can be closed using a Motion UI animation.</p>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Avatar / Thumbnail -->
+    <section>
+      <a name="avatar" class="h4">Avatar / Thumbnail</a>
+      <br>
+      <img class="thumbnail" src="./vendor/v6.9.0/thumbnail_01.jpg" alt="Photo of Uranus.">
+      <a href="#" class="thumbnail"><img src="./vendor/v6.9.0/thumbnail_02.jpg" alt="Photo of Neptune."></a>
+      <img class="thumbnail" src="./vendor/v6.9.0/thumbnail_03.jpg" alt="Photo of Pluto.">
+    </section>
+    <br><br>
+
+    <!-- Badge -->
+    <section>
+      <a name="badge" class="h4">Badge</a>
+      <br>
+      <span class="badge primary">1</span>
+      <span class="badge secondary">2</span>
+      <span class="badge success">3</span>
+      <span class="badge alert">A</span>
+      <span class="badge warning">B</span>
+      <span class="badge secondary"><i class="fi-share"></i></span>
+      <span class="badge success"><i class="fi-check"></i></span>
+      <span class="badge warning"><i class="fi-wrench"></i></span>
+    </section>
+    <br><br>
+
+    <!-- Breadcrumbs -->
+    <section>
+      <a name="breadcrumbs" class="h4">Breadcrumbs</a>
+      <br>
+      <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li class="disabled">Gene Splicing</li>
+          <li>
+            <span class="show-for-sr">Current: </span> Cloning
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <br><br>
+
+    <!-- Buttons -->
+    <section>
+      <a name="buttons" class="h4">Buttons</a>
+      <br>
+      <a class="button tiny" href="#">So Tiny</a>
+      <a class="button small" href="#">So Small</a>
+      <a class="button" href="#">So Basic</a>
+      <a class="button large" href="#">So Large</a>
+      <a class="button expanded" href="#">Such Expand</a>
+      <a class="button small expanded" href="#">Wow, Small Expand</a>
+      <br>
+      <a class="button small small-only-expanded" href="#">Wow, Expand only on small viewport</a>
+      <a class="button small medium-only-expanded" href="#">Expand only on medium viewport</a>
+      <a class="button small large-only-expanded" href="#">Expand only on large viewport</a>
+
+      <a class="button small medium-expanded" href="#">Wow, Expand on medium and larger</a>
+      <a class="button small large-expanded" href="#">Expand on large and larger</a>
+
+      <a class="button small medium-down-expanded" href="#">Expand on medium and smaller</a>
+      <a class="button small large-down-expanded" href="#">Expand on large and smaller</a>
+      <br>
+      <a class="button primary" href="#">Primary</a>
+      <a class="button secondary" href="#">Secondary</a>
+      <a class="button success" href="#">Success</a>
+      <a class="button alert" href="#">Alert</a>
+      <a class="button warning" href="#">Warning</a>
+      <br>
+      <button class="hollow button" href="#">Primary</button>
+      <button class="hollow button secondary" href="#">Secondary</button>
+      <button class="hollow button success" href="#">Success</button>
+      <button class="hollow button alert" href="#">Alert</button>
+      <button class="hollow button warning" href="#">Warning</button>
+      <button class="hollow button" href="#" disabled>Disabled</button>
+      <br>
+      <a class="button disabled" href="#" aria-disabled>Disabled</a>
+      <button type="button" class="button primary" disabled>Disabled</button>
+      <button type="button" class="button secondary" disabled>Disabled</button>
+      <button type="button" class="button success" disabled>Disabled</button>
+      <button type="button" class="button alert" disabled>Disabled</button>
+      <button type="button" class="button warning" disabled>Disabled</button>
+      <br>
+      <a class="button hollow disabled" href="#" aria-disabled>Disabled</a>
+      <button type="button" class="button hollow primary" disabled>Disabled</button>
+      <button type="button" class="button hollow secondary" disabled>Disabled</button>
+      <button type="button" class="button hollow success" disabled>Disabled</button>
+      <button type="button" class="button hollow alert" disabled>Disabled</button>
+      <button type="button" class="button hollow warning" disabled>Disabled</button>
+      <br>
+      <a class="clear button" href="#">Primary</a>
+      <a class="clear button secondary" href="#">Secondary</a>
+      <a class="clear button success" href="#">Success</a>
+      <a class="clear button alert" href="#">Alert</a>
+      <a class="clear button warning" href="#">Warning</a>
+      <a class="clear button" href="#" disabled>Disabled</a>
+      <br>
+      <button class="dropdown button tiny">Dropdown Button</button>
+      <button class="dropdown button small">Dropdown Button</button>
+      <button class="dropdown button">Dropdown Button</button>
+      <button class="dropdown button large">Dropdown Button</button>
+      <button class="dropdown button expanded">Dropdown Button</button>
+      <br>
+      <button class="button" type="button">
+        <!-- Screen readers will see "close" -->
+        <span class="show-for-sr">Close</span>
+        <!-- Visual users will see the X, but not the "Close" text -->
+        <span aria-hidden="true"><i class="fi-x"></i></span>
+      </button>
+    </section>
+    <br><br>
+
+    <!-- Button group -->
+    <section>
+      <a name="button_group" class="h4">Button group</a>
+      <br>
+      <div class="tiny button-group">
+        <a class="button">Tiny</a>
+        <a class="button">Button</a>
+        <a class="button">Group</a>
+      </div>
+      <div class="small button-group">
+        <a class="button">Small</a>
+        <a class="button">Button</a>
+        <a class="button">Group</a>
+      </div>
+      <div class="button-group">
+        <a class="button">Basic</a>
+        <a class="button">Button</a>
+        <a class="button">Group</a>
+      </div>
+      <div class="large button-group">
+        <a class="button">Large</a>
+        <a class="button">Button</a>
+        <a class="button">Group</a>
+      </div>
+      <div class="button-group">
+        <a class="secondary button">View</a>
+        <a class="success button">Edit</a>
+        <a class="warning button">Share</a>
+        <a class="alert button">Delete</a>
+      </div>
+      <div class="button-group">
+        <a class="secondary button hollow">View</a>
+        <a class="success button hollow">Edit</a>
+        <a class="warning button hollow">Share</a>
+        <a class="alert button hollow">Delete</a>
+      </div>
+      <div class="button-group">
+        <a class="secondary button clear">View</a>
+        <a class="success button clear">Edit</a>
+        <a class="warning button clear">Share</a>
+        <a class="alert button clear">Delete</a>
+      </div>
+      <div class="primary button-group no-gaps">
+        <a class="button">Harder</a>
+        <a class="button">Better</a>
+        <a class="button">Faster</a>
+        <a class="button">Stronger</a>
+      </div>
+      <div class="primary button-group hollow no-gaps">
+        <a class="button">Harder</a>
+        <a class="button">Better</a>
+        <a class="button">Faster</a>
+        <a class="button">Stronger</a>
+      </div>
+      <div class="button-group no-gaps">
+        <a class="secondary button">View</a>
+        <a class="success button">Share</a>
+        <a class="warning button hollow">Edit</a>
+        <a class="alert button clear">Delete</a>
+      </div>
+      <div class="expanded button-group">
+        <a class="button">Expanded</a>
+        <a class="button">Button</a>
+        <a class="button">Group</a>
+      </div>
+      <div class="stacked-for-small button-group">
+        <a class="button">Stacked</a>
+        <a class="button">Buttons</a>
+        <a class="button">In</a>
+        <a class="button">Small</a>
+        <a class="button">Screen</a>
+      </div>
+      <div class="button-group">
+        <a class="button">Primary Action</a>
+        <a class="dropdown button arrow-only">
+          <span class="show-for-sr">Show menu</span>
+        </a>
+      </div>
+      <div class="button-group align-center">
+        <a class="button">One</a>
+        <a class="button">Two</a>
+        <a class="button">Three</a>
+      </div>
+
+      <div class="button-group align-right">
+        <a class="button">One</a>
+        <a class="button">Two</a>
+        <a class="button">Three</a>
+      </div>
+
+      <div class="button-group align-spaced">
+        <a class="button">One</a>
+        <a class="button">Two</a>
+        <a class="button">Three</a>
+      </div>
+
+      <div class="button-group align-justify">
+        <a class="button">One</a>
+        <a class="button">Two</a>
+        <a class="button">Three</a>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Cards -->
+    <section>
+      <a name="cards" class="h4">Card</a>
+      <br>
+      <h6>Basics</h6>
+      <div class="card" style="width: 300px;">
+        <div class="card-divider">
+          This is a header
+        </div>
+        <img src="./vendor/v6.9.0/generic_rectangle-1.jpg">
+        <div class="card-section">
+          <h4>This is a card.</h4>
+          <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        </div>
+      </div>
+      <br>
+      <h6>Card Divider</h6>
+      <div class="card" style="width: 300px;">
+        <div class="card-divider">
+          <h4>I'm featured</h4>
+        </div>
+        <img src="./vendor/v6.9.0/generic_rectangle-1.jpg">
+        <div class="card-section">
+          <p>This card makes use of the card-divider element.</p>
+        </div>
+      </div>
+      <br>
+      <h6>Images</h6>
+      <!-- image has no padding -->
+      <div class="card" style="width: 300px;">
+        <img src="./vendor/v6.9.0/generic_rectangle-1.jpg">
+        <div class="card-section">
+          <p>This is a simple card with an image.</p>
+        </div>
+      </div>
+
+      <!-- image has padding -->
+      <div class="card" style="width: 300px;">
+        <div class="card-section">
+          <img src="./vendor/v6.9.0/generic_rectangle-1.jpg">
+        </div>
+        <div class="card-section">
+          <p>This is a simple card with an image inside a `.card-section`.</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 300px;">
+        <div class="card-section">
+          <p>Images work just fine below the content too!</p>
+        </div>
+        <img src="./vendor/v6.9.0/generic_rectangle-1.jpg">
+      </div>
+      <br>
+      <h6>Sizing</h6>
+      <div class="grid-container">
+        <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+          <div class="cell">
+            <div class="card">
+              <img src="./vendor/v6.9.0/generic_rectangle-1.jpg">
+              <div class="card-section">
+                <h4>This is a row of cards.</h4>
+                <p>This row of cards is embedded in an X-Y Block Grid.</p>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="card">
+              <img src="./vendor/v6.9.0/generic_rectangle-1.jpg">
+              <div class="card-section">
+                <h4>This is a card.</h4>
+                <p>It has an easy to override visual style, and is appropriately subdued.</p>
+              </div>
+            </div>
+          </div>
+          <div class="cell">
+            <div class="card">
+              <img src="./vendor/v6.9.0/generic_rectangle-1.jpg">
+              <div class="card-section">
+                <h4>This is a card.</h4>
+                <p>It has an easy to override visual style, and is appropriately subdued.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+        <div class="cell">
+          <div class="card">
+            <img src="./vendor/v6.9.0/generic_rectangle-1.jpg">
+            <div class="card-section">
+              <h4>This is a row of cards.</h4>
+              <p>This row of cards is embedded in an Flex Block Grid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card">
+            <img src="./vendor/v6.9.0/generic_rectangle-1.jpg">
+            <div class="card-section">
+              <h4>This is a card.</h4>
+              <p>It has an easy to override visual style, and is appropriately subdued.</p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card">
+            <img src="./vendor/v6.9.0/generic_rectangle-1.jpg">
+            <div class="card-section">
+              <h4>This is a card.</h4>
+              <p>It has an easy to override visual style, and is appropriately subdued.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Carousel / Orbit -->
+    <section>
+      <a name="carousel" class="h4">Carousel / Orbit</a>
+      <br>
+      <h6>Basics</h6>
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+        <ul class="orbit-container">
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+          <li class="is-active orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_01.jpg" alt="Space">
+            <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_02.jpg" alt="Space">
+            <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_03.jpg" alt="Space">
+            <figcaption class="orbit-caption">Encapsulating</figcaption>
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_04.jpg" alt="Space">
+            <figcaption class="orbit-caption">Outta This World</figcaption>
+          </li>
+        </ul>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span
+              class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+        </nav>
+      </div>
+      <br>
+      <h6>Slide Contents</h6>
+      <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+        <ul class="orbit-container">
+          <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous
+              Slide</span>&#9664;</button>
+          <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+          <li class="is-active orbit-slide" style="background: dodgerblue;">
+            <div style="padding: 2rem 4rem; color: white;">
+              <p><strong>This is dodgerblue.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </li>
+          <li class="orbit-slide" style="background: rebeccapurple;">
+            <div style="padding: 2rem 4rem; color: white;">
+              <p><strong>This is rebeccapurple.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </li>
+          <li class="orbit-slide" style="background: darkgoldenrod;">
+            <div style="padding: 2rem 4rem; color: white;">
+              <p><strong>This is darkgoldenrod.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </li>
+          <li class="orbit-slide" style="background: lightseagreen;">
+            <div style="padding: 2rem 4rem; color: white;">
+              <p><strong>This is lightseagreen.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </li>
+        </ul>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span
+              class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+        </nav>
+      </div>
+      <br>
+      <h6>Using Animation</h6>
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit
+        data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+        <ul class="orbit-container">
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+          <li class="is-active orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_01.jpg" alt="Space">
+            <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_02.jpg" alt="Space">
+            <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_03.jpg" alt="Space">
+            <figcaption class="orbit-caption">Encapsulating</figcaption>
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_04.jpg" alt="Space">
+            <figcaption class="orbit-caption">Outta This World</figcaption>
+          </li>
+        </ul>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span
+              class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+        </nav>
+      </div>
+      <h6>Disabling Animation</h6>
+      <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-use-m-u-i="false">
+        <ul class="orbit-container">
+          <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+          <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+          <li class="is-active orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_01.jpg" alt="Space">
+            <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_02.jpg" alt="Space">
+            <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_03.jpg" alt="Space">
+            <figcaption class="orbit-caption">Encapsulating</figcaption>
+          </li>
+          <li class="orbit-slide">
+            <img class="orbit-image" src="./vendor/v6.9.0/orbit_04.jpg" alt="Space">
+            <figcaption class="orbit-caption">Outta This World</figcaption>
+          </li>
+        </ul>
+        <nav class="orbit-bullets">
+          <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span
+              class="show-for-sr">Current Slide</span></button>
+          <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+          <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+          <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+        </nav>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Close button -->
+    <section>
+      <a name="close_button" class="h4">Close button</a>
+      <br>
+      <div class="callout" data-closable>
+        <button class="close-button" aria-label="Close alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <p>Look at this close button!</p>
+      </div>
+      <div class="success callout" data-closable="slide-out-right">
+        <p>You can close me too, and I close using a Motion UI animation.</p>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Dropdowns -->
+    <section>
+      <a name="dropdowns" class="h4">Dropdowns</a>
+      <br>
+      <h6>Basics</h6>
+      <button class="button" type="button" data-toggle="example-dropdown">Toggle Dropdown</button>
+      <div class="dropdown-pane" id="example-dropdown" data-dropdown data-auto-focus="true">
+        Example form in a dropdown.
+        <form>
+          <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+              <div class="cell medium-6">
+                <label>Name
+                  <input type="text" placeholder="Kirk, James T.">
+                </label>
+              </div>
+              <div class="cell medium-6">
+                <label>Rank
+                  <input type="text" placeholder="Captain">
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <button class="button" type="button" data-toggle="example-dropdown-1">Hoverable Dropdown</button>
+      <div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="true" data-hover-pane="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+      <br>
+      <h6>Positioning</h6>
+      <div class="row">
+        <div class="columns">
+          <button class="button" type="button" data-toggle="example-dropdown3" style="float: right;">Left
+            Aligned</button>
+          <div class="dropdown-pane left" id="example-dropdown3" data-dropdown>
+            Just some junk that needs to be said. Or not. Your choice.
+          </div>
+          <button class="button" type="button" data-toggle="example-dropdown4">Right Aligned</button>
+          <div class="dropdown-pane right" id="example-dropdown4" data-dropdown>
+            Just some junk that needs to be said. Or not. Your choice.
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="columns">
+          <button class="button float-right" type="button" data-toggle="example-dropdown5">Bottom-right Aligned</button>
+          <div class="dropdown-pane bottom" id="example-dropdown5" data-dropdown>
+            Just some junk that needs to be said. Or not. Your choice.
+          </div>
+
+          <button class="button float-left" type="button" data-toggle="example-dropdown6">Bottom-left Aligned</button>
+          <div class="dropdown-pane bottom" id="example-dropdown6" data-dropdown>
+            Just some junk that needs to be said. Or not. Your choice.
+          </div>
+        </div>
+      </div>
+      <br><br><br><br>
+      <h6>Explicit Positioning</h6>
+      <!-- Bottom Left -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-bottom-left">Bottom
+        Left</button>
+      <div class="dropdown-pane" data-position="bottom" data-alignment="left" id="example-dropdown-bottom-left"
+        data-dropdown data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+
+      <!-- Bottom Center -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-bottom-center">Bottom
+        Center</button>
+      <div class="dropdown-pane" data-position="bottom" data-alignment="center" id="example-dropdown-bottom-center"
+        data-dropdown data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+
+      <!-- Bottom Right -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-bottom-right">Bottom
+        Right</button>
+      <div class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right"
+        data-dropdown data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+
+      <!-- Top Left -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-top-left">Top
+        Left</button>
+      <div class="dropdown-pane" data-position="top" data-alignment="left" id="example-dropdown-top-left" data-dropdown
+        data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+
+      <!-- Top Center -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-top-center">Top
+        Center</button>
+      <div class="dropdown-pane" data-position="top" data-alignment="center" id="example-dropdown-top-center"
+        data-dropdown data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+
+      <!-- Top Right -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-top-right">Top
+        Right</button>
+      <div class="dropdown-pane" data-position="top" data-alignment="right" id="example-dropdown-top-right"
+        data-dropdown data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+      <br>
+      <!-- Right Top -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-right-top">Right
+        Top</button>
+      <div class="dropdown-pane" data-position="right" data-alignment="top" id="example-dropdown-right-top"
+        data-dropdown data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+
+      <!-- Left Top -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-left-top">Left
+        Top</button>
+      <div class="dropdown-pane" data-position="left" data-alignment="top" id="example-dropdown-left-top" data-dropdown
+        data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+
+      <!-- Right Center -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-right-center">Right
+        Center</button>
+      <div class="dropdown-pane" data-position="right" data-alignment="center" id="example-dropdown-right-center"
+        data-dropdown data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+
+      <!-- Left Center -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-left-center">Left
+        Center</button>
+      <div class="dropdown-pane" data-position="left" data-alignment="center" id="example-dropdown-left-center"
+        data-dropdown data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+
+      <!-- Right Bottom -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-right-bottom">Right
+        Bottom</button>
+      <div class="dropdown-pane" data-position="right" data-alignment="bottom" id="example-dropdown-right-bottom"
+        data-dropdown data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+
+      <!-- Left Bottom -->
+      <button style="width: 10rem;" class="button" type="button" data-toggle="example-dropdown-left-bottom">Left
+        Bottom</button>
+      <div class="dropdown-pane" data-position="left" data-alignment="bottom" id="example-dropdown-left-bottom"
+        data-dropdown data-auto-focus="true">
+        Just some junk that needs to be said. Or not. Your choice.
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Forms -->
+    <section>
+      <a name="forms" class="h4">Forms</a>
+      <br>
+      <h6>Text Inputs</h6>
+
+      <form>
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+              <label>Text
+                <input type="text" placeholder="text">
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>Password
+                <input type="password" placeholder="password">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+              <label>Date
+                <input type="date" placeholder="date">
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>Datetime
+                <input type="datetime" placeholder="datetime">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+              <label>Datetime local
+                <input type="datetime-local" placeholder="datetime local">
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>Email
+                <input type="email" placeholder="email">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+              <label>Month
+                <input type="month" placeholder="month">
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>Number
+                <input type="number" placeholder="number">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+              <label>Search
+                <input type="search" placeholder="search">
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>Tel
+                <input type="tel" placeholder="tel">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+              <label>Time
+                <input type="time" placeholder="time">
+              </label>
+            </div>
+            <div class="medium-6 cell">
+              <label>Url
+                <input type="url" placeholder="url">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <div class="medium-6 cell">
+              <label>Week
+                <input type="week" placeholder="week">
+              </label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <br>
+      <h6>Textarea</h6>
+      <label>
+        What books did you read over summer break?
+        <textarea placeholder="None"></textarea>
+      </label>
+      <br>
+      <h6>Select Menus</h6>
+      <label>Select Menu
+        <select>
+          <option value="husker">Husker</option>
+          <option value="starbuck">Starbuck</option>
+          <option value="hotdog">Hot Dog</option>
+          <option value="apollo">Apollo</option>
+        </select>
+      </label>
+      <label>Multiple Select Menu
+        <select multiple>
+          <option value="showboat">Showboat</option>
+          <option value="redwing">Redwing</option>
+          <option value="narcho">Narcho</option>
+          <option value="hardball">Hardball</option>
+        </select>
+      </label>
+      <br>
+      <h6>Checkboxes and Radio Buttons</h6>
+      <div class="grid-x grid-padding-x">
+        <fieldset class="large-5 cell">
+          <legend>Choose Your Favorite</legend>
+          <input type="radio" name="pokemon" value="Red" id="pokemonRed" required><label for="pokemonRed">Red</label>
+          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+          <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+        </fieldset>
+        <fieldset class="large-7 cell">
+          <legend>Check these out</legend>
+          <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+          <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+          <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+        </fieldset>
+      </div>
+      <br>
+      <h6>Fieldset Styles</h6>
+      <fieldset class="fieldset">
+        <legend>Check these out</legend>
+        <input id="checkbox12" type="checkbox"><label for="checkbox12">Checkbox 1</label>
+        <input id="checkbox22" type="checkbox"><label for="checkbox22">Checkbox 2</label>
+        <input id="checkbox32" type="checkbox"><label for="checkbox32">Checkbox 3</label>
+      </fieldset>
+      <br>
+      <h6>Help Text (Accessibility)</h6>
+      <label>Password
+        <input type="password" aria-describedby="passwordHelpText">
+      </label>
+      <p class="help-text" id="passwordHelpText">Your password must have at least 10 characters, a number, and an Emoji.
+      </p>
+      <br>
+      <h6>Label Positioning</h6>
+      <form>
+        <div class="grid-x grid-padding-x">
+          <div class="small-3 cell">
+            <label for="right-label" class="text-right">Label</label>
+          </div>
+          <div class="small-9 cell">
+            <input type="text" id="right-label" placeholder="Right-aligned text input">
+          </div>
+        </div>
+      </form>
+      <form>
+        <div class="grid-x grid-padding-x">
+          <div class="small-3 cell">
+            <label for="middle-label" class="text-right middle">Label</label>
+          </div>
+          <div class="small-9 cell">
+            <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+          </div>
+        </div>
+      </form>
+      <br>
+      <h6>Inline Labels and Buttons</h6>
+      <div class="input-group">
+        <span class="input-group-label">$</span>
+        <input class="input-group-field" type="number">
+        <div class="input-group-button">
+          <input type="submit" class="button" value="Submit">
+        </div>
+      </div>
+      <br>
+      <h6>File Upload Button</h6>
+      <label for="exampleFileUpload" class="button">Upload File</label>
+      <input type="file" id="exampleFileUpload" class="show-for-sr">
+      <br>
+      <h6>Custom Controls (Accessibility)</h6>
+      <label id="ageLabel">Age</label>
+      <div class="slider" aria-labelledby="ageLabel" aria-describedby="ageHelpText" data-slider data-initial-start="50"
+        data-end="200">
+        <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <input type="hidden">
+      </div>
+      <p id="ageHelpText">How old are you?</p>
+      <br>
+      <h6>Slider / Range</h6>
+      <div class="slider" data-slider data-initial-start="50" data-end="200">
+        <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <input type="hidden">
+      </div>
+      <div class="slider vertical" data-slider data-initial-start="25" data-end="200" data-vertical="true">
+        <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <input type="hidden">
+      </div>
+      <div class="slider disabled" data-slider data-initial-start="78">
+        <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <input type="hidden">
+      </div>
+      <div class="slider" data-slider data-initial-start="25" data-initial-end="75">
+        <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+        <span class="slider-fill" data-slider-fill></span>
+        <span class="slider-handle" data-slider-handle role="slider" tabindex="1"></span>
+        <input type="hidden">
+        <input type="hidden">
+      </div>
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-10">
+          <div class="slider" data-slider data-initial-start="50">
+            <span class="slider-handle" data-slider-handle role="slider" tabindex="1"
+              aria-controls="sliderOutput1"></span>
+            <span class="slider-fill" data-slider-fill></span>
+          </div>
+        </div>
+        <div class="cell small-2">
+          <input type="number" id="sliderOutput1">
+        </div>
+      </div>
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-10">
+          <div class="slider" data-slider data-initial-start="50" data-step="5">
+            <span class="slider-handle" data-slider-handle role="slider" tabindex="1"
+              aria-controls="sliderOutput2"></span>
+            <span class="slider-fill" data-slider-fill></span>
+          </div>
+        </div>
+        <div class="cell small-2">
+          <input type="number" id="sliderOutput2">
+        </div>
+      </div>
+      <input type="range" min="1" max="100" step="1">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-10">
+          <div class="slider" data-slider data-initial-start="50" data-step="1" data-position-value-function="log"
+            data-non-linear-base="5">
+            <span class="slider-handle" data-slider-handle role="slider" tabindex="1"
+              aria-controls="sliderOutputNonLinear"></span>
+          </div>
+        </div>
+        <div class="cell small-2">
+          <input type="number" id="sliderOutputNonLinear">
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Modal /Reveal -->
+    <section>
+      <a name="modal" class="h4">Modal / Reveal</a>
+      <br>
+      <h6>Basics</h6>
+      <p><button class="button" data-open="exampleModal1">Click me for a modal</button></p>
+      <div class="reveal" id="exampleModal1" data-reveal>
+        <h1>Awesome. I Have It.</h1>
+        <p class="lead">Your couch. It is mine.</p>
+        <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <br>
+      <h6>Sizing</h6>
+      <!-- Tiny: 30% wide -->
+      <p><button class="button" data-open="exampleModal2">Click me for a tiny modal</button></p>
+      <div class="reveal tiny" id="exampleModal2" data-reveal>
+        <p>OH I'M SO TIIINY</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- Small: 50% wide -->
+      <p><button class="button" data-open="exampleModal3">Click me for a small modal</button></p>
+      <div class="reveal small" id="exampleModal3" data-reveal>
+        <p>I may be small, but I've got a big heart!</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- Large: 90% wide -->
+      <p><button class="button" data-open="exampleModal4">Click me for a large modal</button></p>
+      <div class="reveal large" id="exampleModal4" data-reveal>
+        <p>I'm big, like bear!</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!-- Full: 100% width and height -->
+      <p><button class="button" data-open="exampleModal5">Click me for a full modal</button></p>
+      <div class="reveal full" id="exampleModal5" data-reveal>
+        <p>I'm full, like the moon!</p>
+        <p>Use close button or ESC key to close me!</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <br>
+      <h6>Nested Modal</h6>
+      <p><button class="button" data-open="exampleModal6">Click me for a modal</button></p>
+
+      <!-- This is the first modal -->
+      <div class="reveal" id="exampleModal6" data-reveal>
+        <h1>Awesome!</h1>
+        <p class="lead">I have another modal inside of me!</p>
+        <button class="button" data-open="exampleModal7">Click me for another modal!</button>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- This is the nested modal -->
+      <div class="reveal" id="exampleModal7" data-reveal>
+        <h2>ANOTHER MODAL!!!</h2>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <br>
+      <h6>No Overlay</h6>
+      <p><button class="button" data-toggle="exampleModal8">Click me for an overlay-lacking modal</button></p>
+
+      <div class="reveal" id="exampleModal8" data-reveal data-overlay="false">
+        <p>I feel so free!</p>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <br>
+      <h6>Animations</h6>
+      <p><button class="button" data-toggle="animatedModal9">Click me for a modal</button></p>
+
+      <div class="reveal" id="animatedModal9" data-reveal data-close-on-click="true" data-animation-in="spin-in"
+        data-animation-out="spin-out">
+        <h1>Whoa, I'm dizzy!</h1>
+        <p class="lead">There are many options for animating modals, check out the Motion UI library to see them all</p>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <br>
+      <h6>Accessibility</h6>
+      <p><button class="button" data-open="exampleModal10">Click me for a modal</button></p>
+
+      <div class="reveal" id="exampleModal10" aria-labelledby="exampleModalHeader10" data-reveal>
+        <h1 id="exampleModalHeader10">Label for the Modal!</h1>
+        <p class="lead">I am even more accessible than the other modals.</p>
+        <button class="close-button" data-close aria-label="Close Accessible Modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Navbar / Top Bar -->
+    <section>
+      <a name="navbar" class="h4">Navbar / Top Bar</a>
+      <br>
+      <div class="top-bar">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Site Title</li>
+            <li>
+              <a href="#">One</a>
+              <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Navs and Tabs -->
+    <section>
+      <a name="navs_and_tabs" class="h4">Navs and Tabs</a>
+      <br>
+      <h6>Menu</h6>
+      <ul class="menu">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+      </ul>
+      <ul class="menu align-center">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+      </ul>
+      <ul class="menu align-right">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+      </ul>
+      <hr>
+      <ul class="menu expanded">
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Expanded</a></li>
+      </ul>
+      <hr>
+      <ul class="menu simple">
+        <li>One</li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+      </ul>
+      <hr>
+      <ul class="vertical menu">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+      </ul>
+      <ul class="vertical menu align-center">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+      </ul>
+      <ul class="vertical menu align-right">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+      </ul>
+      <hr>
+      <ul class="vertical menu">
+        <li>
+          <a href="#">One</a>
+          <ul class="nested vertical menu">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+            <li><a href="#">Four</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+      </ul>
+      <hr>
+      <ul class="menu">
+        <li class="is-active"><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Nachos</a></li>
+      </ul>
+      <ul class="menu">
+        <li class="menu-text">Site Title</li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">With</a></li>
+        <li><a href="#">Text</a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#"><i class="fi-list"></i> <span>Menu</span></a></li>
+        <li><a href="#"><i class="fi-list"></i> <span>with</span></a></li>
+        <li><a href="#"><i class="fi-list"></i> <span>Left</span></a></li>
+        <li><a href="#"><i class="fi-list"></i> <span>Icon</span></a></li>
+      </ul>
+      <ul class="menu icons icon-top">
+        <li><a href="#"><i class="fi-list"></i> <span>Menu</span></a></li>
+        <li><a href="#"><i class="fi-list"></i> <span>With</span></a></li>
+        <li><a href="#"><i class="fi-list"></i> <span>Top</span></a></li>
+        <li><a href="#"><i class="fi-list"></i> <span>Icon</span></a></li>
+      </ul>
+      <ul class="menu icons icon-right">
+        <li><a href="#"><span>Menu</span> <i class="fi-list"></i></a></li>
+        <li><a href="#"><span>With</span> <i class="fi-list"></i></a></li>
+        <li><a href="#"><span>Right</span> <i class="fi-list"></i></a></li>
+        <li><a href="#"><span>Icon</span> <i class="fi-list"></i></a></li>
+      </ul>
+      <ul class="menu icons icon-bottom">
+        <li><a href="#"><span>Menu</span> <i class="fi-list"></i></a></li>
+        <li><a href="#"><span>With</span> <i class="fi-list"></i></a></li>
+        <li><a href="#"><span>Bottom</span> <i class="fi-list"></i></a></li>
+        <li><a href="#"><span>Icon</span> <i class="fi-list"></i></a></li>
+      </ul>
+      <ul class="vertical menu icons icon-top">
+        <li>
+          <a href="#"><i class="fi-list"></i> Icon</a>
+          <ul class="nested vertical menu icons icon-left">
+            <li><a href="#"><i class="fi-list"></i> Position</a></li>
+            <li><a href="#"><i class="fi-list"></i> With</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fi-list"></i> Nested</a></li>
+        <li><a href="#"><i class="fi-list"></i> Styles</a></li>
+      </ul>
+      <hr>
+      <h6>Dropdown Menu</h6>
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li>
+          <a href="#Item-1">Item 1</a>
+          <ul class="menu">
+            <li><a href="#Item-1A">Item 1A</a></li>
+            <li>
+              <a href="#Item-1B">Item 1B</a>
+              <ul class="menu">
+                <li><a href="#Item-1Bi">Item 1B i</a></li>
+                <li><a href="#Item-1Bii">Item 1B ii</a></li>
+                <li>
+                  <a href="#Item-1Biii">Item 1B iii</a>
+                  <ul class="menu">
+                    <li><a href="#Item-1Biiialpha">Item 1B iii alpha</a></li>
+                    <li><a href="#Item-1Biiiomega">Item 1B iii omega</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#Item-1Biv">Item 1B iv</a>
+                  <ul class="menu">
+                    <li><a href="#Item-1Bivalpha">Item 1B iv alpha</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#Item-1C">Item 1C</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#Item-2">Item 2</a>
+          <ul class="menu">
+            <li><a href="#Item-2A">Item 2A</a></li>
+            <li><a href="#Item-2B">Item 2B</a></li>
+          </ul>
+        </li>
+        <li><a href="#Item-3">Item 3</a></li>
+        <li><a href="#Item-4">Item 4</a></li>
+      </ul>
+      <br>
+      <ul class="vertical dropdown menu" data-dropdown-menu style="max-width: 250px;">
+        <li>
+          <a href="#Item-1">Item 1</a>
+          <ul class="menu">
+            <li><a href="#Item-1A">Item 1A</a></li>
+            <li>
+              <a href="#Item-1B">Item 1B</a>
+              <ul class="menu">
+                <li><a href="#Item-1Bi">Item 1B i</a></li>
+                <li><a href="#Item-1Bii">Item 1B ii</a></li>
+                <li>
+                  <a href="#Item-1Biii">Item 1B iii</a>
+                  <ul class="menu">
+                    <li><a href="#Item-1Biiialpha">Item 1B iii alpha</a></li>
+                    <li><a href="#Item-1Biiiomega">Item 1B iii omega</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#Item-1Biv">Item 1B iv</a>
+                  <ul class="menu">
+                    <li><a href="#Item-1Bivalpha">Item 1B iv alpha</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#Item-1C">Item 1C</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#Item-2">Item 2</a>
+          <ul class="menu">
+            <li><a href="#Item-2A">Item 2A</a></li>
+            <li><a href="#Item-2B">Item 2B</a></li>
+          </ul>
+        </li>
+        <li><a href="#Item-3">Item 3</a></li>
+        <li><a href="#Item-4">Item 4</a></li>
+      </ul>
+      <hr>
+      <h6>Drilldown Menu</h6>
+      <div class="row">
+        <div class="columns">
+          <ul class="vertical drilldown menu" data-drilldown style="max-width: 250px; padding: 2rem 1rem;" id="m1">
+            <li>
+              <a href="#">Item 1</a>
+              <ul class="menu">
+                <li>
+                  <a href="#">Item 1A</a>
+                  <ul class="menu">
+                    <li><a href="#Item-1Aa">Item 1Aa</a></li>
+                    <li><a href="#Item-1Ba">Item 1Ba</a></li>
+                    <li><a href="#Item-1Ca">Item 1Ca</a></li>
+                    <li><a href="#Item-1Da">Item 1Da</a></li>
+                    <li><a href="#Item-1Ea">Item 1Ea</a></li>
+                  </ul>
+                </li>
+                <li><a href="#Item-1B">Item 1B</a></li>
+                <li><a href="#Item-1C">Item 1C</a></li>
+                <li><a href="#Item-1D">Item 1D</a></li>
+                <li><a href="#Item-1E">Item 1E</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Item 2</a>
+              <ul class="menu">
+                <li><a href="#Item-2A">Item 2A</a></li>
+                <li><a href="#Item-2B">Item 2B</a></li>
+                <li><a href="#Item-2C">Item 2C</a></li>
+                <li><a href="#Item-2D">Item 2D</a></li>
+                <li><a href="#Item-2E">Item 2E</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Item 3</a>
+              <ul class="menu">
+                <li><a href="#Item-3A">Item 3A</a></li>
+                <li><a href="#Item-3B">Item 3B</a></li>
+                <li><a href="#Item-3C">Item 3C</a></li>
+                <li><a href="#Item-3D">Item 3D</a></li>
+                <li><a href="#Item-3E">Item 3E</a></li>
+              </ul>
+            </li>
+            <li><a href="#Item-4"> Item 4</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <h6>Accordion Menu</h6>
+      <ul class="vertical menu accordion-menu" data-accordion-menu>
+        <li>
+          <a href="#">Item 1</a>
+          <ul class="menu vertical nested">
+            <li><a href="#">Item 1A</a></li>
+            <li><a href="#">Item 1B</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Item 2</a></li>
+      </ul>
+      <hr>
+      <h6>Responsive Menu</h6>
+      <ul class="vertical medium-horizontal menu">
+        <li><a href="#0"><i class="fi-list"></i> <span>One</span></a></li>
+        <li><a href="#0"><i class="fi-list"></i> <span>Two</span></a></li>
+        <li><a href="#0"><i class="fi-list"></i> <span>Three</span></a></li>
+        <li><a href="#0"><i class="fi-list"></i> <span>Four</span></a></li>
+      </ul>
+      <br>
+      <ul class="vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+        <li>
+          <a href="#">Item 1</a>
+          <ul class="vertical menu">
+            <li>
+              <a href="#">Item 1A</a>
+              <ul class="vertical menu">
+                <li><a href="#">Item 1A</a></li>
+                <li><a href="#">Item 1B</a></li>
+                <li><a href="#">Item 1C</a></li>
+                <li><a href="#">Item 1D</a></li>
+                <li><a href="#">Item 1E</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Item 1B</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Item 2</a>
+          <ul class="vertical menu">
+            <li><a href="#">Item 2A</a></li>
+            <li><a href="#">Item 2B</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Item 3</a>
+          <ul class="vertical menu">
+            <li><a href="#">Item 3A</a></li>
+            <li><a href="#">Item 3B</a></li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
+        <li>
+          <a href="#">Item 1</a>
+          <ul class="vertical menu">
+            <li>
+              <a href="#">Item 1A</a>
+              <ul class="vertical menu">
+                <li><a href="#">Item 1A</a></li>
+                <li><a href="#">Item 1B</a></li>
+                <li><a href="#">Item 1C</a></li>
+                <li><a href="#">Item 1D</a></li>
+                <li><a href="#">Item 1E</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Item 1B</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Item 2</a>
+          <ul class="vertical menu">
+            <li><a href="#">Item 2A</a></li>
+            <li><a href="#">Item 2B</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Item 3</a>
+          <ul class="vertical menu">
+            <li><a href="#">Item 3A</a></li>
+            <li><a href="#">Item 3B</a></li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <ul class="vertical menu" data-responsive-menu="drilldown medium-accordion" style="max-width: 250px;">
+        <li>
+          <a href="#">Item 1</a>
+          <ul class="vertical menu">
+            <li>
+              <a href="#">Item 1A</a>
+              <ul class="vertical menu">
+                <li><a href="#">Item 1A</a></li>
+                <li><a href="#">Item 1B</a></li>
+                <li><a href="#">Item 1C</a></li>
+                <li><a href="#">Item 1D</a></li>
+                <li><a href="#">Item 1E</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Item 1B</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Item 2</a>
+          <ul class="vertical menu">
+            <li><a href="#">Item 2A</a></li>
+            <li><a href="#">Item 2B</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Item 3</a>
+          <ul class="vertical menu">
+            <li><a href="#">Item 3A</a></li>
+            <li><a href="#">Item 3B</a></li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+        <div class="title-bar-title">Menu</div>
+      </div>
+
+      <div class="top-bar" id="example-menu">
+        <div class="top-bar-left">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li class="menu-text">Site Title</li>
+            <li>
+              <a href="#">One</a>
+              <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><input type="search" placeholder="Search"></li>
+            <li><button type="button" class="button">Search</button></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <h6>Tabs</h6>
+      <ul class="tabs" data-tabs id="example-tabs">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Tab 2</a></li>
+      </ul>
+      <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+          <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh
+            porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+            Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <p>Suspendisse dictum feugiat nisl ut dapibus. Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla
+            enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Sed auctor neque eu tellus
+            rhoncus ut eleifend nibh porttitor.</p>
+        </div>
+      </div>
+      <br>
+      <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell medium-3">
+            <ul class="vertical tabs" data-tabs id="example-tabs">
+              <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Tab 1</a></li>
+              <li class="tabs-title"><a href="#panel2v">Tab 2</a></li>
+              <li class="tabs-title"><a href="#panel3v">Tab 3</a></li>
+              <li class="tabs-title"><a href="#panel4v">Tab 4</a></li>
+              <li class="tabs-title"><a href="#panel5v">Tab 5</a></li>
+              <li class="tabs-title"><a href="#panel6v">Tab 6</a></li>
+            </ul>
+          </div>
+          <div class="cell medium-9">
+            <div class="tabs-content vertical" data-tabs-content="example-tabs">
+              <div class="tabs-panel is-active" id="panel1v">
+                <p>One</p>
+                <p>Check me out! I'm a super cool Tab panel with text content!</p>
+              </div>
+              <div class="tabs-panel" id="panel2v">
+                <p>Two</p>
+                <img class="thumbnail" src="./vendor/v6.9.0/generic_rectangle-7.jpg">
+              </div>
+              <div class="tabs-panel" id="panel3v">
+                <p>Three</p>
+                <p>Check me out! I'm a super cool Tab panel with text content!</p>
+              </div>
+              <div class="tabs-panel" id="panel4v">
+                <p>Four</p>
+                <img class="thumbnail" src="./vendor/v6.9.0/generic_rectangle-2.jpg">
+              </div>
+              <div class="tabs-panel" id="panel5v">
+                <p>Five</p>
+                <p>Check me out! I'm a super cool Tab panel with text content!</p>
+              </div>
+              <div class="tabs-panel" id="panel6v">
+                <p>Six</p>
+                <img class="thumbnail" src="./vendor/v6.9.0/generic_rectangle-8.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+        <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">Collapsable Tab 1</a></li>
+        <li class="tabs-title"><a href="#panel2c">Collapsable Tab 2</a></li>
+        <li class="tabs-title"><a href="#panel3c">Collapsable Tab 3</a></li>
+        <li class="tabs-title"><a href="#panel4c">Collapsable Tab 4</a></li>
+      </ul>
+
+      <div class="tabs-content" data-tabs-content="collapsing-tabs">
+        <div class="tabs-panel is-active" id="panel1c">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel" id="panel2c">
+          <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh
+            porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+            Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel" id="panel3c">
+          <img class="thumbnail" src="./vendor/v6.9.0/generic_rectangle-2.jpg">
+        </div>
+        <div class="tabs-panel" id="panel4c">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </div>
+      <br>
+      <ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true"
+        data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
+        <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Deep Linking Tab 1</a></li>
+        <li class="tabs-title"><a href="#panel2d">Deep Linking Tab 2</a></li>
+        <li class="tabs-title"><a href="#panel3d">Deep Linking Tab 3</a></li>
+        <li class="tabs-title"><a href="#panel4d">Deep Linking Tab 4</a></li>
+      </ul>
+
+      <div class="tabs-content" data-tabs-content="deeplinked-tabs">
+        <div class="tabs-panel is-active" id="panel1d">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+        <div class="tabs-panel" id="panel2d">
+          <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh
+            porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+            Suspendisse dictum feugiat nisl ut dapibus.</p>
+        </div>
+        <div class="tabs-panel" id="panel3d">
+          <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+        </div>
+        <div class="tabs-panel" id="panel4d">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
+        </div>
+      </div>
+      <hr>
+      <h6>Responsive Accordion Tabs</h6>
+      <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+        <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+        <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+        <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
+        <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
+        <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
+      </ul>
+
+      <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+          <p>one</p>
+          <p>Check me out! I'm a super cool Tab panel with text content!</p>
+        </div>
+        <div class="tabs-panel" id="panel2">
+          <p>two</p>
+          <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
+        </div>
+        <div class="tabs-panel" id="panel3">
+          <p>three</p>
+          <p>Check me out! I'm a super cool Tab panel with text content!</p>
+        </div>
+        <div class="tabs-panel" id="panel4">
+          <p>four</p>
+          <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
+        </div>
+        <div class="tabs-panel" id="panel5">
+          <p>five</p>
+          <p>Check me out! I'm a super cool Tab panel with text content!</p>
+        </div>
+        <div class="tabs-panel" id="panel6">
+          <p>six</p>
+          <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Offcanvas -->
+    <section>
+      <a name="offcanvas" class="h4">Offcanvas</a>
+      <br>
+      <button type="button" class="button" data-toggle="offCanvasLeft1">Open left off-canvas</button>
+      <button type="button" class="button" data-toggle="offCanvasRight1">Open right off-canvas</button>
+      <button type="button" class="button" data-toggle="offCanvasTop1">Open top off-canvas</button>
+      <button type="button" class="button" data-toggle="offCanvasBottom1">Open bottom off-canvas</button>
+      <br>
+      <button type="button" class="button" data-toggle="offCanvasLeft2">Open left off-canvas with overlay</button>
+      <br>
+      <div class="title-bar">
+        <div class="title-bar-left">
+          <button class="menu-icon" type="button" data-open="offCanvasLeft1"></button>
+          <span class="title-bar-title">Combine with Title Bar</span>
+        </div>
+        <div class="title-bar-right">
+          <button class="menu-icon" type="button" data-open="offCanvasRight1"></button>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Pagination -->
+    <section>
+      <a name="pagination" class="h4">Pagination</a>
+      <br>
+      <nav aria-label="Pagination">
+        <ul class="pagination">
+          <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+          <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+          <li><a href="#" aria-label="Page 2">2</a></li>
+          <li><a href="#" aria-label="Page 3">3</a></li>
+          <li><a href="#" aria-label="Page 4">4</a></li>
+          <li class="ellipsis" aria-hidden="true"></li>
+          <li><a href="#" aria-label="Page 12">12</a></li>
+          <li><a href="#" aria-label="Page 13">13</a></li>
+          <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a>
+          </li>
+        </ul>
+      </nav>
+      <br>
+      <nav aria-label="Pagination">
+        <ul class="pagination text-center">
+          <li class="pagination-previous disabled">Previous</li>
+          <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+          <li><a href="#" aria-label="Page 2">2</a></li>
+          <li><a href="#" aria-label="Page 3">3</a></li>
+          <li><a href="#" aria-label="Page 4">4</a></li>
+          <li class="ellipsis"></li>
+          <li><a href="#" aria-label="Page 12">12</a></li>
+          <li><a href="#" aria-label="Page 13">13</a></li>
+          <li class="pagination-next"><a href="#" aria-label="Next page">Next</a></li>
+        </ul>
+      </nav>
+    </section>
+    <br><br>
+
+    <!-- Progress -->
+    <section>
+      <a name="progress" class="h4">Progress</a>
+      <br>
+      <div class="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent"
+        aria-valuemax="100">
+        <div class="progress-meter" style="width: 15%"></div>
+      </div>
+
+      <div class="secondary progress" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+        aria-valuetext="25 percent" aria-valuemax="100">
+        <div class="progress-meter" style="width: 35%"></div>
+      </div>
+
+      <div class="success progress">
+        <div class="progress-meter" style="width: 55%"></div>
+      </div>
+
+      <div class="warning progress">
+        <div class="progress-meter" style="width: 75%"></div>
+      </div>
+
+      <div class="alert progress">
+        <div class="progress-meter" style="width: 95%"></div>
+      </div>
+
+      <div class="progress" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuetext="25 percent"
+        aria-valuemax="100">
+        <span class="progress-meter" style="width: 25%">
+          <span class="progress-meter-text">25%</span>
+        </span>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Scrollspy / Magellan -->
+    <!-- NOTE: Having difficulties making a working example for this one, skipping for now.  -->
+    <!-- <section>
+      <a name="scrollspy" class="h4">Scrollspy / Magellan</a>
+      <br>
+      <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell medium-3">
+            <ul class="vertical menu" data-tabs id="magellan-menu" data-magellan>
+              <li><a href="#magellan1">One</a></li>
+              <li><a href="#magellan2">Two</a></li>
+              <li><a href="#magellan3">Three</a></li>
+            </ul>
+          </div>
+          <div class="cell medium-9">
+            <div class="sections" style="max-height: 150px; overflow: auto; max-width: 150px;">
+              <section id="magellan1" data-magellan-target="magellan1">First Section! Aliquam orci orci, maximus a pulvinar id, tincidunt a neque. Suspendisse eros diam, finibus et faucibus ac, suscipit feugiat orci. Morbi scelerisque sem id blandit malesuada. Donec suscipit tincidunt dolor in blandit. Nam rhoncus risus vitae lacinia dictum. Cras lobortis, nulla non faucibus mattis, tellus nibh condimentum eros, posuere volutpat arcu risus vel ante. In ut ullamcorper eros, et vestibulum risus. Fusce auctor risus vitae diam viverra tincidunt. In debitis ex repudiandae et, earum, distinctio deserunt beatae quibusdam quidem laborum ea ut! Veniam tempora quia perspiciatis illum accusantium voluptatibus eligendi aspernatur ea. Tempora pariatur quasi aliquam nulla rem porro mollitia quas minima accusantium, sit repellat in hic, minus neque sed perspiciatis praesentium libero similique quos nobis labore iste! Placeat nobis quidem accusantium facere consequatur ut, unde nulla inventore possimus, quam atque a deserunt similique ad deleniti voluptate qui? Minus porro deserunt, labore debitis cumque alias autem amet maxime nam obcaecati hic aspernatur doloribus veniam! Culpa aliquid, corporis nemo odit odio error enim fuga! Odit numquam modi ullam sapiente voluptate nemo deserunt autem quaerat, eos placeat temporibus voluptates ducimus quos blanditiis excepturi vero aut doloremque laudantium possimus id fugit. Quos asperiores magni reprehenderit illum, ipsam cupiditate unde quam. Corporis, nulla, doloribus! Minima ipsa sapiente, eligendi maxime possimus suscipit fuga nulla dicta quidem odio doloribus assumenda delectus, dolor? Odit at minus voluptas saepe officiis ipsa dolores ad possimus, facilis eligendi laudantium fugit, alias nulla minima sapiente quasi distinctio corporis temporibus voluptatum illum pariatur similique autem ea delectus! Harum eveniet quasi incidunt nihil impedit minus alias, sapiente omnis maxime error illo! Consectetur facere quisquam non aperiam, impedit quos atque pariatur totam quis provident alias placeat mollitia laboriosam soluta aspernatur modi, officiis nesciunt cumque. Ea magni earum ab, aliquam dicta omnis, eaque id dolore delectus iure repellat optio voluptas doloremque aut harum ad aperiam. Nulla, numquam, iure. Illum, harum neque non quae! Ab officiis, odio praesentium laborum maiores qui modi, voluptatum cupiditate corporis assumenda. Suscipit delectus, eaque dolore rem optio. Dolorem eum porro consequuntur, tempore quam sunt nulla inventore voluptates, minus non fugiat iste nobis doloremque dolorum beatae. Dolor ullam corrupti nesciunt aperiam perferendis, sit aliquid itaque eius perspiciatis illum maiores dicta repudiandae eum nostrum officiis architecto ipsa incidunt error placeat! Dignissimos nobis nihil magni sit blanditiis et. Duis scelerisque ligula ut metus rhoncus scelerisque. Integer ut egestas metus. Nulla facilisi. Aenean luctus magna lobortis ligula rhoncus, sit amet lacinia lorem sagittis. Sed ultrices at metus id aliquet. Vestibulum in condimentum quam, id ornare erat. Vivamus nec justo quis ex fringilla condimentum ac non quam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cum obcaecati ratione maiores praesentium a illum tempore expedita aperiam voluptate. Enim a pariatur, illum explicabo dignissimos distinctio sed ducimus, doloremque harum maiores accusamus itaque, aliquid laboriosam!</section>
+              <section id="magellan2" data-magellan-target="magellan2">Second Section! Amet, similique, autem nobis laudantium adipisci repellendus quas officiis iure nemo error, quaerat, blanditiis! Ex aliquid repudiandae cum, consectetur voluptas adipisci, fugit, deleniti atque nostrum, labore necessitatibus. Totam, earum assumenda! Asperiores obcaecati fuga provident nobis natus consequuntur molestias harum modi error, voluptate velit tenetur magni vitae odio soluta earum incidunt. Ea sunt optio modi ex magni ipsa iure earum, labore tempora ipsam repellendus quas enim eos a voluptas quaerat libero quod provident soluta, fugiat numquam.</section>
+              <section id="magellan3" data-magellan-target="magellan3">Third Section! Ab officiis, odio praesentium laborum maiores qui modi, voluptatum cupiditate corporis assumenda. Suscipit delectus, eaque dolore rem optio. Dolorem eum porro consequuntur, tempore quam sunt nulla inventore voluptates, minus non fugiat iste nobis doloremque dolorum beatae. Dolor ullam corrupti nesciunt aperiam perferendis, sit aliquid itaque eius perspiciatis illum maiores dicta repudiandae eum nostrum officiis architecto ipsa incidunt error placeat! Dignissimos nobis nihil magni sit blanditiis et.</section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br> -->
+
+    <!-- Swap / Switch -->
+    <section>
+      <a name="swap" class="h4">Swap / Switch</a>
+      <br>
+      <h6>Basics</h6>
+      <div class="switch">
+        <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="exampleSwitch">
+          <span class="show-for-sr">Download Kittens</span>
+        </label>
+      </div>
+      <h6>Disabled</h6>
+      <div class="switch">
+        <input class="switch-input" disabled checked="checked" id="exampleCheckedDisabledSwitch" type="checkbox"
+          name="exampleCheckedDisabledSwitch">
+        <label class="switch-paddle" for="exampleCheckedDisabledSwitch">
+          <span class="show-for-sr">Can't Touch This Checked</span>
+        </label>
+      </div>
+      <div class="switch">
+        <input class="switch-input" disabled id="exampleUncheckedDisabledSwitch" type="checkbox"
+          name="exampleUncheckedDisabledSwitch">
+        <label class="switch-paddle" for="exampleUncheckedDisabledSwitch">
+          <span class="show-for-sr">Can't Touch This Unchecked</span>
+        </label>
+      </div>
+      <h6>Radio Switch</h6>
+      <div class="switch">
+        <input class="switch-input" id="exampleRadioSwitch1" type="radio" checked name="testGroup">
+        <label class="switch-paddle" for="exampleRadioSwitch1">
+          <span class="show-for-sr">Bulbasaur</span>
+        </label>
+      </div>
+
+      <div class="switch">
+        <input class="switch-input" id="exampleRadioSwitch2" type="radio" name="testGroup">
+        <label class="switch-paddle" for="exampleRadioSwitch2">
+          <span class="show-for-sr">Bulbasaur</span>
+        </label>
+      </div>
+
+      <div class="switch">
+        <input class="switch-input" id="exampleRadioSwitch3" type="radio" name="testGroup">
+        <label class="switch-paddle" for="exampleRadioSwitch3">
+          <span class="show-for-sr">Bulbasaur</span>
+        </label>
+      </div>
+      <h6>Sizing</h6>
+      <div class="switch tiny">
+        <input class="switch-input" id="tinySwitch" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="tinySwitch">
+          <span class="show-for-sr">Tiny Sandwiches Enabled</span>
+        </label>
+      </div>
+      <div class="switch small">
+        <input class="switch-input" id="smallSwitch" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="smallSwitch">
+          <span class="show-for-sr">Small Portions Only</span>
+        </label>
+      </div>
+      <div class="switch large">
+        <input class="switch-input" id="largeSwitch" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="largeSwitch">
+          <span class="show-for-sr">Show Large Elephants</span>
+        </label>
+      </div>
+      <h6>Inner Labels</h6>
+      <div class="switch large">
+        <input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+        <label class="switch-paddle" for="yes-no">
+          <span class="show-for-sr">Do you like me?</span>
+          <span class="switch-active" aria-hidden="true">Yes</span>
+          <span class="switch-inactive" aria-hidden="true">No</span>
+        </label>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Tables -->
+    <section>
+      <a name="tables" class="h4">Tables</a>
+      <br>
+      <h6>Basics</h6>
+      <table>
+        <thead>
+          <tr>
+            <th width="200">Table Header</th>
+            <th>Table Header</th>
+            <th width="150">Table Header</th>
+            <th width="150">Table Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h6>Hover State</h6>
+      <table class="hover">
+        <thead>
+          <tr>
+            <th width="200">Table Header</th>
+            <th>Table Header</th>
+            <th width="150">Table Header</th>
+            <th width="150">Table Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h6>Unstriped Table</h6>
+      <table class="unstriped">
+        <thead>
+          <tr>
+            <th width="200">Table Header</th>
+            <th>Table Header</th>
+            <th width="150">Table Header</th>
+            <th width="150">Table Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h6>Stacked Table</h6>
+      <table class="stack">
+        <thead>
+          <tr>
+            <th width="300">Table Header</th>
+            <th>Table Header</th>
+            <th width="150">Table Header</th>
+            <th width="150">Table Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+          <tr>
+            <td>Content Goes Here</td>
+            <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+            <td>Content Goes Here</td>
+            <td>Content Goes Here</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h6>Scrolling Table</h6>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>This is the description!</th>
+              <th>One</th>
+              <th>Two</th>
+              <th>Three</th>
+              <th>Four</th>
+              <th>Five</th>
+              <th>Six</th>
+              <th>Seven</th>
+              <th>Eight</th>
+              <th>Nine</th>
+              <th>Ten</th>
+              <th>Eleven</th>
+              <th>Twelve</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="display:block; width:400px;">These are all the words that people use to describe Foundation 6!
+              </td>
+              <td>Cool</td>
+              <td>Swag</td>
+              <td>Chill</td>
+              <td>Killer</td>
+              <td>Rad</td>
+              <td>Baller</td>
+              <td>OMG</td>
+              <td>Sweet</td>
+              <td>Awesome</td>
+              <td>Beast</td>
+              <td>Dope</td>
+              <td>Tubular</td>
+            </tr>
+            <tr>
+              <td>These are some words that people use to describe other web frameworks.</td>
+              <td>Whatevs</td>
+              <td>Ugh.</td>
+              <td>LOL</td>
+              <td>K</td>
+              <td>Aight</td>
+              <td>Eh.</td>
+              <td>Grrr...</td>
+              <td>Meh.</td>
+              <td>TTYL</td>
+              <td>Bleh.</td>
+              <td>Really?</td>
+              <td>Why?</td>
+            </tr>
+            <tr>
+              <td>Here are some great super heros.</td>
+              <td>Batman</td>
+              <td>Superman</td>
+              <td>Spiderman</td>
+              <td>Wonder Woman</td>
+              <td>Hulk</td>
+              <td>Nicolas Cage</td>
+              <td>Antman</td>
+              <td>Aquaman</td>
+              <td>Captain America</td>
+              <td>Wolverine</td>
+              <td>Thor</td>
+              <td>Iron Man</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Here's a footer, just in case</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Tooltips -->
+    <section>
+      <a name="tooltips" class="h4">Tooltips</a>
+      <br>
+      <h6>Basic Tooltip</h6>
+      The <span data-tooltip tabindex="1" title="Fancy word for a beetle.">scarabaeus</span> hung quite
+      clear of any branches, and, if allowed to fall, would have fallen at our feet.
+      <br><br>
+      <h6>Tooltip Top</h6>
+      The <span data-tooltip class="top" tabindex="2" title="Fancy word for a beetle.">scarabaeus</span>
+      hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet.
+      <br><br>
+      <h6>Tooltip Clicking</h6>
+      this
+      <span data-tooltip class="top" tabindex="2" title="You see?  I'm open!">
+        tooltip will stay open
+      </span>
+      while
+      <span data-tooltip class="top" data-click-open="false" tabindex="2" title="I don't stay open">
+        this one will only be open when hovered
+      </span>
+      <br><br>
+      <h6>Tooltip Right and Left</h6>
+      When he was dressed he went down the hall into the
+      <span data-tooltip class="right" tabindex="3" title="Aligned on the right">kitchen</span>.
+      The table was almost hidden beneath all Dudley's birthday presents. It looked as though
+      <span data-tooltip class="left" tabindex="4" title="Aligned on the left">Dudley</span>
+      had gotten the new computer he wanted, not to mention the second television and the racing bike.
+      <br><br>
+      <h6>Explicit Positioning</h6>
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="bottom" data-alignment="left">
+        Bottom Left
+      </button>
+
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="bottom" data-alignment="center">
+        Bottom Center
+      </button>
+
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="bottom" data-alignment="right">
+        Bottom Right
+      </button>
+
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="top" data-alignment="left">
+        Top Left
+      </button>
+
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="top" data-alignment="center">
+        Top Center
+      </button>
+
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="top" data-alignment="right">
+        Top Right
+      </button>
+      <br>
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="right" data-alignment="top">
+        Right Top
+      </button>
+
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="left" data-alignment="top">
+        Left Top
+      </button>
+
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="right" data-alignment="center">
+        Right Center
+      </button>
+
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="left" data-alignment="center">
+        Left Center
+      </button>
+
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="right" data-alignment="bottom">
+        Right Bottom
+      </button>
+
+      <button class="button" type="button" data-tooltip tabindex="1" title="Fancy word for a beetle."
+        data-position="left" data-alignment="bottom">
+        Left Bottom
+      </button>
+
+    </section>
+    <br><br>
+
+    <!-- Typography -->
+    <section>
+      <a name="typography" class="h4">Typography</a>
+      <br>
+      <h6>Paragraphs</h6>
+      <p>This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall
+        vertical rhythm. To show what a paragraph looks like this needs a little more content so, did you know that
+        there are storms occurring on Jupiter that are larger than the Earth? Pretty cool. Wrap strong around type to
+        <strong>make it bold!</strong>. You can also use em to <em>italicize your words</em>.
+      </p>
+      <br>
+      <h6>Headings</h6>
+      <h1>h1. This is a very large header.</h1>
+      <h2>h2. This is a large header.</h2>
+      <h3>h3. This is a medium header.</h3>
+      <h4>h4. This is a moderate header.</h4>
+      <h5>h5. This is a small header.</h5>
+      <h6>h6. This is a tiny header.</h6>
+      <br>
+      <h6>Small Header Segments</h6>
+      <h3>Foundation for Sites <small>Version 6.6.1</small></h3>
+      <br>
+      <h6>Links</h6>
+      <p>Links are very standard, and the color is preset to the Foundation primary color. <a href="global.html">Learn
+          more about Foundation's global colors.</a></p>
+      <br>
+      <h6>Dividers</h6>
+      <hr>
+      <br>
+      <h6>Unordered Lists</h6>
+      <ul>
+        <li>List item with a much longer description or more content.</li>
+        <li>List item</li>
+        <li>List item
+          <ul>
+            <li>Nested list item</li>
+            <li>Nested list item</li>
+            <li>Nested list item</li>
+          </ul>
+        </li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+      </ul>
+      <br>
+      <h6>Ordered Lists</h6>
+      <ol>
+        <li>Cheese (essential)</li>
+        <li>Pepperoni</li>
+        <li>Bacon
+          <ol>
+            <li>Normal bacon</li>
+            <li>Canadian bacon</li>
+          </ol>
+        </li>
+        <li>Sausage</li>
+        <li>Onions</li>
+        <li>Mushrooms</li>
+      </ol>
+      <br>
+      <h6>Definition Lists</h6>
+      <dl>
+        <dt>Time</dt>
+        <dd>The indefinite continued progress of existence and events in the past, present, and future regarded as a
+          whole.</dd>
+        <dt>Space</dt>
+        <dd>A continuous area or expanse that is free, available, or unoccupied.</dd>
+        <dd>The dimensions of height, depth, and width within which all things exist and move.</dd>
+      </dl>
+      <br>
+      <h6>Blockquotes</h6>
+      <blockquote>
+        Those people who think they know everything are a great annoyance to those of us who do.
+        <cite>Isaac Asimov</cite>
+      </blockquote>
+      <br>
+      <h6>Abbreviations</h6>
+      <p>In my dream last night, I saw <abbr title="John Ronald Reuel">J. R. R.</abbr> Tolkien and George <abbr
+          title="Raymond Richard">R. R.</abbr> Martin hanging out on Sunset <abbr title="Boulevard">Blvd</abbr>.</p>
+      <br>
+      <h6>Code</h6>
+      Remember to escape angle brackets when printing HTML: <code>&lt;div&gt;</code>
+      <br>
+      <span class="code-inline">I am not code, but I am displayed as if.</span>
+      <br>
+      <code class="code-block">{
+        "What I am": "I am a big chunk of code. I can have very long lines, I will not break and show a scrollbar instead.",
+        ...
+}</code>
+      <br>
+      <h6>Keystrokes</h6>
+      <p>Press <kbd>Cmd+Q</kbd> (or <kbd>Ctrl+Q</kbd> on Windows) to play Half-Life 3.</p>
+      <br>
+      <h6>Text Alignment</h6>
+      <p class="text-left"><strong>This text is left-aligned.</strong> Set in the year 0 F.E. ("Foundation Era"), The
+        Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears
+        stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire.</p>
+
+      <p class="text-right"><strong>This text is right-aligned.</strong> Set in the year 0 F.E. ("Foundation Era"), The
+        Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears
+        stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire.</p>
+
+      <p class="text-center"><strong>This text is center-aligned.</strong> Set in the year 0 F.E. ("Foundation Era"),
+        The Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire
+        appears stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman
+        Empire.</p>
+
+      <p class="text-justify"><strong>This text is justified.</strong> Set in the year 0 F.E. ("Foundation Era"), The
+        Psychohistorians opens on Trantor, the capital of the 12,000-year-old Galactic Empire. Though the empire appears
+        stable and powerful, it is slowly decaying in ways that parallel the decline of the Western Roman Empire.</p>
+      <br>
+      <h6>Subheader</h6>
+      <h1 class="subheader">h1.subheader</h1>
+      <h2 class="subheader">h2.subheader</h2>
+      <h3 class="subheader">h3.subheader</h3>
+      <h4 class="subheader">h4.subheader</h4>
+      <h5 class="subheader">h5.subheader</h5>
+      <h6 class="subheader">h6.subheader</h6>
+      <br>
+      <h6>Lead Paragraph</h6>
+      <p class="lead">What are your cats <em>really</em> dreaming about while they sleep?</p>
+      <br>
+      <h6>Un-bulleted List</h6>
+      <ul class="no-bullet">
+        <li>List item with a much longer description or more content.</li>
+        <li>List item</li>
+        <li>List item
+          <ul>
+            <li>Nested list item</li>
+            <li>Nested list item</li>
+            <li>Nested list item</li>
+          </ul>
+        </li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+      </ul>
+      <br>
+      <ol class="no-bullet">
+        <li>List item with a much longer description or more content.</li>
+        <li>List item</li>
+        <li>List item
+          <ol>
+            <li>Nested list item</li>
+            <li>Nested list item</li>
+            <li>Nested list item</li>
+          </ol>
+        </li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+      </ol>
+      <br>
+      <h6>Statistics</h6>
+      <p>Days without merge conflict</p>
+      <div class="stat">128</div>
+      <br>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <!-- Offcanvas content needs to be outside body -->
+  <section>
+    <div class="off-canvas position-left" id="offCanvasLeft1" data-off-canvas>
+      <!-- Your menu or Off-canvas content goes here -->
+
+      <ul class="menu vertical">
+        <p>Left offcanvas content</p>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="off-canvas position-right" id="offCanvasRight1" data-off-canvas>
+      <!-- Your menu or Off-canvas content goes here -->
+
+      <ul class="menu vertical">
+        <p>Right offcanvas content</p>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="off-canvas position-top" id="offCanvasTop1" data-off-canvas>
+      <!-- Your menu or Off-canvas content goes here -->
+
+      <ul class="menu vertical">
+        <p>Top offcanvas content</p>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="off-canvas position-bottom" id="offCanvasBottom1" data-off-canvas>
+      <!-- Your menu or Off-canvas content goes here -->
+
+      <ul class="menu vertical">
+        <p>Bottom offcanvas content</p>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="off-canvas position-left" id="offCanvasLeft2" data-off-canvas data-transition="overlap">
+      <!-- Your menu or Off-canvas content goes here -->
+
+      <ul class="menu vertical">
+        <p>Left offcanvas content</p>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </section>
+
+
+  <script src="./vendor/v6.9.0/jquery-3.7.1.min.js"></script>
+  <script src="./vendor/v6.9.0/what-input.5.2.12.min.js"></script>
+  <script src="./vendor/v6.9.0/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+
+</html>

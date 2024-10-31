@@ -1,0 +1,3773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootswatch</title>
+  <link href="./vendor/v5.3.3/cerulean/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      text-anchor: middle
+    }
+
+    .bd-placeholder-img-lg {
+      font-size: calc(1.475rem + 2.7vw)
+    }
+
+    .custom-popover {
+      --bs-popover-max-width: 200px;
+      --bs-popover-border-color: blue;
+      --bs-popover-header-bg: violet;
+      --bs-popover-header-color: white;
+      --bs-popover-body-padding-x: 1rem;
+      --bs-popover-body-padding-y: .5rem;
+    }
+
+    .bd-example-toasts {
+      min-height: 240px;
+    }
+
+    .custom-tooltip {
+      --bs-tooltip-color: white;
+      --bs-tooltip-bg: violet;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Bootswatch (v5.3.3)</h1>
+    <!-- Select dropdown for loading different themes -->
+    <label for="themeSelector" class="form-label">Select a theme:</label>
+    <select id="themeSelector" class="form-select mb-3">
+      <option value="cerulean">Cerulean</option>
+      <option value="cosmo">Cosmo</option>
+      <option value="cyborg">Cyborg</option>
+      <option value="darkly">Darkly</option>
+      <option value="flatly">Flatly</option>
+      <option value="journal">Journal</option>
+      <option value="litera">Litera</option>
+      <option value="lumen">Lumen</option>
+      <option value="lux">Lux</option>
+      <option value="materia">Materia</option>
+      <option value="minty">Minty</option>
+      <option value="morph">Morph</option>
+      <option value="pulse">Pulse</option>
+      <option value="quartz">Quartz</option>
+      <option value="sandstone">Sandstone</option>
+      <option value="simplex">Simplex</option>
+      <option value="sketchy">Sketchy</option>
+      <option value="slate">Slate</option>
+      <option value="solar">Solar</option>
+      <option value="spacelab">Spacelab</option>
+      <option value="superhero">Superhero</option>
+      <option value="united">United</option>
+      <option value="vapor">Vapor</option>
+      <option value="yeti">Yeti</option>
+      <option value="zephyr">Zephyr</option>
+    </select>
+
+    <!-- Accordion -->
+    <section>
+      <a name="accordion" class="fs-3">Accordion</a>
+      <br>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin
+              adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Alerts -->
+    <section>
+      <a name="alerts" class="fs-3">Alerts</a>
+      <br>
+      <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+      </div>
+      <div class="alert alert-secondary" role="alert">
+        A simple secondary alert—check it out!
+      </div>
+      <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+      </div>
+      <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+      </div>
+      <div class="alert alert-warning" role="alert">
+        A simple warning alert—check it out!
+      </div>
+      <div class="alert alert-info" role="alert">
+        A simple info alert—check it out!
+      </div>
+      <div class="alert alert-light" role="alert">
+        A simple light alert—check it out!
+      </div>
+      <div class="alert alert-dark" role="alert">
+        A simple dark alert—check it out!
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Badge -->
+    <section>
+      <a name="badges" class="fs-3">Badge</a>
+      <br>
+      <h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
+      <h2>Example heading <span class="badge text-bg-secondary">New</span></h2>
+      <h3>Example heading <span class="badge text-bg-secondary">New</span></h3>
+      <h4>Example heading <span class="badge text-bg-secondary">New</span></h4>
+      <h5>Example heading <span class="badge text-bg-secondary">New</span></h5>
+      <h6>Example heading <span class="badge text-bg-secondary">New</span></h6>
+      <br>
+      <button type="button" class="btn btn-primary">
+        Notifications <span class="badge text-bg-secondary">4</span>
+      </button>
+      <button type="button" class="btn btn-primary position-relative ms-3">
+        Inbox
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+      <button type="button" class="btn btn-primary position-relative ms-3">
+        Profile
+        <span
+          class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+          <span class="visually-hidden">New alerts</span>
+        </span>
+      </button>
+      <br><br>
+      <span class="badge text-bg-primary">Primary</span>
+      <span class="badge text-bg-secondary">Secondary</span>
+      <span class="badge text-bg-success">Success</span>
+      <span class="badge text-bg-danger">Danger</span>
+      <span class="badge text-bg-warning">Warning</span>
+      <span class="badge text-bg-info">Info</span>
+      <span class="badge text-bg-light">Light</span>
+      <span class="badge text-bg-dark">Dark</span>
+      <br><br>
+      <span class="badge rounded-pill text-bg-primary">Primary</span>
+      <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+      <span class="badge rounded-pill text-bg-success">Success</span>
+      <span class="badge rounded-pill text-bg-danger">Danger</span>
+      <span class="badge rounded-pill text-bg-warning">Warning</span>
+      <span class="badge rounded-pill text-bg-info">Info</span>
+      <span class="badge rounded-pill text-bg-light">Light</span>
+      <span class="badge rounded-pill text-bg-dark">Dark</span>
+    </section>
+    <br><br>
+
+    <!-- Breadcrumbs -->
+    <section>
+      <a name="breadcrumbs" class="fs-3">Breadcrumbs</a>
+      <br>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+
+      <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Library</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+      </nav>
+    </section>
+    <br><br>
+
+    <!-- Buttons -->
+    <section>
+      <a name="buttons" class="fs-3">Buttons</a>
+      <br>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+      <button type="button" class="btn btn-link">Link</button>
+      <br><br>
+      <button type="button" class="btn btn-primary" disabled>Primary</button>
+      <button type="button" class="btn btn-secondary" disabled>Secondary</button>
+      <button type="button" class="btn btn-success" disabled>Success</button>
+      <button type="button" class="btn btn-danger" disabled>Danger</button>
+      <button type="button" class="btn btn-warning" disabled>Warning</button>
+      <button type="button" class="btn btn-info" disabled>Info</button>
+      <button type="button" class="btn btn-light" disabled>Light</button>
+      <button type="button" class="btn btn-dark" disabled>Dark</button>
+      <button type="button" class="btn btn-link" disabled>Link</button>
+      <br><br>
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button>
+      <br><br>
+      <button type="button" class="btn btn-primary btn-lg">Large button</button>
+      <button type="button" class="btn btn-primary">Default button</button>
+      <button type="button" class="btn btn-primary btn-sm">Small button</button>
+      <br><br>
+      <p class="d-inline-flex gap-1">
+        <button type="button" class="btn" data-bs-toggle="button">Toggle button</button>
+        <button type="button" class="btn active" data-bs-toggle="button" aria-pressed="true">Active toggle
+          button</button>
+        <button type="button" class="btn" disabled data-bs-toggle="button">Disabled toggle button</button>
+      </p>
+      <p class="d-inline-flex gap-1">
+        <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>
+        <button type="button" class="btn btn-primary active" data-bs-toggle="button" aria-pressed="true">Active toggle
+          button</button>
+        <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Disabled toggle button</button>
+      </p>
+    </section>
+    <br><br>
+
+    <!-- Button group -->
+    <section>
+      <a name="button_group" class="fs-3">Button group</a>
+      <br>
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary">Left</button>
+        <button type="button" class="btn btn-primary">Middle</button>
+        <button type="button" class="btn btn-primary">Right</button>
+      </div>
+      <div class="btn-group">
+        <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+        <a href="#" class="btn btn-primary">Link</a>
+        <a href="#" class="btn btn-primary">Link</a>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-danger">Left</button>
+        <button type="button" class="btn btn-warning">Middle</button>
+        <button type="button" class="btn btn-success">Right</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <button type="button" class="btn btn-outline-primary">Left</button>
+        <button type="button" class="btn btn-outline-primary">Middle</button>
+        <button type="button" class="btn btn-outline-primary">Right</button>
+      </div>
+      <br><br>
+      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
+
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+      </div>
+      <br><br>
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-primary">1</button>
+          <button type="button" class="btn btn-primary">2</button>
+          <button type="button" class="btn btn-primary">3</button>
+          <button type="button" class="btn btn-primary">4</button>
+        </div>
+        <div class="btn-group me-2" role="group" aria-label="Second group">
+          <button type="button" class="btn btn-secondary">5</button>
+          <button type="button" class="btn btn-secondary">6</button>
+          <button type="button" class="btn btn-secondary">7</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Third group">
+          <button type="button" class="btn btn-info">8</button>
+        </div>
+      </div>
+      <br><br>
+      <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+        <button type="button" class="btn btn-outline-primary">Left</button>
+        <button type="button" class="btn btn-outline-primary">Middle</button>
+        <button type="button" class="btn btn-outline-primary">Right</button>
+      </div>
+      <br>
+      <div class="btn-group mt-2" role="group" aria-label="Default button group">
+        <button type="button" class="btn btn-outline-primary">Left</button>
+        <button type="button" class="btn btn-outline-primary">Middle</button>
+        <button type="button" class="btn btn-outline-primary">Right</button>
+      </div>
+      <br>
+      <div class="btn-group btn-group-sm mt-2" role="group" aria-label="Small button group">
+        <button type="button" class="btn btn-outline-primary">Left</button>
+        <button type="button" class="btn btn-outline-primary">Middle</button>
+        <button type="button" class="btn btn-outline-primary">Right</button>
+      </div>
+      <br><br>
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-primary">1</button>
+        <button type="button" class="btn btn-primary">2</button>
+
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+      </div>
+      <br><br>
+      <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+        <button type="button" class="btn btn-primary">Button</button>
+        <button type="button" class="btn btn-primary">Button</button>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group dropstart" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group dropend" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+        <div class="btn-group dropup" role="group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+      </div>
+      <br><br>
+      <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+        <label class="btn btn-outline-danger" for="vbtn-radio1">Radio 1</label>
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+        <label class="btn btn-outline-danger" for="vbtn-radio2">Radio 2</label>
+        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+        <label class="btn btn-outline-danger" for="vbtn-radio3">Radio 3</label>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Cards -->
+    <section>
+      <a name="cards" class="fs-3">Cards</a>
+      <br>
+      <div class="card mb-3" style="width: 18rem;">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image
+            cap</text>
+        </svg>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card" style="width: 100%;">
+        <div class="card-header">
+          Quote
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>A well-known quote, contained in a blockquote element.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+          <a href="#" class="card-link">Card link 1</a>
+          <a href="#" class="card-link">Card link 2</a>
+        </div>
+        <div class="card-footer text-body-secondary">
+          2 days ago
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-end">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="card text-center mb-3">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="card text-center mb-3">
+        <div class="card-header">
+          <ul class="nav nav-pills card-header-pills">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Secondary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Success card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Danger card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Warning card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-bg-info mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Info card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Dark card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Carousel -->
+    <section>
+      <a name="carousel" class="fs-3">Carousel</a>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First
+                slide</text>
+            </svg>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second
+                slide</text>
+            </svg>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third
+                slide</text>
+            </svg>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First
+                slide</text>
+            </svg>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Crossfade - First slide</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second
+                slide</text>
+            </svg>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Crossfade - Second slide</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third
+                slide</text>
+            </svg>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Crossfade - Third slide</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First
+                slide</text>
+            </svg>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second
+                slide</text>
+            </svg>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+              xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third
+                slide</text>
+            </svg>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Close Button -->
+    <section>
+      <a name="close_button" class="fs-3">Close Button</a>
+      <br>
+      <button type="button" class="btn-close" aria-label="Close"></button>
+      <button type="button" class="btn-close" disabled aria-label="Close"></button>
+    </section>
+    <br><br>
+
+    <!-- Collapse -->
+    <section>
+      <a name="collapse" class="fs-3">Collapse</a>
+      <br>
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
+          Button with data-bs-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+          user
+          activates the relevant trigger.
+        </div>
+      </div>
+      <br>
+      <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+          aria-expanded="false" aria-controls="collapseWidthExample">
+          Toggle width collapse
+        </button>
+      </p>
+      <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+          <div class="card card-body" style="width: 300px;">
+            This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+          </div>
+        </div>
+      </div>
+      <br>
+      <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+          aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+          aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
+          elements</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Some placeholder content for the first collapse component of this multi-collapse example. This panel is
+              hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Some placeholder content for the second collapse component of this multi-collapse example. This panel is
+              hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Dropdowns -->
+    <section>
+      <a name="dropdowns" class="fs-3">Dropdowns</a>
+      <br>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Primary
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Secondary
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Success
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Info
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Warning
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Danger
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <br><br>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Primary Split</button>
+        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary">Secondary Split</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-success">Success Split</button>
+        <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-info">Info Split</button>
+        <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-warning">Warning Split</button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Danger Split</button>
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <br><br>
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Large button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-lg" type="button">
+          Large split button
+        </button>
+        <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <br><br>
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Small button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-secondary btn-sm" type="button">
+          Small split button
+        </button>
+        <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Forms -->
+    <section>
+      <a name="forms" class="fs-3">Forms</a>
+      <br>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="bs-component">
+            <form>
+              <fieldset>
+                <legend>Legend</legend>
+                <div class="row">
+                  <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="text" readonly="" class="form-control-plaintext" id="staticEmail"
+                      value="email@example.com">
+                  </div>
+                </div>
+                <div>
+                  <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+                </div>
+                <div>
+                  <label for="exampleInputPassword1" class="form-label mt-4">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                    autocomplete="off">
+                </div>
+                <div>
+                  <label for="exampleSelect1" class="form-label mt-4">Example select</label>
+                  <select class="form-select" id="exampleSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="exampleSelect1" class="form-label mt-4">Example disabled select</label>
+                  <select class="form-select" id="exampleDisabledSelect1" disabled="">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="exampleSelect2" class="form-label mt-4">Example multiple select</label>
+                  <select multiple="" class="form-select" id="exampleSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="exampleTextarea" class="form-label mt-4">Example textarea</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <div>
+                  <label for="formFile" class="form-label mt-4">Default file input example</label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+                <fieldset>
+                  <legend class="mt-4">Radio buttons</legend>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios1"
+                      value="option1" checked="">
+                    <label class="form-check-label" for="optionsRadios1">
+                      Option one is this and that—be sure to include why it's great
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios2"
+                      value="option2">
+                    <label class="form-check-label" for="optionsRadios2">
+                      Option two can be something else and selecting it will deselect option one
+                    </label>
+                  </div>
+                  <div class="form-check disabled">
+                    <input class="form-check-input" type="radio" name="optionsRadios" id="optionsRadios3"
+                      value="option3" disabled="">
+                    <label class="form-check-label" for="optionsRadios3">
+                      Option three is disabled
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend class="mt-4">Checkboxes</legend>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Default checkbox
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked="">
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Checked checkbox
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend class="mt-4">Switches</legend>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked="">
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                  </div>
+                </fieldset>
+                <fieldset>
+                  <legend class="mt-4">Ranges</legend>
+                  <label for="customRange1" class="form-label">Example range</label>
+                  <input type="range" class="form-range" id="customRange1">
+                  <label for="disabledRange" class="form-label">Disabled range</label>
+                  <input type="range" class="form-range" id="disabledRange" disabled="">
+                  <label for="customRange3" class="form-label">Example range</label>
+                  <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                </fieldset>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1">
+          <form class="bs-component">
+            <div>
+              <fieldset disabled="">
+                <label class="form-label" for="disabledInput">Disabled input</label>
+                <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..."
+                  disabled="">
+              </fieldset>
+            </div>
+
+            <div>
+              <fieldset>
+                <label class="form-label mt-4" for="readOnlyInput">Readonly input</label>
+                <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here..."
+                  readonly="">
+              </fieldset>
+            </div>
+
+            <div class="has-success">
+              <label class="form-label mt-4" for="inputValid">Valid input</label>
+              <input type="text" value="correct value" class="form-control is-valid" id="inputValid">
+              <div class="valid-feedback">Success! You've done it.</div>
+            </div>
+
+            <div class="has-danger">
+              <label class="form-label mt-4" for="inputInvalid">Invalid input</label>
+              <input type="text" value="wrong value" class="form-control is-invalid" id="inputInvalid">
+              <div class="invalid-feedback">Sorry, that username's taken. Try another?</div>
+            </div>
+
+            <div>
+              <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">Large input</label>
+              <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" id="inputLarge">
+            </div>
+
+            <div>
+              <label class="col-form-label mt-4" for="inputDefault">Default input</label>
+              <input type="text" class="form-control" placeholder="Default input" id="inputDefault">
+            </div>
+
+            <div>
+              <label class="col-form-label col-form-label-sm mt-4" for="inputSmall">Small input</label>
+              <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" id="inputSmall">
+            </div>
+
+            <div>
+              <label class="form-label mt-4">Input addons</label>
+              <div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">$</span>
+                  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                  <span class="input-group-text">.00</span>
+                </div>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="Recipient's username"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button class="btn btn-primary" type="button" id="button-addon2">Button</button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label class="form-label mt-4">Floating labels</label>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                  autocomplete="off">
+                <label for="floatingPassword">Password</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Link -->
+    <section>
+      <a name="link" class="fs-3">Link</a>
+      <br>
+      <a href="#" class="link-primary">Primary link</a>
+      <a href="#" class="link-secondary">Secondary link</a>
+      <a href="#" class="link-success">Success link</a>
+      <a href="#" class="link-danger">Danger link</a>
+      <a href="#" class="link-warning">Warning link</a>
+      <a href="#" class="link-info">Info link</a>
+      <a href="#" class="link-light">Light link</a>
+      <a href="#" class="link-dark">Dark link</a>
+      <br><br>
+      <div class="card" style="width: 18rem;">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Card image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Card image cap</title>
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+        </svg>
+
+        <div class="card-body">
+          <h5 class="card-title">Card with stretched link</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+        </div>
+      </div>
+      <br>
+      <div class="d-flex position-relative">
+        <svg class="bd-placeholder-img flex-shrink-0 me-3" width="144" height="144" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Generic placeholder image" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Generic placeholder image</title>
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+        </svg>
+
+        <div>
+          <h5 class="mt-0">Custom component with stretched link</h5>
+          <p>This is some placeholder content for the custom component. It is intended to mimic what some real-world
+            content would look like, and we're using it here to give the component a bit of body and size.</p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
+      <br>
+      <div class="row g-0 bg-light position-relative">
+        <div class="col-md-6 mb-md-0 p-md-4">
+          <svg class="bd-placeholder-img w-100" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img"
+            aria-label="Generic placeholder image" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Generic placeholder image</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+          </svg>
+
+        </div>
+        <div class="col-md-6 p-4 ps-md-0">
+          <h5 class="mt-0">Columns with stretched link</h5>
+          <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some
+            real-world content would look like, and we're using it here to give the component a bit of body and size.
+          </p>
+          <a href="#" class="stretched-link">Go somewhere</a>
+        </div>
+      </div>
+      <br>
+      <div class="card" style="width: 18rem;">
+        <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Card image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Card image cap</title>
+          <rect width="100%" height="100%" fill="#868e96"></rect>
+        </svg>
+
+        <div class="card-body">
+          <h5 class="card-title">Card with stretched links</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+          <p class="card-text">
+            <a href="#" class="stretched-link text-danger" style="position: relative;">Stretched link will not work
+              here, because <code>position: relative</code> is added to the link</a>
+          </p>
+          <p class="card-text bg-light" style="transform: rotate(0);">
+            This <a href="#" class="text-warning stretched-link">stretched link</a> will only be spread over the
+            <code>p</code>-tag, because a transform is applied to it.
+          </p>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- List group -->
+    <section>
+      <a name="list_group" class="fs-3">List group</a>
+      <br>
+      <div class="row">
+        <div class="col-sm-4">
+          <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">An active item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              The current link item
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+            <a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+              The current button
+            </button>
+            <button type="button" class="list-group-item list-group-item-action">A second button item</button>
+            <button type="button" class="list-group-item list-group-item-action">A third button item</button>
+            <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
+            <button type="button" class="list-group-item list-group-item-action" disabled>A disabled button
+              item</button>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">An item - flush</li>
+            <li class="list-group-item">A second item - flush</li>
+            <li class="list-group-item">A third item - flush</li>
+            <li class="list-group-item">A fourth item - flush</li>
+            <li class="list-group-item">And a fifth one - flush</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">A list item - numbered</li>
+            <li class="list-group-item">A list item - numbered</li>
+            <li class="list-group-item">A list item - numbered</li>
+          </ol>
+        </div>
+        <div class="col-sm-4">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-sm">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-md">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-lg">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-xl">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <ul class="list-group list-group-horizontal-xxl">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+        </div>
+      </div>
+      <br><br>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start active" aria-current="true">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Subheading</div>
+            Content for list item - custom content
+          </div>
+          <small>3 days ago</small>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Subheading</div>
+            Content for list item
+          </div>
+          <span class="badge text-bg-primary rounded-pill">3</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Subheading</div>
+            Content for list item
+          </div>
+          <span class="badge text-bg-primary rounded-pill">7</span>
+        </li>
+      </ol>
+      <br><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+              <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+              <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+              <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+              <label class="form-check-label" for="firstRadio">First radio</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+              <label class="form-check-label" for="secondRadio">Second radio</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+              <label class="form-check-label" for="thirdRadio">Third radio</label>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+              <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox - whole item
+                clickable</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+              <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox - whole item
+                clickable</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+              <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox - whole item
+                clickable</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="list-group">
+            <li class="list-group-item">A simple default list group item</li>
+            <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+            <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+            <li class="list-group-item list-group-item-success">A simple success list group item</li>
+            <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+            <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+            <li class="list-group-item list-group-item-info">A simple info list group item</li>
+            <li class="list-group-item list-group-item-light">A simple light list group item</li>
+            <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">A simple default list group item (link)</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list
+              group
+              item (link)</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list
+              group item (link)</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list
+              group
+              item (link)</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group
+              item (link)</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list
+              group
+              item (link)</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group
+              item
+              (link)</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group
+              item (link)</a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group
+              item
+              (link)</a>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+              href="#list-home" role="tab" aria-controls="list-home">Home</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+              href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+              href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+              href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Some
+              placeholder content in a paragraph relating to "Home". And some more content, used here just to pad out
+              and
+              fill this tab panel. In production, you would obviously have more real content here. And not just text. It
+              could be anything, really. Text, images, forms.</div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Some
+              placeholder content in a paragraph relating to "Profile". And some more content, used here just to pad out
+              and fill this tab panel. In production, you would obviously have more real content here. And not just
+              text.
+              It could be anything, really. Text, images, forms.</div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Some
+              placeholder content in a paragraph relating to "Messages". And some more content, used here just to pad
+              out
+              and fill this tab panel. In production, you would obviously have more real content here. And not just
+              text.
+              It could be anything, really. Text, images, forms.</div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Some
+              placeholder content in a paragraph relating to "Settings". And some more content, used here just to pad
+              out
+              and fill this tab panel. In production, you would obviously have more real content here. And not just
+              text.
+              It could be anything, really. Text, images, forms.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Modal -->
+    <section>
+      <a name="modal" class="fs-3">Modal</a>
+      <br>
+      <!-- Example 1 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Woo-hoo, you're reading this text in a modal!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 2 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              I will not close if you click outside of me. Don't even try to press escape key.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 3 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#longContent">
+        Launch long content modal
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="longContent" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="longContentropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="longContentLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="min-height: 1500px;">
+              This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the text
+              in
+              the modal, we use an inline style to set a minimum height, thereby extending the length of the overall
+              modal
+              and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport,
+              scrolling will move the modal as needed.
+              <br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 4 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#longContentScrollable">
+        Launch scrollable long content modal
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="longContentScrollable" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="longContentScrollableLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="longContentScrollableLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>This is some placeholder content to show the scrolling behavior for modals. Instead of repeating the
+                text
+                in
+                the modal, we use an inline style to set a minimum height, thereby extending the length of the overall
+                modal
+                and demonstrating the overflow scrolling. When content becomes longer than the height of the viewport,
+                scrolling will move the modal as needed.</p>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <p>This content should appear at the bottom after you scroll.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 5 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+        Vertically centered modal
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalCenterLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              This is a vertically centered modal.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 6 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModalPopovers">
+        Modal with tooltips and popovers
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalPopoversLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h2 class="fs-5">Popover in a modal</h2>
+              <p>This <button class="btn btn-secondary" data-bs-toggle="popover" title="Popover title"
+                  data-bs-content="Popover body content is set in this attribute.">button</button> triggers a popover on
+                click.</p>
+              <hr>
+              <h2 class="fs-5">Tooltips in a modal</h2>
+              <p><a href="#" data-bs-toggle="tooltip" title="Tooltip">This link</a> and <a href="#"
+                  data-bs-toggle="tooltip" title="Tooltip">that link</a> have tooltips on hover.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 7 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModalGrid">
+        Modal using grid
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalGrid" tabindex="-1" aria-labelledby="exampleModalGridLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalGridLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid bd-example-row">
+                <div class="row">
+                  <div class="col-md-4" style="background-color: bisque;">.col-md-4</div>
+                  <div class="col-md-4 ms-auto" style="background-color: bisque;">.col-md-4 .ms-auto</div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 ms-auto" style="background-color: bisque;">.col-md-3 .ms-auto</div>
+                  <div class="col-md-2 ms-auto" style="background-color: bisque;">.col-md-2 .ms-auto</div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 ms-auto" style="background-color: bisque;">.col-md-6 .ms-auto</div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-9" style="background-color: bisque;">
+                    Level 1: .col-sm-9
+                    <div class="row">
+                      <div class="col-8 col-sm-6" style="background-color: burlywood;">
+                        Level 2: .col-8 .col-sm-6
+                      </div>
+                      <div class="col-4 col-sm-6" style="background-color: darkgoldenrod">
+                        Level 2: .col-4 .col-sm-6
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 8 -->
+      <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Show a second modal and hide this one with the button below.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second
+                modal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Hide this modal and show the first with the button below.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+                first</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary mb-3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Toggle between
+        models</button>
+
+      <!-- Example 9 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModalNoFade">
+        Model without animation
+      </button>
+      <!-- Modal -->
+      <div class="modal" id="exampleModalNoFade" tabindex="-1" aria-labelledby="exampleModalNoFadeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalNoFadeLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Woo-hoo, you're reading this text in a modal!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <!-- Example 9 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+        data-bs-target="#exampleModalExtraLarge">
+        Extra large modal
+      </button>
+      <!-- Modal -->
+      <div class="modal" id="exampleModalExtraLarge" tabindex="-1" aria-labelledby="exampleModalExtraLargeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalExtraLargeLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Extra large modal body
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 10 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModalLarge">
+        Large modal
+      </button>
+      <!-- Modal -->
+      <div class="modal" id="exampleModalLarge" tabindex="-1" aria-labelledby="exampleModalLargeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLargeLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Large modal body
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 11 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModalSmall">
+        Small modal
+      </button>
+      <!-- Modal -->
+      <div class="modal" id="exampleModalSmall" tabindex="-1" aria-labelledby="exampleModalSmallLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalSmallLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Small modal body
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 12 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+        data-bs-target="#exampleModalFullScreen">
+        Full screen modal
+      </button>
+      <!-- Modal -->
+      <div class="modal" id="exampleModalFullScreen" tabindex="-1" aria-labelledby="exampleModalFullScreenLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalFullScreenLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Full screen modal body
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 13 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+        data-bs-target="#exampleModalFullScreenBelowSmall">
+        Full screen below sm modal
+      </button>
+      <!-- Modal -->
+      <div class="modal" id="exampleModalFullScreenBelowSmall" tabindex="-1"
+        aria-labelledby="exampleModalFullScreenBelowSmallLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalFullScreenBelowSmallLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Full screen below sm modal body
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 14 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+        data-bs-target="#exampleModalFullScreenBelowMedium">
+        Full screen below md modal
+      </button>
+      <!-- Modal -->
+      <div class="modal" id="exampleModalFullScreenBelowMedium" tabindex="-1"
+        aria-labelledby="exampleModalFullScreenBelowMediumLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-md-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalFullScreenBelowMediumLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Full screen below md modal body
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 15 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+        data-bs-target="#exampleModalFullScreenBelowLarge">
+        Full screen below lg modal
+      </button>
+      <!-- Modal -->
+      <div class="modal" id="exampleModalFullScreenBelowLarge" tabindex="-1"
+        aria-labelledby="exampleModalFullScreenBelowLargeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-lg-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalFullScreenBelowLargeLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Full screen below lg modal body
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 16 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+        data-bs-target="#exampleModalFullScreenBelowExtraLarge">
+        Full screen below xl modal
+      </button>
+      <!-- Modal -->
+      <div class="modal" id="exampleModalFullScreenBelowExtraLarge" tabindex="-1"
+        aria-labelledby="exampleModalFullScreenBelowExtraLargeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-xl-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalFullScreenBelowExtraLargeLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Full screen below xl modal body
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Example 17 -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+        data-bs-target="#exampleModalFullScreenBelowExtraExtraLarge">
+        Full screen below xxl modal
+      </button>
+      <!-- Modal -->
+      <div class="modal" id="exampleModalFullScreenBelowExtraExtraLarge" tabindex="-1"
+        aria-labelledby="exampleModalFullScreenBelowExtraExtraLargeLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-xxl-down">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalFullScreenBelowExtraExtraLargeLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Full screen below xxl modal body
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Navbar -->
+    <section>
+      <a name="navbar" class="fs-3">Navbar</a>
+      <br>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./vendor/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+              class="d-inline-block align-text-top">
+            Navbar
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+
+      <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./vendor/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+              class="d-inline-block align-text-top">
+            Navbar
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+
+      <nav class="navbar navbar-expand-md bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./vendor/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+              class="d-inline-block align-text-top">
+            Navbar
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+
+      <nav class="navbar navbar-expand-md" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./vendor/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+              class="d-inline-block align-text-top">
+            Navbar
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <br><br>
+
+    <!-- Navs and tabs -->
+    <section>
+      <a name="navs_and_tabs" class="fs-3">Navs & tabs</a>
+      <br>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <br>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <br>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <br>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <br>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <br>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <br>
+      <ul class="nav nav-underline">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <br>
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Much longer nav link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <br>
+      <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Much longer nav link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </section>
+    <br><br>
+
+    <!-- Offcanvas -->
+    <section>
+      <a name="offcanvas" class="fs-3">Offcanvas</a>
+      <br>
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        Button with data-bs-target
+      </button>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+            etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling">Enable body scrolling</button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling &
+        backdrop</button>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdropOffcanvas"
+        aria-controls="staticBackdropOffcanvas">
+        Toggle static offcanvas
+      </button>
+
+      <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdropOffcanvas"
+        aria-labelledby="staticBackdropOffcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="staticBackdropOffcanvasLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            I will not close if you click outside of me.
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Pagination -->
+    <section>
+      <a name="pagination" class="fs-3">Pagination</a>
+      <br>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+      <br>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <br>
+      <nav aria-label="...">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      <br>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      <br>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+      <br>
+      <nav aria-label="...">
+        <ul class="pagination pagination-lg">
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">1</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+      </nav>
+      <br>
+      <nav aria-label="...">
+        <ul class="pagination pagination-sm">
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">1</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+        </ul>
+      </nav>
+    </section>
+    <br><br>
+
+    <!-- Placeholders -->
+    <section>
+      <a name="placeholders" class="fs-3">Placeholders</a>
+      <br>
+      <a class="btn btn-primary disabled placeholder col-4" aria-disabled="true"></a>
+      <br><br>
+      <span class="placeholder col-12 placeholder-lg"></span>
+      <span class="placeholder col-12"></span>
+      <span class="placeholder col-12 placeholder-sm"></span>
+      <span class="placeholder col-12 placeholder-xs"></span>
+      <br><br>
+      <span class="placeholder col-4"></span><br>
+      <span class="placeholder col-5 bg-primary"></span><br>
+      <span class="placeholder col-6 bg-secondary"></span><br>
+      <span class="placeholder col-7 bg-success"></span><br>
+      <span class="placeholder col-8 bg-danger"></span><br>
+      <span class="placeholder col-9 bg-warning"></span><br>
+      <span class="placeholder col-10 bg-info"></span><br>
+      <span class="placeholder col-11 bg-light"></span><br>
+      <span class="placeholder col-12 bg-dark"></span><br>
+
+      <br><br>
+      <p class="placeholder-glow">
+        <span class="placeholder col-12"></span>
+      </p>
+
+      <p class="placeholder-wave">
+        <span class="placeholder col-12"></span>
+      </p>
+    </section>
+    <br><br>
+
+    <!-- Popovers -->
+    <section>
+      <a name="popovers" class="fs-3">Popovers</a>
+      <br>
+      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="top" data-bs-content="Top popover">
+        Popover on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="right" data-bs-content="Right popover">
+        Popover on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="bottom" data-bs-content="Bottom popover">
+        Popover on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+        data-bs-placement="left" data-bs-content="Left popover">
+        Popover on left
+      </button>
+      <br><br>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="popover" data-bs-placement="right"
+        data-bs-custom-class="custom-popover" data-bs-title="Custom popover" data-bs-content="Custom popover">
+        Custom popover
+      </button>
+    </section>
+    <br><br>
+
+    <!-- Progress -->
+    <section>
+      <a name="progress" class="fs-3">Progress</a>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar" style="width: 0%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar" style="width: 25%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar" style="width: 50%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar" style="width: 75%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar" style="width: 100%"></div>
+      </div>
+      <br><br>
+      <div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100" style="height: 1px">
+        <div class="progress-bar" style="width: 25%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100" style="height: 20px">
+        <div class="progress-bar" style="width: 25%"></div>
+      </div>
+      <br><br>
+      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar" style="width: 25%">25%</div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="10" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar overflow-visible text-dark" style="width: 10%">Long label text for the progress bar,
+          set
+          to a dark color</div>
+      </div>
+      <br><br>
+      <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-success" style="width: 25%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-info" style="width: 50%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-warning" style="width: 75%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar bg-danger" style="width: 100%"></div>
+      </div>
+      <br><br>
+      <div class="progress-stacked">
+        <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="15" aria-valuemin="0"
+          aria-valuemax="100" style="width: 15%">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30" aria-valuemin="0"
+          aria-valuemax="100" style="width: 30%">
+          <div class="progress-bar bg-success"></div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0"
+          aria-valuemax="100" style="width: 20%">
+          <div class="progress-bar bg-info"></div>
+        </div>
+      </div>
+      <br><br>
+      <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped" style="width: 10%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped bg-success" style="width: 25%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped bg-info" style="width: 50%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped bg-warning" style="width: 75%"></div>
+      </div>
+      <br>
+      <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0"
+        aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped bg-danger" style="width: 100%"></div>
+      </div>
+      <br><br>
+      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75"
+        aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Scrollspy -->
+    <section>
+      <a name="scrollspy" class="fs-3">Scrollspy</a>
+      <br>
+      <div class="border p-1">
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading1">First</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading2">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+          data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0"
+          style="height: 200px; overflow: auto;">
+          <h4 id="scrollspyHeading1">First heading</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+            appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+            some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h4 id="scrollspyHeading2">Second heading</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+            appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+            some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h4 id="scrollspyHeading3">Third heading</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+            appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+            some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h4 id="scrollspyHeading4">Fourth heading</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+            appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+            some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h4 id="scrollspyHeading5">Fifth heading</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+            appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+            some more example copy here to emphasize the scrolling and highlighting.</p>
+        </div>
+      </div>
+      <br>
+      <div class="border p-1">
+        <div class="row">
+          <div class="col-4">
+            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">Item 1</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                  <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                </nav>
+                <a class="nav-link" href="#item-2">Item 2</a>
+                <a class="nav-link" href="#item-3">Item 3</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                  <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                </nav>
+              </nav>
+            </nav>
+          </div>
+
+          <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+              class="scrollspy-example-2" tabindex="0" style="height: 400px; overflow: auto;">
+              <div id="item-1">
+                <h4>Item 1</h4>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding some more example copy here to emphasize the scrolling and highlighting.
+
+                  Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+                  Multiple visible scrollspy targets at the same time may cause some issues.</p>
+              </div>
+              <div id="item-1-1">
+                <h5>Item 1-1</h5>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding some more example copy here to emphasize the scrolling and highlighting.
+
+                  Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+                  Multiple visible scrollspy targets at the same time may cause some issues.</p>
+              </div>
+              <div id="item-1-2">
+                <h5>Item 1-2</h5>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding some more example copy here to emphasize the scrolling and highlighting.
+
+                  Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+                  Multiple visible scrollspy targets at the same time may cause some issues.</p>
+              </div>
+              <div id="item-2">
+                <h4>Item 2</h4>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding some more example copy here to emphasize the scrolling and highlighting.
+
+                  Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+                  Multiple visible scrollspy targets at the same time may cause some issues.</p>
+              </div>
+              <div id="item-3">
+                <h4>Item 3</h4>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding some more example copy here to emphasize the scrolling and highlighting.
+
+                  Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+                  Multiple visible scrollspy targets at the same time may cause some issues.</p>
+              </div>
+              <div id="item-3-1">
+                <h5>Item 3-1</h5>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding some more example copy here to emphasize the scrolling and highlighting.
+
+                  Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+                  Multiple visible scrollspy targets at the same time may cause some issues.</p>
+              </div>
+              <div id="item-3-2">
+                <h5>Item 3-2</h5>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding some more example copy here to emphasize the scrolling and highlighting.
+
+                  Keep in mind that the JavaScript plugin tries to pick the right element among all that may be visible.
+                  Multiple visible scrollspy targets at the same time may cause some issues.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="border p-1">
+        <div class="row">
+          <div class="col-4">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+              class="scrollspy-example" tabindex="0" style="height: 150px; overflow: auto;">
+              <h4 id="list-item-1">Item 1</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+              <h4 id="list-item-2">Item 2</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+              <h4 id="list-item-3">Item 3</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+              <h4 id="list-item-4">Item 4</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="border p-1">
+        <div class="row">
+          <div class="col-4">
+            <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
+              <a class="p-1 rounded" href="#simple-list-item-1">Item 1</a>
+              <a class="p-1 rounded" href="#simple-list-item-2">Item 2</a>
+              <a class="p-1 rounded" href="#simple-list-item-3">Item 3</a>
+              <a class="p-1 rounded" href="#simple-list-item-4">Item 4</a>
+              <a class="p-1 rounded" href="#simple-list-item-5">Item 5</a>
+            </div>
+          </div>
+          <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
+              data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0"
+              style="height: 150px; overflow: auto;">
+              <h4 id="simple-list-item-1">Item 1</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+              <h4 id="simple-list-item-2">Item 2</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+              <h4 id="simple-list-item-3">Item 3</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+              <h4 id="simple-list-item-4">Item 4</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+              <h4 id="simple-list-item-5">Item 5</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Spinners -->
+    <section>
+      <a name="spinners" class="fs-3">Spinners</a>
+      <br>
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-border text-dark" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <br><br>
+      <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-dark" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <br><br>
+      <div class="spinner-border m-5" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <div class="d-flex align-items-center">
+        <div class="spinner-border ms-auto" aria-hidden="true"></div>
+      </div>
+      <br><br>
+      <div class="spinner-border spinner-border-sm" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow spinner-grow-sm" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <br><br>
+      <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <br><br>
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+        <span class="visually-hidden" role="status">Loading...</span>
+      </button>
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+        <span role="status">Loading...</span>
+      </button>
+      <br><br>
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+        <span class="visually-hidden" role="status">Loading...</span>
+      </button>
+      <button class="btn btn-primary" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+        <span role="status">Loading...</span>
+      </button>
+    </section>
+    <br><br>
+
+    <!-- Tables -->
+    <section>
+      <a name="tables" class="fs-3">Tables</a>
+      <br>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Column heading</th>
+            <th scope="col">Column heading</th>
+            <th scope="col">Column heading</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-active">
+            <th scope="row">Active</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr>
+            <th scope="row">Default</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-primary">
+            <th scope="row">Primary</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row">Secondary</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-success">
+            <th scope="row">Success</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-danger">
+            <th scope="row">Danger</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">Warning</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-info">
+            <th scope="row">Info</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-light">
+            <th scope="row">Light</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+          <tr class="table-dark">
+            <th scope="row">Dark</th>
+            <td>Column content</td>
+            <td>Column content</td>
+            <td>Column content</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <br><br>
+
+    <!-- Toasts -->
+    <section>
+      <a name="toasts" class="fs-3">Toasts</a>
+      <br>
+      <!-- Example 1 -->
+      <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="#007aff"></rect>
+            </svg>
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <!-- Example 2 -->
+      <button type="button" class="btn btn-primary" id="stackToast1Btn">Stack toast 1</button>
+      <button type="button" class="btn btn-primary" id="stackToast2Btn">Stack toast 2</button>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="stackToast1" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="#007aff"></rect>
+            </svg>
+            <strong class="me-auto">Bootstrap</strong>
+            <small class="text-body-secondary">just now</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            See? Just like this.
+          </div>
+        </div>
+
+        <div id="stackToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="#007aff"></rect>
+            </svg>
+            <strong class="me-auto">Bootstrap</strong>
+            <small class="text-body-secondary">2 seconds ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Heads up, toasts will stack automatically
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <!-- Example 3 -->
+      <button type="button" class="btn btn-primary" id="customToastBtn">Show custom toast</button>
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="customToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+            <div class="mt-2 pt-2 border-top">
+              <button type="button" class="btn btn-primary btn-sm">Take action</button>
+              <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <!-- Example 4 -->
+      <button type="button" class="btn btn-primary" id="colorToastBtn">Show toast with color scheme</button>
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="colorToast" class="toast align-items-center text-bg-primary border-0" role="alert"
+          aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+              aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <!-- Example 5 -->
+      <form>
+        <div class="mb-3">
+          <label for="selectToastPlacement">Toast placement</label>
+          <select class="form-select mt-2" id="selectToastPlacement">
+            <option value="" selected>Select a position...</option>
+            <option value="top-0 start-0">Top left</option>
+            <option value="top-0 start-50 translate-middle-x">Top center</option>
+            <option value="top-0 end-0">Top right</option>
+            <option value="top-50 start-0 translate-middle-y">Middle left</option>
+            <option value="top-50 start-50 translate-middle">Middle center</option>
+            <option value="top-50 end-0 translate-middle-y">Middle right</option>
+            <option value="bottom-0 start-0">Bottom left</option>
+            <option value="bottom-0 start-50 translate-middle-x">Bottom center</option>
+            <option value="bottom-0 end-0">Bottom right</option>
+          </select>
+        </div>
+      </form>
+      <div aria-live="polite" aria-atomic="true"
+        class="bg-body-secondary position-relative bd-example-toasts rounded-3">
+        <div class="toast-container p-3" id="toastPlacement">
+          <div class="toast fade show">
+            <div class="toast-header">
+              <strong class="me-auto">Bootstrap</strong>
+              <small>11 mins ago</small>
+            </div>
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Tooltips -->
+    <section>
+      <a name="tooltips" class="fs-3">Tooltips</a>
+      <br>
+      <p class="muted">Placeholder text to demonstrate some <a href="#" data-bs-toggle="tooltip"
+          data-bs-title="Default tooltip">inline links</a> with tooltips. This is now just filler, no killer. Content
+        placed here just to mimic the presence of <a href="#" data-bs-toggle="tooltip"
+          data-bs-title="Another tooltip">real text</a>. And all that just to give you an idea of how tooltips would
+        look
+        when used in real-world situations. So hopefully you've now seen how <a href="#" data-bs-toggle="tooltip"
+          data-bs-title="Another one here too">these tooltips on links</a> can work in practice, once you use them on <a
+          href="#" data-bs-toggle="tooltip" data-bs-title="The last tip!">your own</a> site or project.</p>
+
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip" data-bs-title="Themed tooltip.">
+        Custom tooltip
+      </button>
+
+      <br><br>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-title="Tooltip on top">
+        Tooltip on top
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
+        data-bs-title="Tooltip on right">
+        Tooltip on right
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+        data-bs-title="Tooltip on bottom">
+        Tooltip on bottom
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
+        data-bs-title="Tooltip on left">
+        Tooltip on left
+      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true"
+        data-bs-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+        Tooltip with HTML
+      </button>
+      <a href="#" class="d-inline-block" data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 100 100">
+          <rect width="100%" height="100%" fill="#563d7c"></rect>
+          <circle cx="50" cy="50" r="30" fill="#007bff"></circle>
+        </svg>
+      </a>
+    </section>
+    <br><br>
+
+    <!-- Typography -->
+    <section>
+      <a name="typography" class="fs-3">Typography</a>
+      <br>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="bs-component">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            <h3>
+              Heading
+              <small class="text-body-secondary">with faded secondary text</small>
+            </h3>
+            <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="bs-component">
+            <h2>Example body text</h2>
+            <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et
+              magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+            <p><small>This line of text is meant to be treated as fine print.</small></p>
+            <p>The following is <strong>rendered as bold text</strong>.</p>
+            <p>The following is <em>rendered as italicized text</em>.</p>
+            <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="bs-component">
+            <h2>Emphasis classes</h2>
+            <p class="text-primary">.text-primary</p>
+            <p class="text-primary-emphasis">.text-primary-emphasis</p>
+            <p class="text-secondary">.text-secondary</p>
+            <p class="text-secondary-emphasis">.text-secondary-emphasis</p>
+            <p class="text-success">.text-success</p>
+            <p class="text-success-emphasis">.text-success-emphasis</p>
+            <p class="text-danger">.text-danger</p>
+            <p class="text-danger-emphasis">.text-danger-emphasis</p>
+            <p class="text-warning">.text-warning</p>
+            <p class="text-warning-emphasis">.text-warning-emphasis</p>
+            <p class="text-info">.text-info</p>
+            <p class="text-info">.text-info-emphasis</p>
+            <p class="text-light">.text-light</p>
+            <p class="text-light">.text-light-emphasis</p>
+            <p class="text-dark">.text-dark</p>
+            <p class="text-dark">.text-dark-emphasis</p>
+            <p class="text-body">.text-body</p>
+            <p class="text-body">.text-body-emphasis</p>
+            <p class="text-body-secondary">.text-body-secondary</p>
+            <p class="text-body-tertiary">.text-body-tertiary</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="bs-component">
+            <figure>
+              <blockquote class="blockquote">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                </p>
+
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="bs-component">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                </p>
+
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="bs-component">
+            <figure class="text-end">
+              <blockquote class="blockquote">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                </p>
+
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br><br><br><br>
+
+  </div>
+
+
+
+  <script src="./vendor/v5.3.3/bootstrap.bundle.min.js"></script>
+  <script>
+    // Custom script to load the correct stylesheet based on user's selection
+    const themeSelector = document.getElementById('themeSelector')
+
+    themeSelector.onchange = function () {
+      var newstyle = document.createElement("link");
+      newstyle.setAttribute("rel", "stylesheet");
+      newstyle.setAttribute("type", "text/css");
+      const href = './vendor/v5.3.3/' + themeSelector.value + '/bootstrap.min.css'
+      newstyle.setAttribute("href", href);
+      // Find current loaded stylesheet and replace it with new stylesheet
+      const oldstyle = document.querySelector('link[href*="bootstrap.min.css"]')
+      console.log(oldstyle)
+      document.head.replaceChild(newstyle, oldstyle)
+    }
+
+  </script>
+  <script>
+    // Enable tooltips and popovers
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+    // Enable toasts
+    function triggerToast(btn, toast) {
+      const toastTrigger = document.getElementById(btn)
+      const toastLiveExample = document.getElementById(toast)
+
+      if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastTrigger.addEventListener('click', () => {
+          toastBootstrap.show()
+        })
+      }
+    }
+
+    triggerToast('liveToastBtn', 'liveToast')
+    triggerToast('stackToast1Btn', 'stackToast1')
+    triggerToast('stackToast2Btn', 'stackToast2')
+    triggerToast('customToastBtn', 'customToast')
+    triggerToast('colorToastBtn', 'colorToast')
+
+    // Toast placement example
+    const toastPlacement = document.getElementById('toastPlacement')
+    if (toastPlacement) {
+      const selectToastPlacement = document.getElementById('selectToastPlacement')
+      selectToastPlacement.addEventListener('change', () => {
+        if (!toastPlacement.dataset.originalClass) {
+          toastPlacement.dataset.originalClass = toastPlacement.className
+        }
+        toastPlacement.className = toastPlacement.dataset.originalClass + ' ' + selectToastPlacement.value
+      })
+    }
+
+  </script>
+</body>
+
+</html>

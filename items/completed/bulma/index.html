@@ -1,0 +1,3229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BULMA</title>
+  <link rel="stylesheet" href="./vendor/v1.0.2/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="is-size-1">BULMA (v1.0.2)</h1>
+
+    <!-- Alerts -->
+    <section>
+      <a name="alerts" class="is-size-4 has-text-black-bis">Alerts / Notification</a>
+      <br>
+      <div class="notification">
+        <button class="delete"></button>
+        This is a notification in <strong>default</strong> color with <a>link</a>.
+      </div>
+      <div class="fixed-grid">
+        <div class="grid">
+          <div class="cell">
+            <div class="notification is-link">
+              <button class="delete"></button>
+              This is a notification in <strong>link</strong> color with <a>link</a>.
+            </div>
+          </div>
+          <div class="cell">
+            <div class="notification is-link is-light">
+              <button class="delete"></button>
+              This is a notification in <strong>light link</strong> color with <a>link</a>.
+            </div>
+          </div>
+          <div class="cell">
+            <div class="notification is-primary">
+              <button class="delete"></button>
+              This is a notification in <strong>primary</strong> color with <a>link</a>.
+            </div>
+          </div>
+          <div class="cell">
+            <div class="notification is-primary is-light">
+              <button class="delete"></button>
+              This is a notification in <strong>light primary</strong> color with <a>link</a>.
+            </div>
+          </div>
+          <div class="cell">
+            <div class="notification is-info">
+              <button class="delete"></button>
+              This is a notification in <strong>info</strong> color with <a>link</a>.
+            </div>
+          </div>
+          <div class="cell">
+            <div class="notification is-info is-light">
+              <button class="delete"></button>
+              This is a notification in <strong>light info</strong> color with <a>link</a>.
+            </div>
+          </div>
+          <div class="cell">
+            <div class="notification is-success">
+              <button class="delete"></button>
+              This is a notification in <strong>success</strong> color with <a>link</a>.
+            </div>
+          </div>
+          <div class="cell">
+            <div class="notification is-success is-light">
+              <button class="delete"></button>
+              This is a notification in <strong>light success</strong> color with <a>link</a>.
+            </div>
+          </div>
+          <div class="cell">
+            <div class="notification is-warning">
+              <button class="delete"></button>
+              This is a notification in <strong>warning</strong> color with <a>link</a>.
+            </div>
+          </div>
+          <div class="cell">
+            <div class="notification is-warning is-light">
+              <button class="delete"></button>
+              This is a notification in <strong>light warning</strong> color with <a>link</a>.
+            </div>
+          </div>
+          <div class="cell">
+            <div class="notification is-danger">
+              <button class="delete"></button>
+              This is a notification in <strong>danger</strong> color with <a>link</a>.
+            </div>
+          </div>
+          <div class="cell">
+            <div class="notification is-danger is-light">
+              <button class="delete"></button>
+              This is a notification in <strong>light danger</strong> color with <a>link</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <br><br>
+
+    <!-- Badge / Tag -->
+    <section>
+      <a name="badges" class="is-size-4 has-text-black-bis">Badge / Tag</a>
+      <br>
+      <span class="tag is-black">Black</span>
+      <span class="tag is-dark">Dark</span>
+      <span class="tag is-light">Light</span>
+      <span class="tag is-white">White</span>
+      <br><br>
+      <span class="tag is-primary">Primary</span>
+      <span class="tag is-link">Link</span>
+      <span class="tag is-info">Info</span>
+      <span class="tag is-success">Success</span>
+      <span class="tag is-warning">Warning</span>
+      <span class="tag is-danger">Danger</span>
+      <span class="tag is-primary is-light">Primary</span>
+      <span class="tag is-link is-light">Link</span>
+      <span class="tag is-info is-light">Info</span>
+      <span class="tag is-success is-light">Success</span>
+      <span class="tag is-warning is-light">Warning</span>
+      <span class="tag is-danger is-light">Danger</span>
+      <br><br>
+      <span class="tag is-primary is-rounded">Primary</span>
+      <span class="tag is-link is-rounded">Link</span>
+      <span class="tag is-info is-rounded">Info</span>
+      <span class="tag is-success is-rounded">Success</span>
+      <span class="tag is-warning is-rounded">Warning</span>
+      <span class="tag is-danger is-rounded">Danger</span>
+      <span class="tag is-primary is-light is-rounded">Primary</span>
+      <span class="tag is-link is-light is-rounded">Link</span>
+      <span class="tag is-info is-light is-rounded">Info</span>
+      <span class="tag is-success is-light is-rounded">Success</span>
+      <span class="tag is-warning is-light is-rounded">Warning</span>
+      <span class="tag is-danger is-light is-rounded">Danger</span>
+      <br><br>
+      <a class="tag is-link">Hover me</a>
+      <button class="tag is-primary">Hover me</button>
+      <div class="tag is-hoverable is-success">Hover me</div>
+      <a class="tag is-info">Hover me</a>
+      <button class="tag is-warning">Hover me</button>
+      <div class="tag is-hoverable is-danger">Hover me</div>
+      <br><br>
+      <span class="tag is-link is-normal">Normal</span>
+      <span class="tag is-primary is-medium">Medium</span>
+      <span class="tag is-info is-large">Large</span>
+      <span class="tag is-success">
+        Bar
+        <button class="delete is-small"></button>
+      </span>
+      <span class="tag is-warning is-medium">
+        Hello
+        <button class="delete is-small"></button>
+      </span>
+      <span class="tag is-danger is-large">
+        World
+        <button class="delete"></button>
+      </span>
+      <br><br>
+      <div class="field is-grouped is-grouped-multiline">
+        <div class="control">
+          <div class="tags has-addons">
+            <span class="tag">Package</span>
+            <span class="tag is-primary">Bulma</span>
+          </div>
+        </div>
+        <div class="control">
+          <div class="tags has-addons">
+            <span class="tag is-danger">Alex Smith</span>
+            <a class="tag is-delete"></a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="field is-grouped is-grouped-multiline">
+        <div class="control">
+          <div class="tags has-addons">
+            <span class="tag is-dark">npm</span>
+            <span class="tag is-info">1.0.2</span>
+          </div>
+        </div>
+
+        <div class="control">
+          <div class="tags has-addons">
+            <span class="tag is-dark">build</span>
+            <span class="tag is-success">passing</span>
+          </div>
+        </div>
+
+        <div class="control">
+          <div class="tags has-addons">
+            <span class="tag is-dark">chat</span>
+            <span class="tag is-primary">on gitter</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Breadcrumb -->
+    <section>
+      <a name="breadcrumbs" class="is-size-4 has-text-black-bis">Breadcrumbs</a>
+      <br>
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Bulma</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Components</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+        </ul>
+      </nav>
+      <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Bulma</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Components</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+        </ul>
+      </nav>
+      <nav class="breadcrumb is-right" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Bulma</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Components</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+        </ul>
+      </nav>
+      <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon is-small">
+                <i class="fas fa-home" aria-hidden="true"></i>
+              </span>
+              <span>Bulma</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon is-small">
+                <i class="fas fa-book" aria-hidden="true"></i>
+              </span>
+              <span>Documentation</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon is-small">
+                <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+              </span>
+              <span>Components</span>
+            </a>
+          </li>
+          <li class="is-active">
+            <a href="#">
+              <span class="icon is-small">
+                <i class="fas fa-thumbs-up" aria-hidden="true"></i>
+              </span>
+              <span>Breadcrumb</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="fixed-grid">
+        <div class="grid">
+          <nav class="breadcrumb has-arrow-separator" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="#">Bulma</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Components</a></li>
+              <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="#">Bulma</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Components</a></li>
+              <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb has-dot-separator" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="#">Bulma</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Components</a></li>
+              <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+            </ul>
+          </nav>
+          <nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="#">Bulma</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Components</a></li>
+              <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Bulma</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Components</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+        </ul>
+      </nav>
+      <nav class="breadcrumb is-medium" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Bulma</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Components</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+        </ul>
+      </nav>
+      <nav class="breadcrumb is-large" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Bulma</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Components</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+        </ul>
+      </nav>
+    </section>
+    <br><br>
+
+    <!-- Buttons -->
+    <section>
+      <a name="buttons" class="is-size-4 has-text-black-bis">Buttons</a>
+      <br>
+      <div class="buttons">
+        <button class="button">Default</button>
+        <button class="button is-white">White</button>
+        <button class="button is-light">Light</button>
+        <button class="button is-dark">Dark</button>
+        <button class="button is-black">Black</button>
+        <button class="button is-text">Text</button>
+        <button class="button is-ghost">Ghost</button>
+      </div>
+      <div class="buttons">
+        <button class="button is-primary">Primary</button>
+        <button class="button is-link">Link</button>
+        <button class="button is-info">Info</button>
+        <button class="button is-success">Success</button>
+        <button class="button is-warning">Warning</button>
+        <button class="button is-danger">Danger</button>
+      </div>
+      <div class="buttons">
+        <button class="button is-primary is-light">Primary</button>
+        <button class="button is-link is-light">Link</button>
+        <button class="button is-info is-light">Info</button>
+        <button class="button is-success is-light">Success</button>
+        <button class="button is-warning is-light">Warning</button>
+        <button class="button is-danger is-light">Danger</button>
+      </div>
+      <div class="buttons">
+        <button class="button is-primary is-dark">Primary</button>
+        <button class="button is-link is-dark">Link</button>
+        <button class="button is-info is-dark">Info</button>
+        <button class="button is-success is-dark">Success</button>
+        <button class="button is-warning is-dark">Warning</button>
+        <button class="button is-danger is-dark">Danger</button>
+      </div>
+      <div class="buttons">
+        <button class="button is-primary is-outlined">Primary</button>
+        <button class="button is-link is-outlined">Link</button>
+        <button class="button is-info is-outlined">Info</button>
+        <button class="button is-success is-outlined">Success</button>
+        <button class="button is-warning is-outlined">Warning</button>
+        <button class="button is-danger is-outlined">Danger</button>
+      </div>
+      <div class="buttons">
+        <button class="button is-primary is-inverted">Primary</button>
+        <button class="button is-link is-inverted">Link</button>
+        <button class="button is-info is-inverted">Info</button>
+        <button class="button is-success is-inverted">Success</button>
+        <button class="button is-warning is-inverted">Warning</button>
+        <button class="button is-danger is-inverted">Danger</button>
+      </div>
+      <div class="buttons">
+        <button class="button is-primary is-rounded">Primary</button>
+        <button class="button is-link is-rounded">Link</button>
+        <button class="button is-info is-rounded">Info</button>
+        <button class="button is-success is-rounded">Success</button>
+        <button class="button is-warning is-rounded">Warning</button>
+        <button class="button is-danger is-rounded">Danger</button>
+      </div>
+      <div class="buttons">
+        <button class="button is-primary" disabled>Primary</button>
+        <button class="button is-link" disabled>Link</button>
+        <button class="button is-info" disabled>Info</button>
+        <button class="button is-success" disabled>Success</button>
+        <button class="button is-warning" disabled>Warning</button>
+        <button class="button is-danger" disabled>Danger</button>
+      </div>
+      <div class="buttons">
+        <button class="button is-primary is-loading">Primary</button>
+        <button class="button is-link is-loading">Link</button>
+        <button class="button is-info is-loading">Info</button>
+        <button class="button is-success is-loading">Success</button>
+        <button class="button is-warning is-loading">Warning</button>
+        <button class="button is-danger is-loading">Danger</button>
+      </div>
+      <p class="buttons">
+        <button class="button">
+          <span class="icon is-small">
+            <i class="fas fa-bold"></i>
+          </span>
+        </button>
+        <button class="button">
+          <span class="icon is-small">
+            <i class="fas fa-italic"></i>
+          </span>
+        </button>
+        <button class="button">
+          <span class="icon is-small">
+            <i class="fas fa-underline"></i>
+          </span>
+        </button>
+      </p>
+      <p class="buttons">
+        <button class="button">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span>GitHub</span>
+        </button>
+        <button class="button is-primary">
+          <span class="icon">
+            <i class="fab fa-twitter"></i>
+          </span>
+          <span>@jgthms</span>
+        </button>
+        <button class="button is-success">
+          <span class="icon is-small">
+            <i class="fas fa-check"></i>
+          </span>
+          <span>Save</span>
+        </button>
+        <button class="button is-danger is-outlined">
+          <span>Delete</span>
+          <span class="icon is-small">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+      </p>
+      <div class="buttons">
+        <button class="button is-small">Small</button>
+        <button class="button">Default</button>
+        <button class="button is-normal">Normal</button>
+        <button class="button is-medium">Medium</button>
+        <button class="button is-large">Large</button>
+      </div>
+      <div class="buttons">
+        <button class="button is-small is-responsive">
+          Responsive Small
+        </button>
+        <button class="button is-responsive">
+          Responsive Default
+        </button>
+        <button class="button is-normal is-responsive">
+          Responsive Normal
+        </button>
+        <button class="button is-medium is-responsive">
+          Responsive Medium
+        </button>
+        <button class="button is-large is-responsive">
+          Responsive Large
+        </button>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Button group -->
+    <section>
+      <a name="button-group" class="is-size-4 has-text-black-bis">Button group</a>
+      <br>
+      <div class="field is-grouped">
+        <p class="control">
+          <button class="button is-link">Save changes</button>
+        </p>
+        <p class="control">
+          <button class="button">Cancel</button>
+        </p>
+        <p class="control">
+          <button class="button is-danger">Delete post</button>
+        </p>
+      </div>
+      <div class="field has-addons">
+        <p class="control">
+          <button class="button">
+            <span class="icon is-small">
+              <i class="fas fa-align-left"></i>
+            </span>
+            <span>Left</span>
+          </button>
+        </p>
+        <p class="control">
+          <button class="button">
+            <span class="icon is-small">
+              <i class="fas fa-align-center"></i>
+            </span>
+            <span>Center</span>
+          </button>
+        </p>
+        <p class="control">
+          <button class="button">
+            <span class="icon is-small">
+              <i class="fas fa-align-right"></i>
+            </span>
+            <span>Right</span>
+          </button>
+        </p>
+      </div>
+      <div class="buttons">
+        <button class="button">One</button>
+        <button class="button">Two</button>
+        <button class="button">Three</button>
+        <button class="button">Four</button>
+        <button class="button">Five</button>
+        <button class="button">Six</button>
+        <button class="button">Seven</button>
+        <button class="button">Eight</button>
+        <button class="button">Nine</button>
+        <button class="button">Ten</button>
+        <button class="button">Eleven</button>
+        <button class="button">Twelve</button>
+        <button class="button">Thirteen</button>
+        <button class="button">Fourteen</button>
+        <button class="button">Fifteen</button>
+        <button class="button">Sixteen</button>
+        <button class="button">Seventeen</button>
+        <button class="button">Eighteen</button>
+        <button class="button">Nineteen</button>
+        <button class="button">Twenty</button>
+      </div>
+      <div class="buttons has-addons">
+        <button class="button is-success is-selected">Yes</button>
+        <button class="button">Maybe</button>
+        <button class="button">No</button>
+      </div>
+      <div class="buttons has-addons is-centered">
+        <button class="button">Yes</button>
+        <button class="button is-info is-selected">Maybe</button>
+        <button class="button">No</button>
+      </div>
+      <div class="buttons has-addons is-right">
+        <button class="button">Yes</button>
+        <button class="button">Maybe</button>
+        <button class="button is-danger is-selected">No</button>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Cards -->
+    <section>
+      <a name="cards" class="is-size-4 has-text-black-bis">Card</a>
+      <br>
+      <div class="grid">
+        <div class="cell">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/assets/images/placeholders/1280x960.png" alt="Placeholder image" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-left">
+                  <figure class="image is-48x48">
+                    <img src="https://bulma.io/assets/images/placeholders/96x96.png" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <p class="title is-4">John Smith</p>
+                  <p class="subtitle is-6">@johnsmith</p>
+                </div>
+              </div>
+
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
+                <a href="#">#responsive</a>
+                <br />
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Component</p>
+              <button class="card-header-icon" aria-label="more options">
+                <span class="icon">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                iaculis mauris.
+                <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                <br />
+                <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Save</a>
+              <a href="#" class="card-footer-item">Edit</a>
+              <a href="#" class="card-footer-item">Delete</a>
+            </footer>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card">
+            <div class="card-content">
+              <p class="title">
+                “There are two hard things in computer science: cache invalidation, naming
+                things, and off-by-one errors.”
+              </p>
+              <p class="subtitle">Jeff Atwood</p>
+            </div>
+            <footer class="card-footer">
+              <p class="card-footer-item">
+                <span>
+                  View on
+                  <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
+                </span>
+              </p>
+              <p class="card-footer-item">
+                <span> Share on <a href="#">Facebook</a> </span>
+              </p>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <br><br>
+
+    <!-- Close button / Delete -->
+    <section>
+      <a name="close-button" class="is-size-4 has-text-black-bis">Close button / Delete</a>
+      <br>
+      <button class="delete is-small"></button>
+      <button class="delete"></button>
+      <button class="delete is-medium"></button>
+      <button class="delete is-large"></button>
+    </section>
+    <br><br>
+
+    <!-- Dropdowns -->
+    <section>
+      <a name="dropdowns" class="is-size-4 has-text-black-bis">Dropdowns</a>
+      <br>
+      <div class="grid">
+        <div class="cell">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                <span>Dropdown</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item"> Dropdown item </a>
+                <a class="dropdown-item"> Other dropdown item </a>
+                <a href="#" class="dropdown-item is-active"> Active dropdown item </a>
+                <a href="#" class="dropdown-item"> Other dropdown item </a>
+                <hr class="dropdown-divider" />
+                <a href="#" class="dropdown-item"> With a divider </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="dropdown is-up">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu7">
+                <span>Dropup button</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-up" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu7" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>
+                    You can add the <code>is-up</code> modifier to have a dropdown menu
+                    that appears above the dropdown button.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
+                <span>Content</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>
+                    You can insert <strong>any type of content</strong> within the
+                    dropdown menu.
+                  </p>
+                </div>
+                <hr class="dropdown-divider" />
+                <div class="dropdown-item">
+                  <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
+                </div>
+                <hr class="dropdown-divider" />
+                <a href="#" class="dropdown-item"> This is a link </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                <span>Click me</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content">
+                <a href="#" class="dropdown-item"> Overview </a>
+                <a href="#" class="dropdown-item"> Modifiers </a>
+                <a href="#" class="dropdown-item"> Grid </a>
+                <a href="#" class="dropdown-item"> Form </a>
+                <a href="#" class="dropdown-item"> Elements </a>
+                <a href="#" class="dropdown-item"> Components </a>
+                <a href="#" class="dropdown-item"> Layout </a>
+                <hr class="dropdown-divider" />
+                <a href="#" class="dropdown-item"> More </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="dropdown is-hoverable">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                <span>Hover me</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>
+                    You can insert <strong>any type of content</strong> within the
+                    dropdown menu.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu5">
+                <span>Left aligned</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu5" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>The dropdown is <strong>left-aligned</strong> by default.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="dropdown is-right">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu6">
+                <span>Right aligned</span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu6" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>
+                    Add the <code>is-right</code> modifier for a
+                    <strong>right-aligned</strong> dropdown.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Forms -->
+    <section>
+      <a name="forms" class="is-size-4 has-text-black-bis">Forms</a>
+      <br>
+      <div class="fixed-grid">
+        <div class="grid">
+          <div class="cell">
+            <form>
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Text input">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Username</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-check"></i>
+                  </span>
+                </div>
+                <p class="help is-success">This username is available</p>
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+                <p class="help is-danger">This email is invalid</p>
+              </div>
+
+
+
+              <div class="field">
+                <label class="label">Disabled field</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="e.g Alex Smith" disabled>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Textarea"></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    I agree to the <a href="#">terms and conditions</a>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="question">
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="question">
+                    No
+                  </label>
+                </div>
+              </div>
+
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                  <button class="button is-link is-light">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="cell">
+            <form>
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">From</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      <input class="input" type="text" placeholder="Name">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left has-icons-right">
+                      <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                      <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal">
+                <div class="field-label"></div>
+                <div class="field-body">
+                  <div class="field is-expanded">
+                    <div class="field has-addons">
+                      <p class="control">
+                        <a class="button is-static">
+                          +44
+                        </a>
+                      </p>
+                      <p class="control is-expanded">
+                        <input class="input" type="tel" placeholder="Your phone number">
+                      </p>
+                    </div>
+                    <p class="help">Do not enter the first zero</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Department</label>
+                </div>
+                <div class="field-body">
+                  <div class="field is-narrow">
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Business development</option>
+                          <option>Marketing</option>
+                          <option>Sales</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal">
+                <div class="field-label">
+                  <label class="label">Already a member?</label>
+                </div>
+                <div class="field-body">
+                  <div class="field is-narrow">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="member">
+                        Yes
+                      </label>
+                      <label class="radio">
+                        <input type="radio" name="member">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Subject</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
+                    </div>
+                    <p class="help is-danger">
+                      This field is required
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                  <label class="label">Question</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal">
+                <div class="field-label">
+                  <!-- Left empty for spacing -->
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <button class="button is-primary">
+                        Send message
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <br><br>
+
+    <!-- Modal -->
+    <section>
+      <a name="modal" class="is-size-4 has-text-black-bis">Modal</a>
+      <br>
+      <!-- Example 1 -->
+      <button class="button is-primary modal-button js-modal-trigger" data-target="modalExample1" aria-haspopup="true">
+        Launch example modal
+      </button>
+      <div id="modalExample1" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="box">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img src="./vendor/128x128.png" alt="Image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean efficitur sit amet massa fringilla
+                    egestas. Nullam condimentum luctus turpis.
+                  </p>
+                </div>
+                <nav class="level is-mobile">
+                  <div class="level-left">
+                    <a class="level-item" aria-label="retweet">
+                      <span class="icon is-small">
+                        <i class="fas fa-retweet" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <a class="level-item" aria-label="like">
+                      <span class="icon is-small">
+                        <i class="fas fa-heart" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+
+      <!-- Example 2 -->
+      <button class="button is-primary modal-button js-modal-trigger" data-target="modalExample2" aria-haspopup="true">
+        Launch image modal
+      </button>
+      <div id="modalExample2" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p class="image is-4by3">
+            <img src="./vendor/1280x960.png" alt="">
+          </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+
+      <!-- Example 3 -->
+      <button class="button is-primary modal-button js-modal-trigger" data-target="modalExample3" aria-haspopup="true">
+        Launch card modal
+      </button>
+      <div id="modalExample3" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">Modal title</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body">
+            <div class="content">
+              <h1>Hello World</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend
+                gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat
+                odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+              <h2>Second level</h2>
+              <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum
+                maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse
+                potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
+              <ul>
+                <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+                <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+                <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+                <li>Ut non enim metus.</li>
+              </ul>
+              <h3>Third level</h3>
+              <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus lacus ex,
+                semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+              <ol>
+                <li>Donec blandit a lorem id convallis.</li>
+                <li>Cras gravida arcu at diam gravida gravida.</li>
+                <li>Integer in volutpat libero.</li>
+                <li>Donec a diam tellus.</li>
+                <li>Aenean nec tortor orci.</li>
+                <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
+                <li>Vivamus maximus ultricies pulvinar.</li>
+              </ol>
+              <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit
+                est tellus sit amet turpis.</blockquote>
+              <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em> elementum.
+                Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.</p>
+              <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus.
+                Maecenas vestibulum interdum commodo.</p>
+              <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi sit amet,
+                mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
+              <h4>Fourth level</h4>
+              <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus
+                laoreet, at elementum ex efficitur.</p>
+              <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus eleifend arcu ut
+                vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis sapien.</p>
+              <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum
+                in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur ligula sit amet
+                ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at cursus leo est vel
+                tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex sodales quis. Aliquam eu nibh
+                in libero accumsan pulvinar. Nullam nec nisl placerat, pretium metus vel, euismod ipsum. Proin tempor
+                cursus nisl vel condimentum. Nam pharetra varius metus non pellentesque.</p>
+              <h5>Fifth level</h5>
+              <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at nunc elit.
+                Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel nisi sodales, a
+                eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.</p>
+              <h6>Sixth level</h6>
+              <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut
+                eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque
+                quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse
+                euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at
+                cursus metus.</p>
+
+            </div>
+          </section>
+          <footer class="modal-card-foot">
+            <div class="buttons">
+              <button class="button is-success">Save changes</button>
+              <button class="button">Cancel</button>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Navs and tabs -->
+    <section>
+      <a name="navs-and-tabs" class="is-size-4 has-text-black-bis">Navs & tabs</a>
+      <br>
+      <div class="tabs">
+        <ul>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+      </div>
+      <div class="tabs is-centered">
+        <ul>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+      </div>
+      <div class="tabs is-right">
+        <ul>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+      </div>
+      <div class="tabs is-small">
+        <ul>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+      </div>
+      <div class="tabs">
+        <ul>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+      </div>
+      <div class="tabs is-medium">
+        <ul>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+      </div>
+      <div class="tabs is-large">
+        <ul>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="tabs">
+            <ul>
+              <li class="is-active">
+                <a>
+                  <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                  <span>Pictures</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+                  <span>Music</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                  <span>Videos</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                  <span>Documents</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="tabs is-boxed">
+            <ul>
+              <li class="is-active">
+                <a>
+                  <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                  <span>Pictures</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+                  <span>Music</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                  <span>Videos</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                  <span>Documents</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <div class="tabs is-toggle">
+            <ul>
+              <li class="is-active">
+                <a>
+                  <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+                  <span>Pictures</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+                  <span>Music</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+                  <span>Videos</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+                  <span>Documents</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="tabs is-toggle is-toggle-rounded">
+            <ul>
+              <li class="is-active">
+                <a>
+                  <span class="icon is-small"><i class="fas fa-image"></i></span>
+                  <span>Pictures</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-music"></i></span>
+                  <span>Music</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-film"></i></span>
+                  <span>Videos</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fas fa-file-alt"></i></span>
+                  <span>Documents</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tabs is-fullwidth">
+        <ul>
+          <li>
+            <a>
+              <span class="icon"><i class="fas fa-angle-left" aria-hidden="true"></i></span>
+              <span>Left</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon"><i class="fas fa-angle-up" aria-hidden="true"></i></span>
+              <span>Up</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span>Right</span>
+              <span class="icon"><i class="fas fa-angle-right" aria-hidden="true"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="tabs is-centered is-boxed">
+        <ul>
+          <li class="is-active">
+            <a>
+              <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+              <span>Pictures</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+              <span>Music</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+              <span>Videos</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+              <span>Documents</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="tabs is-toggle is-fullwidth">
+        <ul>
+          <li class="is-active">
+            <a>
+              <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
+              <span>Pictures</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fas fa-music" aria-hidden="true"></i></span>
+              <span>Music</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
+              <span>Videos</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              <span class="icon is-small"><i class="far fa-file-alt" aria-hidden="true"></i></span>
+              <span>Documents</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Navbar -->
+    <section>
+      <a name="navbar" class="is-size-4 has-text-black-bis">Navbar</a>
+      <br>
+      <!-- Example 1 -->
+      <div class="bd-example is-paddingless" style="min-height: 22rem;">
+        <nav class="navbar">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+                  fill="black" class="bd-svg-black"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+                  fill="#00D1B2"></path>
+              </svg>
+            </a>
+            <div class="navbar-burger js-burger" data-target="navbarExample">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div id="navbarExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/"> Home </a>
+              <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-link" href="https://bulma.io/documentation/overview/start/"> Docs </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                  <a class="navbar-item is-selected" href="https://bulma.io/documentation/layout/container/"> Layout
+                  </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/components/breadcrumb/"> Components </a>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                      data-social-target="https://bulma.io" target="_blank"
+                      href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span> Tweet </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary"
+                      href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <br>
+
+      <!-- Example 2 -->
+      <div class="bd-example is-paddingless" style="min-height: 22rem;">
+        <nav class="navbar is-primary">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+                  fill="currentColor"></path>
+              </svg>
+
+            </a>
+            <div class="navbar-burger js-burger" data-target="navMenuColorprimary-example">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navMenuColorprimary-example" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/"> Home </a>
+              <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-link" href="https://bulma.io/documentation/overview/start/"> Docs </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/layout/container/"> Layout </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                  <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    Components </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button is-primary is-soft" data-social-network="Twitter"
+                      data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
+                      href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span> Tweet </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary is-light"
+                      href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <br>
+
+      <!-- Example 3 -->
+      <div class="bd-example is-paddingless" style="min-height: 22rem;">
+        <nav class="navbar is-link">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+                  fill="currentColor"></path>
+              </svg>
+
+            </a>
+            <div class="navbar-burger js-burger" data-target="navMenuColorlink-example">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navMenuColorlink-example" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/"> Home </a>
+              <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-link" href="https://bulma.io/documentation/overview/start/"> Docs </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/layout/container/"> Layout </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                  <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    Components </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button is-link is-soft" data-social-network="Twitter"
+                      data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
+                      href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span> Tweet </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary is-light"
+                      href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <br>
+
+      <!-- Example 4 -->
+      <div class="bd-example is-paddingless" style="min-height: 22rem;">
+        <nav class="navbar is-info">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+                  fill="currentColor"></path>
+              </svg>
+
+            </a>
+            <div class="navbar-burger js-burger" data-target="navMenuColorinfo-example">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navMenuColorinfo-example" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/"> Home </a>
+              <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-link" href="https://bulma.io/documentation/overview/start/"> Docs </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/layout/container/"> Layout </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                  <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    Components </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button is-info is-soft" data-social-network="Twitter"
+                      data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
+                      href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span> Tweet </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary is-light"
+                      href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <br>
+
+      <!-- Example 5 -->
+      <div class="bd-example is-paddingless" style="min-height: 22rem;">
+        <nav class="navbar is-success">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+                  fill="currentColor"></path>
+              </svg>
+
+            </a>
+            <div class="navbar-burger js-burger" data-target="navMenuColorsuccess-example">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navMenuColorsuccess-example" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/"> Home </a>
+              <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-link" href="https://bulma.io/documentation/overview/start/"> Docs </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/layout/container/"> Layout </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                  <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    Components </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button is-success is-soft" data-social-network="Twitter"
+                      data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
+                      href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span> Tweet </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary is-light"
+                      href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <br>
+
+      <!-- Example 6 -->
+      <div class="bd-example is-paddingless" style="min-height: 22rem;">
+        <nav class="navbar is-warning">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+                  fill="currentColor"></path>
+              </svg>
+
+            </a>
+            <div class="navbar-burger js-burger" data-target="navMenuColorwarning-example">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navMenuColorwarning-example" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/"> Home </a>
+              <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-link" href="https://bulma.io/documentation/overview/start/"> Docs </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/layout/container/"> Layout </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                  <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    Components </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button is-warning is-soft" data-social-network="Twitter"
+                      data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
+                      href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span> Tweet </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary is-light"
+                      href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <br>
+
+      <!-- Example 7 -->
+      <div class="bd-example is-paddingless" style="min-height: 22rem;">
+        <nav class="navbar is-danger">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+                  fill="currentColor"></path>
+              </svg>
+
+            </a>
+            <div class="navbar-burger js-burger" data-target="navMenuColordanger-example">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navMenuColordanger-example" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/"> Home </a>
+              <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-link" href="https://bulma.io/documentation/overview/start/"> Docs </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/layout/container/"> Layout </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                  <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    Components </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button is-danger is-soft" data-social-network="Twitter"
+                      data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
+                      href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span> Tweet </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary is-light"
+                      href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <br>
+
+      <!-- Example 8 -->
+      <div class="bd-example is-paddingless" style="min-height: 22rem;">
+        <nav class="navbar is-black">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+                  fill="currentColor"></path>
+              </svg>
+
+            </a>
+            <div class="navbar-burger js-burger" data-target="navMenuColorblack-example">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navMenuColorblack-example" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/"> Home </a>
+              <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-link" href="https://bulma.io/documentation/overview/start/"> Docs </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/layout/container/"> Layout </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                  <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    Components </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button is-black is-soft" data-social-network="Twitter"
+                      data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
+                      href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span> Tweet </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary is-light"
+                      href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <br>
+
+      <!-- Example 9 -->
+      <div class="bd-example is-paddingless" style="min-height: 22rem;">
+        <nav class="navbar is-dark">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+                  fill="currentColor"></path>
+              </svg>
+
+            </a>
+            <div class="navbar-burger js-burger" data-target="navMenuColordark-example">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navMenuColordark-example" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/"> Home </a>
+              <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-link" href="https://bulma.io/documentation/overview/start/"> Docs </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/layout/container/"> Layout </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                  <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    Components </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button is-dark is-soft" data-social-network="Twitter"
+                      data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
+                      href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span> Tweet </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary is-light"
+                      href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <br>
+
+      <!-- Example 10 -->
+      <div class="bd-example is-paddingless" style="min-height: 22rem;">
+        <nav class="navbar is-light">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+                  fill="currentColor"></path>
+              </svg>
+
+            </a>
+            <div class="navbar-burger js-burger" data-target="navMenuColorlight-example">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navMenuColorlight-example" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/"> Home </a>
+              <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-link" href="https://bulma.io/documentation/overview/start/"> Docs </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/layout/container/"> Layout </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                  <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    Components </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button is-light is-soft" data-social-network="Twitter"
+                      data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
+                      href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span> Tweet </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary is-light"
+                      href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <br>
+
+      <!-- Example 11 -->
+      <div class="bd-example is-paddingless" style="min-height: 22rem;">
+        <nav class="navbar is-white">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <svg width="640" height="160" viewBox="0 0 640 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M170 132.571V27.5908C170 25.5451 170.915 23.93 172.746 22.7456C174.576 21.5612 176.729 20.969 179.206 20.969H210.377C232.019 20.969 242.84 30.4441 242.84 49.3943C242.84 62.5303 238.264 71.0902 229.112 75.074C234.603 77.2275 238.748 80.2692 241.548 84.1992C244.347 88.1292 245.747 93.8627 245.747 101.4V104.791C245.747 116.743 242.84 125.437 237.026 130.875C231.211 136.312 223.351 139.031 213.445 139.031H179.206C176.514 139.031 174.307 138.385 172.584 137.093C170.861 135.801 170 134.293 170 132.571ZM190.834 120.619H209.085C219.529 120.619 224.751 114.751 224.751 103.015V100.431C224.751 94.401 223.432 90.0404 220.794 87.3486C218.156 84.6568 214.253 83.3109 209.085 83.3109H190.834V120.619ZM190.834 66.8371H208.923C213.122 66.8371 216.326 65.5989 218.533 63.1225C220.74 60.646 221.844 57.2544 221.844 52.9475C221.844 48.7483 220.686 45.4374 218.371 43.0148C216.057 40.5922 212.853 39.3809 208.762 39.3809H190.834V66.8371ZM260.283 103.015V27.4293C260.283 25.2759 261.306 23.6608 263.351 22.5841C265.397 21.5074 267.873 20.969 270.781 20.969C273.688 20.969 276.164 21.5074 278.21 22.5841C280.256 23.6608 281.279 25.2759 281.279 27.4293V103.015C281.279 115.397 287.2 121.588 299.044 121.588C310.888 121.588 316.81 115.397 316.81 103.015V27.4293C316.81 25.2759 317.833 23.6608 319.879 22.5841C321.925 21.5074 324.401 20.969 327.308 20.969C330.215 20.969 332.692 21.5074 334.738 22.5841C336.783 23.6608 337.806 25.2759 337.806 27.4293V103.015C337.806 115.72 334.28 125.061 327.227 131.036C320.175 137.012 310.781 140 299.044 140C287.308 140 277.914 137.039 270.861 131.117C263.809 125.195 260.283 115.828 260.283 103.015ZM356.703 132.409V27.4293C356.703 25.2759 357.725 23.6608 359.771 22.5841C361.817 21.5074 364.293 20.969 367.201 20.969C370.108 20.969 372.584 21.5074 374.63 22.5841C376.676 23.6608 377.699 25.2759 377.699 27.4293V120.619H417.106C419.044 120.619 420.579 121.534 421.709 123.365C422.84 125.195 423.405 127.349 423.405 129.825C423.405 132.301 422.84 134.455 421.709 136.285C420.579 138.116 419.044 139.031 417.106 139.031H365.908C363.432 139.031 361.279 138.439 359.448 137.254C357.618 136.07 356.703 134.455 356.703 132.409ZM434.872 132.409V31.467C434.872 27.9138 435.868 25.2759 437.86 23.5532C439.852 21.8304 442.355 20.969 445.37 20.969C449.354 20.969 452.423 21.6689 454.576 23.0686C456.729 24.4684 459.098 27.4832 461.682 32.1131L481.548 68.2907L501.413 32.1131C503.997 27.4832 506.393 24.4684 508.6 23.0686C510.808 21.6689 513.903 20.969 517.887 20.969C520.902 20.969 523.405 21.8304 525.397 23.5532C527.389 25.2759 528.385 27.9138 528.385 31.467V132.409C528.385 134.455 527.335 136.07 525.236 137.254C523.136 138.439 520.686 139.031 517.887 139.031C514.98 139.031 512.503 138.439 510.458 137.254C508.412 136.07 507.389 134.455 507.389 132.409V62.961L488.493 96.5545C486.985 99.354 484.616 100.754 481.386 100.754C478.264 100.754 475.949 99.354 474.441 96.5545L455.868 61.6689V132.409C455.868 134.455 454.818 136.07 452.719 137.254C450.619 138.439 448.17 139.031 445.37 139.031C442.463 139.031 439.987 138.439 437.941 137.254C435.895 136.07 434.872 134.455 434.872 132.409ZM539.529 130.31C539.529 130.094 539.637 129.556 539.852 128.694L571.023 27.1063C571.669 24.8452 573.257 23.0956 575.787 21.8573C578.318 20.6191 581.198 20 584.428 20C587.658 20 590.565 20.6191 593.149 21.8573C595.734 23.0956 597.349 24.8452 597.995 27.1063L629.166 128.694C629.381 129.556 629.489 130.094 629.489 130.31C629.489 132.678 628.035 134.724 625.128 136.447C622.221 138.17 619.26 139.031 616.245 139.031C612.261 139.031 609.892 137.631 609.139 134.832L603.001 113.351H566.016L559.879 134.832C559.125 137.631 556.756 139.031 552.773 139.031C549.65 139.031 546.662 138.197 543.809 136.528C540.956 134.859 539.529 132.786 539.529 130.31ZM570.377 96.8775H598.479L584.428 47.2948L570.377 96.8775Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 110L10 40L50 0L100 50L70 80L110 120L50 160L0 110Z"
+                  fill="currentColor"></path>
+              </svg>
+
+            </a>
+            <div class="navbar-burger js-burger" data-target="navMenuColorwhite-example">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div id="navMenuColorwhite-example" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="https://bulma.io/"> Home </a>
+              <div class="navbar-item has-dropdown is-active">
+                <a class="navbar-link" href="https://bulma.io/documentation/overview/start/"> Docs </a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/start/"> Overview </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/"> Modifiers </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/"> Columns </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/layout/container/"> Layout </a>
+                  <a class="navbar-item" href="https://bulma.io/documentation/form/general/"> Form </a>
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="https://bulma.io/documentation/elements/box/"> Elements </a>
+                  <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                    Components </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a class="bd-tw-button button is-white is-soft" data-social-network="Twitter"
+                      data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
+                      href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                      <span class="icon">
+                        <i class="fab fa-twitter"></i>
+                      </span>
+                      <span> Tweet </span>
+                    </a>
+                  </p>
+                  <p class="control">
+                    <a class="button is-primary is-light"
+                      href="https://github.com/jgthms/bulma/releases/download/1.0.2/bulma-1.0.2.zip">
+                      <span class="icon">
+                        <i class="fas fa-download"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+    </section>
+    <br><br>
+
+    <!-- Pagination -->
+    <section>
+      <a name="pagination" class="is-size-4 has-text-black-bis">Pagination</a>
+      <br>
+      <nav class="pagination" role="navigation" aria-label="pagination">
+        <a href="#" class="pagination-previous">Previous</a>
+        <a href="#" class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li>
+            <a href="#" class="pagination-link" aria-label="Goto page 1">1</a>
+          </li>
+          <li>
+            <span class="pagination-ellipsis">&hellip;</span>
+          </li>
+          <li>
+            <a href="#" class="pagination-link" aria-label="Goto page 45">45</a>
+          </li>
+          <li>
+            <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+          </li>
+          <li>
+            <a href="#" class="pagination-link" aria-label="Goto page 47">47</a>
+          </li>
+          <li>
+            <span class="pagination-ellipsis">&hellip;</span>
+          </li>
+          <li>
+            <a href="#" class="pagination-link" aria-label="Goto page 86">86</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <a href="#" class="pagination-previous">Previous</a>
+        <a href="#" class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li><a href="#" class="pagination-link" aria-label="Goto page 1">1</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 45">45</a></li>
+          <li>
+            <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+          </li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 47">47</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 86">86</a></li>
+        </ul>
+      </nav>
+
+      <nav class="pagination is-right" role="navigation" aria-label="pagination">
+        <a href="#" class="pagination-previous">Previous</a>
+        <a href="#" class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li><a href="#" class="pagination-link" aria-label="Goto page 1">1</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 45">45</a></li>
+          <li>
+            <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+          </li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 47">47</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 86">86</a></li>
+        </ul>
+      </nav>
+
+      <nav class="pagination is-rounded" role="navigation" aria-label="pagination">
+        <a href="#" class="pagination-previous">Previous</a>
+        <a href="#" class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li><a href="#" class="pagination-link" aria-label="Goto page 1">1</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 45">45</a></li>
+          <li>
+            <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+          </li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 47">47</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 86">86</a></li>
+        </ul>
+      </nav>
+
+      <nav class="pagination is-small" role="navigation" aria-label="pagination">
+        <a href="#" class="pagination-previous">Previous</a>
+        <a href="#" class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li><a href="#" class="pagination-link" aria-label="Goto page 1">1</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 45">45</a></li>
+          <li>
+            <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+          </li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 47">47</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 86">86</a></li>
+        </ul>
+      </nav>
+
+      <nav class="pagination" role="navigation" aria-label="pagination">
+        <a href="#" class="pagination-previous">Previous</a>
+        <a href="#" class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li><a href="#" class="pagination-link" aria-label="Goto page 1">1</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 45">45</a></li>
+          <li>
+            <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+          </li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 47">47</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 86">86</a></li>
+        </ul>
+      </nav>
+
+      <nav class="pagination is-medium" role="navigation" aria-label="pagination">
+        <a href="#" class="pagination-previous">Previous</a>
+        <a href="#" class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li><a href="#" class="pagination-link" aria-label="Goto page 1">1</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 45">45</a></li>
+          <li>
+            <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+          </li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 47">47</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 86">86</a></li>
+        </ul>
+      </nav>
+
+      <nav class="pagination is-large" role="navigation" aria-label="pagination">
+        <a href="#" class="pagination-previous">Previous</a>
+        <a href="#" class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li><a href="#" class="pagination-link" aria-label="Goto page 1">1</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 45">45</a></li>
+          <li>
+            <a class="pagination-link is-current" aria-label="Page 46" aria-current="page">46</a>
+          </li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 47">47</a></li>
+          <li><span class="pagination-ellipsis">&hellip;</span></li>
+          <li><a href="#" class="pagination-link" aria-label="Goto page 86">86</a></li>
+        </ul>
+      </nav>
+    </section>
+    <br><br>
+
+    <!-- Progress -->
+    <section>
+      <a name="progress" class="is-size-4 has-text-black-bis">Progress</a>
+      <br>
+      <progress class="progress" value="5" max="100">5%</progress>
+      <progress class="progress is-link" value="15" max="100">15%</progress>
+      <progress class="progress is-primary" value="30" max="100">30%</progress>
+      <progress class="progress is-info" value="45" max="100">45%</progress>
+      <progress class="progress is-success" value="60" max="100">60%</progress>
+      <progress class="progress is-warning" value="75" max="100">75%</progress>
+      <progress class="progress is-danger" value="90" max="100">90%</progress>
+      <br>
+      <progress class="progress is-small" value="15" max="100">15%</progress>
+      <progress class="progress is-normal" value="30" max="100">30%</progress>
+      <progress class="progress is-medium" value="45" max="100">45%</progress>
+      <progress class="progress is-large" value="60" max="100">60%</progress>
+      <br>
+      <progress class="progress is-small is-primary" max="100">15%</progress>
+      <progress class="progress is-danger" max="100">30%</progress>
+      <progress class="progress is-medium is-dark" max="100">45%</progress>
+      <progress class="progress is-large is-info" max="100">60%</progress>
+    </section>
+    <br><br>
+
+    <!-- Table -->
+    <section>
+      <a name="table" class="is-size-4 has-text-black-bis">Table</a>
+      <br>
+      <table class="table">
+        <thead>
+          <tr>
+            <th><abbr title="Position">Pos</abbr></th>
+            <th>Team</th>
+            <th><abbr title="Played">Pld</abbr></th>
+            <th><abbr title="Won">W</abbr></th>
+            <th><abbr title="Drawn">D</abbr></th>
+            <th><abbr title="Lost">L</abbr></th>
+            <th><abbr title="Goals for">GF</abbr></th>
+            <th><abbr title="Goals against">GA</abbr></th>
+            <th><abbr title="Goal difference">GD</abbr></th>
+            <th><abbr title="Points">Pts</abbr></th>
+            <th>Qualification or relegation</th>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <th><abbr title="Position">Pos</abbr></th>
+            <th>Team</th>
+            <th><abbr title="Played">Pld</abbr></th>
+            <th><abbr title="Won">W</abbr></th>
+            <th><abbr title="Drawn">D</abbr></th>
+            <th><abbr title="Lost">L</abbr></th>
+            <th><abbr title="Goals for">GF</abbr></th>
+            <th><abbr title="Goals against">GA</abbr></th>
+            <th><abbr title="Goal difference">GD</abbr></th>
+            <th><abbr title="Points">Pts</abbr></th>
+            <th>Qualification or relegation</th>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." title="Leicester City F.C.">Leicester City</a>
+              <strong>(C)</strong>
+            </td>
+            <td>38</td>
+            <td>23</td>
+            <td>12</td>
+            <td>3</td>
+            <td>68</td>
+            <td>36</td>
+            <td>+32</td>
+            <td>81</td>
+            <td>
+              Qualification for the
+              <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+                title="2016–17 UEFA Champions League">Champions League group stage</a>
+            </td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Arsenal_F.C." title="Arsenal F.C.">Arsenal</a>
+            </td>
+            <td>38</td>
+            <td>20</td>
+            <td>11</td>
+            <td>7</td>
+            <td>65</td>
+            <td>36</td>
+            <td>+29</td>
+            <td>71</td>
+            <td>
+              Qualification for the
+              <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+                title="2016–17 UEFA Champions League">Champions League group stage</a>
+            </td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C." title="Tottenham Hotspur F.C.">Tottenham
+                Hotspur</a>
+            </td>
+            <td>38</td>
+            <td>19</td>
+            <td>13</td>
+            <td>6</td>
+            <td>69</td>
+            <td>35</td>
+            <td>+34</td>
+            <td>70</td>
+            <td>
+              Qualification for the
+              <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Group_stage"
+                title="2016–17 UEFA Champions League">Champions League group stage</a>
+            </td>
+          </tr>
+          <tr class="is-selected">
+            <th>4</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." title="Manchester City F.C.">Manchester
+                City</a>
+            </td>
+            <td>38</td>
+            <td>19</td>
+            <td>9</td>
+            <td>10</td>
+            <td>71</td>
+            <td>41</td>
+            <td>+30</td>
+            <td>66</td>
+            <td>
+              Qualification for the
+              <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Champions_League#Play-off_round"
+                title="2016–17 UEFA Champions League">Champions League play-off round</a>
+            </td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Manchester_United_F.C." title="Manchester United F.C.">Manchester
+                United</a>
+            </td>
+            <td>38</td>
+            <td>19</td>
+            <td>9</td>
+            <td>10</td>
+            <td>49</td>
+            <td>35</td>
+            <td>+14</td>
+            <td>66</td>
+            <td>
+              Qualification for the
+              <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"
+                title="2016–17 UEFA Europa League">Europa League group stage</a>
+            </td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Southampton_F.C." title="Southampton F.C.">Southampton</a>
+            </td>
+            <td>38</td>
+            <td>18</td>
+            <td>9</td>
+            <td>11</td>
+            <td>59</td>
+            <td>41</td>
+            <td>+18</td>
+            <td>63</td>
+            <td>
+              Qualification for the
+              <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Group_stage"
+                title="2016–17 UEFA Europa League">Europa League group stage</a>
+            </td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/West_Ham_United_F.C." title="West Ham United F.C.">West Ham
+                United</a>
+            </td>
+            <td>38</td>
+            <td>16</td>
+            <td>14</td>
+            <td>8</td>
+            <td>65</td>
+            <td>51</td>
+            <td>+14</td>
+            <td>62</td>
+            <td>
+              Qualification for the
+              <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_UEFA_Europa_League#Third_qualifying_round"
+                title="2016–17 UEFA Europa League">Europa League third qualifying round</a>
+            </td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Liverpool_F.C." title="Liverpool F.C.">Liverpool</a>
+            </td>
+            <td>38</td>
+            <td>16</td>
+            <td>12</td>
+            <td>10</td>
+            <td>63</td>
+            <td>50</td>
+            <td>+13</td>
+            <td>60</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Stoke_City_F.C." title="Stoke City F.C.">Stoke City</a>
+            </td>
+            <td>38</td>
+            <td>14</td>
+            <td>9</td>
+            <td>15</td>
+            <td>41</td>
+            <td>55</td>
+            <td>−14</td>
+            <td>51</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Chelsea_F.C." title="Chelsea F.C.">Chelsea</a>
+            </td>
+            <td>38</td>
+            <td>12</td>
+            <td>14</td>
+            <td>12</td>
+            <td>59</td>
+            <td>53</td>
+            <td>+6</td>
+            <td>50</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Everton_F.C." title="Everton F.C.">Everton</a>
+            </td>
+            <td>38</td>
+            <td>11</td>
+            <td>14</td>
+            <td>13</td>
+            <td>59</td>
+            <td>55</td>
+            <td>+4</td>
+            <td>47</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Swansea_City_A.F.C." title="Swansea City A.F.C.">Swansea City</a>
+            </td>
+            <td>38</td>
+            <td>12</td>
+            <td>11</td>
+            <td>15</td>
+            <td>42</td>
+            <td>52</td>
+            <td>−10</td>
+            <td>47</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>13</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Watford_F.C." title="Watford F.C.">Watford</a>
+            </td>
+            <td>38</td>
+            <td>12</td>
+            <td>9</td>
+            <td>17</td>
+            <td>40</td>
+            <td>50</td>
+            <td>−10</td>
+            <td>45</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>14</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/West_Bromwich_Albion_F.C." title="West Bromwich Albion F.C.">West
+                Bromwich Albion</a>
+            </td>
+            <td>38</td>
+            <td>10</td>
+            <td>13</td>
+            <td>15</td>
+            <td>34</td>
+            <td>48</td>
+            <td>−14</td>
+            <td>43</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Crystal_Palace_F.C." title="Crystal Palace F.C.">Crystal Palace</a>
+            </td>
+            <td>38</td>
+            <td>11</td>
+            <td>9</td>
+            <td>18</td>
+            <td>39</td>
+            <td>51</td>
+            <td>−12</td>
+            <td>42</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>16</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/A.F.C._Bournemouth" title="A.F.C. Bournemouth">AFC Bournemouth</a>
+            </td>
+            <td>38</td>
+            <td>11</td>
+            <td>9</td>
+            <td>18</td>
+            <td>45</td>
+            <td>67</td>
+            <td>−22</td>
+            <td>42</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>17</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Sunderland_A.F.C." title="Sunderland A.F.C.">Sunderland</a>
+            </td>
+            <td>38</td>
+            <td>9</td>
+            <td>12</td>
+            <td>17</td>
+            <td>48</td>
+            <td>62</td>
+            <td>−14</td>
+            <td>39</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>18</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Newcastle_United_F.C." title="Newcastle United F.C.">Newcastle
+                United</a>
+              <strong>(R)</strong>
+            </td>
+            <td>38</td>
+            <td>9</td>
+            <td>10</td>
+            <td>19</td>
+            <td>44</td>
+            <td>65</td>
+            <td>−21</td>
+            <td>37</td>
+            <td>
+              Relegation to the
+              <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"
+                title="2016–17 Football League Championship">Football League Championship</a>
+            </td>
+          </tr>
+          <tr>
+            <th>19</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Norwich_City_F.C." title="Norwich City F.C.">Norwich City</a>
+              <strong>(R)</strong>
+            </td>
+            <td>38</td>
+            <td>9</td>
+            <td>7</td>
+            <td>22</td>
+            <td>39</td>
+            <td>67</td>
+            <td>−28</td>
+            <td>34</td>
+            <td>
+              Relegation to the
+              <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"
+                title="2016–17 Football League Championship">Football League Championship</a>
+            </td>
+          </tr>
+          <tr>
+            <th>20</th>
+            <td>
+              <a href="https://en.wikipedia.org/wiki/Aston_Villa_F.C." title="Aston Villa F.C.">Aston Villa</a>
+              <strong>(R)</strong>
+            </td>
+            <td>38</td>
+            <td>3</td>
+            <td>8</td>
+            <td>27</td>
+            <td>27</td>
+            <td>76</td>
+            <td>−49</td>
+            <td>17</td>
+            <td>
+              Relegation to the
+              <a href="https://en.wikipedia.org/wiki/2016%E2%80%9317_Football_League_Championship"
+                title="2016–17 Football League Championship">Football League Championship</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table is-bordered">
+        <tbody>
+
+          <tr>
+            <th class="is-link">Link th cell</th>
+            <td>Two</td>
+            <td class="is-link">Link td cell</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+          <tr class="is-link">
+            <th>Link row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+
+          <tr>
+            <th class="is-primary">Primary th cell</th>
+            <td>Two</td>
+            <td class="is-primary">Primary td cell</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+          <tr class="is-primary">
+            <th>Primary row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+
+          <tr>
+            <th class="is-info">Info th cell</th>
+            <td>Two</td>
+            <td class="is-info">Info td cell</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+          <tr class="is-info">
+            <th>Info row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+
+          <tr>
+            <th class="is-success">Success th cell</th>
+            <td>Two</td>
+            <td class="is-success">Success td cell</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+          <tr class="is-success">
+            <th>Success row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+
+          <tr>
+            <th class="is-warning">Warning th cell</th>
+            <td>Two</td>
+            <td class="is-warning">Warning td cell</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+          <tr class="is-warning">
+            <th>Warning row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+
+          <tr>
+            <th class="is-danger">Danger th cell</th>
+            <td>Two</td>
+            <td class="is-danger">Danger td cell</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+          <tr class="is-danger">
+            <th>Danger row</th>
+            <td>Two</td>
+            <td>Three</td>
+            <td>Four</td>
+            <td>Five</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <div class="columns">
+        <div class="column">
+          <table class="table is-bordered">
+            <thead>
+              <tr>
+                <th>One</th>
+                <th>Two</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Three</td>
+                <td>Four</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="column">
+          <table class="table is-striped">
+            <thead>
+              <tr>
+                <th>One</th>
+                <th>Two</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Three</td>
+                <td>Four</td>
+              </tr>
+              <tr>
+                <td>Five</td>
+                <td>Six</td>
+              </tr>
+              <tr>
+                <td>Seven</td>
+                <td>Eight</td>
+              </tr>
+              <tr>
+                <td>Nine</td>
+                <td>Ten</td>
+              </tr>
+              <tr>
+                <td>Eleven</td>
+                <td>Twelve</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="column">
+          <table class="table is-narrow">
+            <thead>
+              <tr>
+                <th>One</th>
+                <th>Two</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Three</td>
+                <td>Four</td>
+              </tr>
+              <tr>
+                <td>Five</td>
+                <td>Six</td>
+              </tr>
+              <tr>
+                <td>Seven</td>
+                <td>Eight</td>
+              </tr>
+              <tr>
+                <td>Nine</td>
+                <td>Ten</td>
+              </tr>
+              <tr>
+                <td>Eleven</td>
+                <td>Twelve</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="column">
+          <table class="table is-hoverable">
+            <thead>
+              <tr>
+                <th>One</th>
+                <th>Two</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Three</td>
+                <td>Four</td>
+              </tr>
+              <tr>
+                <td>Five</td>
+                <td>Six</td>
+              </tr>
+              <tr>
+                <td>Seven</td>
+                <td>Eight</td>
+              </tr>
+              <tr>
+                <td>Nine</td>
+                <td>Ten</td>
+              </tr>
+              <tr>
+                <td>Eleven</td>
+                <td>Twelve</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <table class="table is-fullwidth">
+        <thead>
+          <tr>
+            <th>One</th>
+            <th>Two</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Three</td>
+            <td>Four</td>
+          </tr>
+          <tr>
+            <td>Five</td>
+            <td>Six</td>
+          </tr>
+          <tr>
+            <td>Seven</td>
+            <td>Eight</td>
+          </tr>
+          <tr>
+            <td>Nine</td>
+            <td>Ten</td>
+          </tr>
+          <tr>
+            <td>Eleven</td>
+            <td>Twelve</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>One</th>
+            <th>Two</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Three</td>
+            <td>Four</td>
+          </tr>
+          <tr>
+            <td>Five</td>
+            <td>Six</td>
+          </tr>
+          <tr>
+            <td>Seven</td>
+            <td>Eight</td>
+          </tr>
+          <tr>
+            <td>Nine</td>
+            <td>Ten</td>
+          </tr>
+          <tr>
+            <td>Eleven</td>
+            <td>Twelve</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <br><br>
+
+    <!-- Typography -->
+    <section>
+      <a name="typography" class="is-size-4 has-text-black-bis">Typography</a>
+      <br>
+      <div class="columns">
+        <div class="column">
+          <h1 class="title is-1">Title 1</h1>
+          <h2 class="title is-2">Title 2</h2>
+          <h3 class="title is-3">Title 3</h3>
+          <h4 class="title is-4">Title 4</h4>
+          <h5 class="title is-5">Title 5</h5>
+          <h6 class="title is-6">Title 6</h6>
+        </div>
+        <div class="column">
+          <h1 class="subtitle is-1">Subtitle 1</h1>
+          <h2 class="subtitle is-2">Subtitle 2</h2>
+          <h3 class="subtitle is-3">Subtitle 3</h3>
+          <h4 class="subtitle is-4">Subtitle 4</h4>
+          <h5 class="subtitle is-5">Subtitle 5</h5>
+          <h6 class="subtitle is-6">Subtitle 6</h6>
+        </div>
+        <div class="column">
+          <span class="is-size-1">Example</span><br>
+          <span class="is-size-2">Example</span><br>
+          <span class="is-size-3">Example</span><br>
+          <span class="is-size-4">Example</span><br>
+          <span class="is-size-5">Example</span><br>
+          <span class="is-size-6">Example</span><br>
+          <span class="is-size-7">Example</span><br>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column">
+          <span class="is-capitalized">Transforms the first character of each word to uppercase</span><br>
+          <span class="is-lowercase">Transforms all characters to lowercase</span><br>
+          <span class="is-uppercase">Transforms all characters to uppercase</span><br>
+          <span class="is-italic">Transforms all characters to italic</span><br>
+          <span class="is-underlined">Underlines the text</span>
+        </div>
+        <div class="column">
+          <span>Transforms text weight to <span class="has-text-weight-light">light</span></span><br>
+          <span>Transforms text weight to <span class="has-text-weight-normal">normal</span></span><br>
+          <span>Transforms text weight to <span class="has-text-weight-medium">medium</span></span><br>
+          <span>Transforms text weight to <span class="has-text-weight-semibold">semi-bold</span></span><br>
+          <span>Transforms text weight to <span class="has-text-weight-bold">bold</span></span>
+        </div>
+        <div class="column">
+          <p class="has-text-black">Text Black</p>
+          <p class="has-text-dark">Text Dark</p>
+          <p class="has-text-light has-background-grey">Text Light</p>
+          <p class="has-text-white has-background-black">Text White</p>
+          <p class="has-text-primary">Text Primary</p>
+          <p class="has-text-link">Text Link</p>
+          <p class="has-text-info">Text Info</p>
+          <p class="has-text-success">Text Success</p>
+          <p class="has-text-warning">Text Warning</p>
+          <p class="has-text-danger">Text Danger</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column has-background-light">
+          <!-- Text centered -->
+          <p class="has-text-centered">Centered text</p>
+        </div>
+        <div class="column has-background-grey">
+          <!-- Text justified -->
+          <p class="has-text-justified has-text-light">Justified text</p>
+        </div>
+        <div class="column has-background-light">
+          <!-- Text right aligned -->
+          <p class="has-text-right">Right aligned text</p>
+        </div>
+        <div class="column has-background-grey">
+          <!-- Text left aligned -->
+          <p class="has-text-left has-text-light">Left aligned text</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </div>
+
+  <script>
+    // Enable all dropdowns on page
+    const dropdowns = document.querySelectorAll('.dropdown:not(.is-hoverable)');
+    if (dropdowns.length > 0) {
+      dropdowns.forEach(function (el) {
+        const trigger = el.querySelector('.dropdown-trigger>button');
+        const menuId = trigger.getAttribute('aria-controls');
+        const menu = document.getElementById(menuId);
+        trigger.addEventListener('click', function (e) {
+          e.preventDefault();
+          el.classList.toggle('is-active');
+          menu.classList.toggle('is-active');
+        });
+      });
+    }
+
+    // Enable modal triggers
+    document.addEventListener('DOMContentLoaded', () => {
+      // Functions to open and close a modal
+      function openModal($el) {
+        $el.classList.add('is-active');
+      }
+
+      function closeModal($el) {
+        $el.classList.remove('is-active');
+      }
+
+      function closeAllModals() {
+        (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+          closeModal($modal);
+        });
+      }
+
+      // Add a click event on buttons to open a specific modal
+      (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+        const modal = $trigger.dataset.target;
+        const $target = document.getElementById(modal);
+
+        $trigger.addEventListener('click', () => {
+          openModal($target);
+        });
+      });
+
+      // Add a click event on various child elements to close the parent modal
+      (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+        const $target = $close.closest('.modal');
+
+        $close.addEventListener('click', () => {
+          closeModal($target);
+        });
+      });
+
+      // Add a keyboard event to close all modals
+      document.addEventListener('keydown', (event) => {
+        if (event.key === "Escape") {
+          closeAllModals();
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

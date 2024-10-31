@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pico</title>
+  <link rel="stylesheet" href="./vendor/v2.0.6/pico.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>pico (v2.0.6)</h1>
+    <br>
+
+    <!-- Accordion -->
+    <section>
+      <a name="accordion">Accordion</a>
+      <br><br>
+      <details open>
+        <summary>Accordion 1</summary>
+        <p>
+          Flamingos are known for their bright pink feathers and distinctive long necks. These
+          birds are social creatures that live in large groups, and a group of flamingos is
+          called a flamboyance. They can often be seen standing on one leg, which helps them
+          conserve body heat.
+        </p>
+      </details>
+      <hr />
+      <details>
+        <summary>Accordion 2</summary>
+        <ul>
+          <li>Kangaroos are marsupials that are native to Australia.</li>
+          <li>They are known for their powerful hind legs, which they use to hop around.</li>
+          <li>Kangaroos can’t walk backwards due to the shape of their legs and tail.</li>
+          <li>
+            Baby kangaroos, called joeys, are born very small and undeveloped and must crawl
+            into their mother’s pouch to continue developing.
+          </li>
+          <li>Some species of kangaroos can leap up to 30 feet in a single bound.</li>
+        </ul>
+      </details>
+      <br><br>
+
+      <details>
+        <summary role="button">Button</summary>
+        <p>
+          Owls are nocturnal birds of prey that are known for their distinctive hooting calls.
+          A group of owls is called a parliament, and these birds are often associated with
+          wisdom and intelligence. Owls have excellent hearing and vision, which helps them
+          hunt prey in the dark.
+        </p>
+      </details>
+      <br><br>
+
+      <details>
+        <summary role="button" class="secondary">
+          Secondary
+        </summary>
+        <p>
+          Ostriches are the largest birds in the world and are native to Africa. They have
+          long, powerful legs that they use to run at high speeds, and they can reach up to 45
+          miles per hour. An ostrich’s eye is bigger than its brain, which is unusual for
+          birds.
+        </p>
+      </details>
+      <details>
+        <summary role="button" class="contrast">
+          Contrast
+        </summary>
+        <p>
+          Koalas are arboreal marsupials that are native to Australia. They are known for
+          their cute and cuddly appearance, but they can be quite aggressive if provoked. The
+          fingerprints of koalas are so similar to those of humans that they have been
+          mistaken for crime scene prints.
+        </p>
+      </details>
+      <details>
+        <summary role="button" class="outline">
+          Primary outline
+        </summary>
+        <p>
+          Elephants are the largest land animals and highly intelligent with intricate
+          communication systems. They use infrasonic sounds to talk and have long memories.
+          They create and maintain habitats for other species, and can eat up to 300 pounds of
+          vegetation per day. Their elongated incisor teeth, called tusks, serve various
+          purposes, including digging and defense.
+        </p>
+      </details>
+      <details>
+        <summary role="button" class="outline secondary">
+          Secondary outline
+        </summary>
+        <p>
+          Crows are intelligent birds that are known for their problem-solving abilities. A
+          group of crows is called a murder, and these birds have a reputation for being
+          mischievous and sometimes even aggressive. Despite their negative image in some
+          cultures, crows are important for their role in controlling pest populations and
+          maintaining ecological balance.
+        </p>
+      </details>
+      <details>
+        <summary role="button" class="outline contrast">
+          Contrast outline
+        </summary>
+        <p>
+          Penguins are flightless birds with a tuxedo-like appearance. They swim well and can
+          hold their breath for up to 20 minutes. Penguins are social, forming tight-knit
+          communities, and some mate for life. They have adaptations to survive in cold
+          climates, including thick feathers and a layer of fat for insulation.
+        </p>
+      </details>
+    </section>
+    <br><br>
+
+    <!-- Breadcrumbs -->
+    <section>
+      <a name="breadcrumbs">Breadcrumbs</a>
+      <br>
+      <nav aria-label="breadcrumb">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li>Design</li>
+        </ul>
+      </nav>
+      <nav aria-label="breadcrumb" style="--pico-nav-breadcrumb-divider: '✨';">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li>Design</li>
+        </ul>
+      </nav>
+    </section>
+    <br><br>
+
+    <!-- Buttons -->
+    <section>
+      <a name="buttons">Buttons</a>
+      <br>
+      <button>Button</button>
+      <button class="secondary">Secondary</button>
+      <button class="contrast">Contrast</button>
+      <button class="outline">Primary</button>
+      <button class="outline secondary">Secondary</button>
+      <button class="outline contrast">Contrast</button>
+      <br><br>
+      <input type="submit">
+      <input type="button" value="Input">
+      <input type="reset">
+      <br>
+      <button disabled>Disabled</button>
+      <button class="secondary" disabled>Disabled</button>
+      <button class="contrast" disabled>Disabled</button>
+      <br><br>
+      <div role="button" tabindex="0">Div as a button</div>
+    </section>
+    <br><br>
+
+    <!-- Button group -->
+    <section>
+      <a name="button_group">Button group</a>
+      <br>
+      <div role="group">
+        <button>Button</button>
+        <button>Button</button>
+        <button>Button</button>
+      </div>
+      <br>
+      <div role="group">
+        <button aria-current="true">Active</button>
+        <button>Button</button>
+        <button>Button</button>
+      </div>
+      <br>
+      <div role="group">
+        <button>Button</button>
+        <button class="secondary">Button</button>
+        <button class="contrast">Button</button>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Cards -->
+    <section>
+      <a name="cards">Card</a>
+      <br>
+      <article>I’m a card!</article>
+      <br>
+      <article>
+        <header>Header</header>
+        Body
+        <footer>Footer</footer>
+      </article>
+    </section>
+    <br><br>
+
+    <!-- Dropdowns -->
+    <section>
+      <a name="dropdowns">Dropdowns</a>
+      <br>
+      <!-- Dropdown -->
+      <details class="dropdown">
+        <summary>Dropdown</summary>
+        <ul>
+          <li><a href="#">Solid</a></li>
+          <li><a href="#">Liquid</a></li>
+          <li><a href="#">Gas</a></li>
+          <li><a href="#">Plasma</a></li>
+        </ul>
+      </details>
+
+      <!-- Select -->
+      <select name="select" aria-label="Select" required>
+        <option selected disabled value="">Select</option>
+        <option>Solid</option>
+        <option>Liquid</option>
+        <option>Gas</option>
+        <option>Plasma</option>false
+      </select>
+      <br>
+      <!-- Radios -->
+      <details class="dropdown">
+        <summary>
+          Select a phase of matter...
+        </summary>
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="phase" value="solid" />
+              Solid
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="phase" value="liquid" />
+              Liquid
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="phase" value="gas" />
+              Gas
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="phase" value="plasma" />
+              Plasma
+            </label>
+          </li>
+        </ul>
+      </details>
+
+      <!-- Checkboxes -->
+      <details class="dropdown">
+        <summary>
+          Select phases of matter...
+        </summary>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="solid" />
+              Solid
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="liquid" />
+              Liquid
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="gas" />
+              Gas
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="plasma" />
+              Plasma
+            </label>
+          </li>
+        </ul>
+      </details>
+      <br>
+      <!-- Primary -->
+      <details class="dropdown">
+        <summary role="button">
+          Primary
+        </summary>
+        <ul>
+          <li><a href="#">Solid</a></li>
+          <li><a href="#">Liquid</a></li>
+          <li><a href="#">Gas</a></li>
+          <li><a href="#">Plasma</a></li>
+        </ul>
+      </details>
+
+      <!-- Secondary -->
+      <details class="dropdown">
+        <summary role="button" class="secondary">
+          Secondary
+        </summary>
+        <ul>
+          <li><a href="#">Solid</a></li>
+          <li><a href="#">Liquid</a></li>
+          <li><a href="#">Gas</a></li>
+          <li><a href="#">Plasma</a></li>
+        </ul>
+      </details>
+
+      <!-- Contrast -->
+      <details class="dropdown">
+        <summary role="button" class="contrast">
+          Contrast
+        </summary>
+        <ul>
+          <li><a href="#">Solid</a></li>
+          <li><a href="#">Liquid</a></li>
+          <li><a href="#">Gas</a></li>
+          <li><a href="#">Plasma</a></li>
+        </ul>
+      </details>
+
+      <!-- Primary outline -->
+      <details class="dropdown">
+        <summary role="button" class="outline">
+          Primary outline
+        </summary>
+        <ul>
+          <li><a href="#">Solid</a></li>
+          <li><a href="#">Liquid</a></li>
+          <li><a href="#">Gas</a></li>
+          <li><a href="#">Plasma</a></li>
+        </ul>
+      </details>
+
+      <!-- Secondary outline -->
+      <details class="dropdown">
+        <summary role="button" class="outline secondary">
+          Secondary outline
+        </summary>
+        <ul>
+          <li><a href="#">Solid</a></li>
+          <li><a href="#">Liquid</a></li>
+          <li><a href="#">Gas</a></li>
+          <li><a href="#">Plasma</a></li>
+        </ul>
+      </details>
+
+      <!-- Contrast outline -->
+      <details class="dropdown">
+        <summary role="button" class="outline contrast">
+          Contrast outline
+        </summary>
+        <ul>
+          <li><a href="#">Solid</a></li>
+          <li><a href="#">Liquid</a></li>
+          <li><a href="#">Gas</a></li>
+          <li><a href="#">Plasma</a></li>
+        </ul>
+      </details>
+
+      <br>
+      <details class="dropdown">
+        <summary aria-invalid="false">
+          Valid phase of matter: Solid
+        </summary>
+        <ul>
+          <li><a href="#">Solid</a></li>
+          <li><a href="#">Liquid</a></li>
+          <li><a href="#">Gas</a></li>
+          <li><a href="#">Plasma</a></li>
+        </ul>
+      </details>
+
+      <details class="dropdown">
+        <summary aria-invalid="true">
+          Debated classification: Plasma
+        </summary>
+        <ul>
+          <li><a href="#">Solid</a></li>
+          <li><a href="#">Liquid</a></li>
+          <li><a href="#">Gas</a></li>
+          <li><a href="#">Plasma</a></li>
+        </ul>
+      </details>
+
+      <br>
+      <nav>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="secondary">Services</a></li>
+          <li>
+            <details class="dropdown">
+              <summary>
+                Account
+              </summary>
+              <ul dir="rtl">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <br><br>
+
+    <!-- Forms -->
+    <section>
+      <a name="forms">Forms</a>
+      <br>
+      <form>
+        <fieldset>
+          <label>
+            First name
+            <input name="first_name" placeholder="First name" autocomplete="given-name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="Email" autocomplete="email" />
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Subscribe" />
+      </form>
+      <br>
+
+      <form>
+
+        <!-- Input inside label -->
+        <label>
+          First name
+          <input name="first_name" placeholder="First name" autocomplete="given-name" />
+        </label>
+
+        <!-- Input outside label -->
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" autocomplete="email" />
+
+      </form>
+      <br>
+
+      <input type="email" name="email" placeholder="Email" autoComplete="email" aria-label="Email"
+        aria-describedby="email-helper" />
+      <small id="email-helper">
+        We'll never share your email with anyone else.
+      </small>
+      <br>
+
+      <form>
+        <fieldset class="grid">
+          <input name="login" placeholder="Login" aria-label="Login" autocomplete="username" />
+          <input type="password" name="password" placeholder="Password" aria-label="Password"
+            autocomplete="current-password" />
+          <input type="submit" value="Log in" />
+        </fieldset>
+      </form>
+      <br>
+
+      <form>
+        <fieldset role="group">
+          <input type="email" name="email" placeholder="Enter your email" autocomplete="email" />
+          <input type="submit" value="Subscribe" />
+        </fieldset>
+      </form>
+      <br>
+
+      <input type="text" name="text" placeholder="Text" aria-label="Text">
+      <input type="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email">
+      <input type="number" name="number" placeholder="Number" aria-label="Number">
+      <input type="password" name="password" placeholder="Password" aria-label="Password">
+      <input type="tel" name="tel" placeholder="Tel" aria-label="Tel" autocomplete="tel">
+      <input type="url" name="url" placeholder="Url" aria-label="Url">
+      <input type="date" name="date" aria-label="Date">
+      <input type="datetime-local" name="datetime-local" aria-label="Datetime local">
+      <input type="month" name="month" aria-label="Month">
+      <input type="time" name="time" aria-label="Time">
+      <input type="search" name="search" placeholder="Search" aria-label="Search" />
+      <input type="color" value="#ff9500" aria-label="Color picker">
+      <input type="file">
+      <input type="text" name="text" placeholder="Disabled" aria-label="Disabled input" disabled>
+      <input type="text" name="text" value="Read-only" aria-label="Read-only input" readonly>
+      <input type="text" name="valid" value="Valid" aria-invalid="false">
+
+      <input type="text" name="invalid" value="Invalid" aria-invalid="true">
+
+      <input type="text" name="valid" value="Valid" aria-invalid="false" aria-describedby="valid-helper">
+      <small id="valid-helper">Looks good!</small>
+
+      <input type="text" name="invalid" value="Invalid" aria-invalid="true" aria-describedby="invalid-helper">
+      <small id="invalid-helper">
+        Please provide a valid value!
+      </small>
+      <br>
+      <textarea name="bio" placeholder="Write a professional short bio..." aria-label="Professional short bio">
+</textarea>
+      <textarea name="disabled" disabled>
+  Disabled
+</textarea>
+      <textarea name="read-only" readonly>
+  Read-only
+</textarea>
+      <textarea name="valid" aria-invalid="false">
+  Valid
+</textarea>
+
+      <textarea name="invalid" aria-invalid="true">
+  Invalid
+</textarea>
+      <textarea name="valid" aria-invalid="false" aria-describedby="valid-helper">
+  Valid
+</textarea>
+      <small id="valid-helper">Looks good!</small>
+
+      <textarea name="invalid" aria-invalid="true" aria-describedby="invalid-helper">
+  Invalid
+</textarea>
+      <small id="invalid-helper">
+        Please provide a valid value!
+      </small>
+
+      <select name="favorite-cuisine" aria-label="Select your favorite cuisine..." required>
+        <option selected disabled value="">
+          Select your favorite cuisine...
+        </option>
+        <option>Italian</option>
+        <option>Japanese</option>
+        <option>Indian</option>
+        <option>Thai</option>
+        <option>French</option>
+      </select>
+
+      <select aria-label="Select your favorite snacks..." multiple size="6">
+        <option disabled>
+          Select your favorite snacks...
+        </option>
+        <option>Cheese</option>
+        <option selected>Fruits</option>
+        <option selected>Nuts</option>
+        <option>Chocolate</option>
+        <option>Crackers</option>
+      </select>
+
+      <select name="meal-type" aria-label="Select a meal type..." disabled>
+        <option>Select a meal type...</option>
+        <option>...</option>
+      </select>
+
+      <select name="pizza-topping" aria-label="Select your favorite pizza topping..." aria-invalid="false">
+        <option disabled="">Select your favorite pizza topping...</option>
+        <option selected="">Pepperoni</option>
+        <option>Mushrooms</option>
+        <option>Onions</option>
+        <option>Green Peppers</option>
+        <option>Olives</option>
+      </select>
+      <small>
+        Please select your favorite pizza topping!
+      </small>
+
+      <select name="pizza-topping" aria-label="Select your favorite pizza topping..." required="" aria-invalid="true">
+        <option disabled="" value="" selected="">Select your favorite pizza topping...</option>
+        <option>Pepperoni</option>
+        <option>Mushrooms</option>
+        <option>Onions</option>
+        <option>Green Peppers</option>
+        <option>Olives</option>
+      </select>
+      <small>Please select your favorite pizza topping!</small>
+
+      <div class="grid">
+        <details class="dropdown">
+          <summary>Select your favorite French dessert...</summary>
+          <ul>
+            <li><label><input type="radio" name="french-dessert" value="Crème brûlée">Crème brûlée</label></li>
+            <li><label><input type="radio" name="french-dessert" value="Macarons">Macarons</label></li>
+            <li><label><input type="radio" name="french-dessert" value="Tarte tatin">Tarte tatin</label></li>
+            <li><label><input type="radio" name="french-dessert" value="Éclair">Éclair</label></li>
+          </ul>
+        </details>
+      </div>
+
+      <br><br>
+
+      <fieldset>
+        <legend>Language preferences:</legend>
+        <label>
+          <input type="checkbox" name="english" checked />
+          English
+        </label>
+        <label>
+          <input type="checkbox" name="french" checked />
+          French
+        </label>
+        <label>
+          <input type="checkbox" name="mandarin" />
+          Mandarin
+        </label>
+        <label>
+          <input type="checkbox" name="thai" />
+          Thai
+        </label>
+        <label aria-disabled="true">
+          <input type="checkbox" name="dothraki" disabled />
+          Dothraki
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Language preferences:</legend>
+        <input type="checkbox" id="hindi" name="hindi" checked />
+        <label htmlFor="hindi">Hindi</label>
+        <input type="checkbox" id="swahili" name="swahili" />
+        <label htmlFor="swahili">Swahili</label>
+        <input type="checkbox" id="navi" name="navi" disabled />
+        <label htmlFor="navi" aria-disabled="true">Na'vi</label>
+      </fieldset>
+
+      <label>
+        <input type="checkbox" id="indeterminate" name="indeterminate" />
+        Indeterminate
+      </label>
+
+      <script>
+        const checkbox = document.querySelector('#indeterminate');
+        checkbox.indeterminate = true;
+      </script>
+
+      <label>
+        <input type="checkbox" name="valid" aria-invalid="false" />
+        Valid
+      </label>
+
+      <label>
+        <input type="checkbox" name="invalid" aria-invalid="true" />
+        Invalid
+      </label>
+
+      <br><br>
+
+      <fieldset>
+        <legend>Language preference:</legend>
+        <label>
+          <input type="radio" name="language" checked />
+          English
+        </label>
+        <label>
+          <input type="radio" name="language" />
+          French
+        </label>
+        <label>
+          <input type="radio" name="language" />
+          Mandarin
+        </label>
+        <label>
+          <input type="radio" name="language" />
+          Thai
+        </label>
+        <label aria-disabled="true">
+          <input type="radio" name="language" disabled />
+          Dothraki
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Second language:</legend>
+        <input type="radio" id="hindi" name="second-language" checked />
+        <label htmlFor="hindi">Hindi</label>
+        <input type="radio" id="swahili" name="second-language" />
+        <label htmlFor="swahili">Swahili</label>
+        <input type="radio" id="navi" name="second-language" disabled />
+        <label htmlFor="navi" aria-disabled="true">Na'vi</label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          <input type="radio" name="validation-states" aria-invalid="false" />
+          Valid
+        </label>
+
+        <label>
+          <input type="radio" name="validation-states" aria-invalid="true" />
+          Invalid
+        </label>
+      </fieldset>
+
+      <br><br>
+
+      <fieldset>
+        <label>
+          <input name="terms" type="checkbox" role="switch" />
+          I agree to the Terms
+        </label>
+        <label>
+          <input name="opt-in" type="checkbox" role="switch" checked />
+          Receive news and offers
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          <input name="publish" type="checkbox" role="switch" disabled />
+          Publish on my profile
+        </label>
+        <label>
+          <input name="change-password" type="checkbox" role="switch" checked disabled />
+          Change my password at next login
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>
+          <input name="2fa" type="checkbox" role="switch" aria-invalid="false" />
+          Enable two-factor authentication
+        </label>
+        <label>
+          <input name="subscription" type="checkbox" role="switch" aria-invalid="true" />
+          Automatic subscription renewal
+        </label>
+      </fieldset>
+
+      <br><br>
+
+      <label>
+        Brightness
+        <input type="range" />
+      </label>
+
+      <label>
+        Contrast
+        <input type="range" value="40" />
+      </label>
+    </section>
+    <br><br>
+
+    <!-- Join / Group -->
+    <section>
+      <a name="join_group">Join / Group</a>
+      <br>
+      <form>
+        <fieldset role="group">
+          <input name="email" type="email" placeholder="Enter your email" autocomplete="email" />
+          <input type="submit" value="Subscribe" />
+        </fieldset>
+      </form>
+
+      <form>
+        <fieldset role="group">
+          <input name="email" type="email" placeholder="Email" autocomplete="email" />
+          <input name="password" type="password" placeholder="Password" />
+          <input type="submit" value="Log in" />
+        </fieldset>
+      </form>
+
+      <form role="search">
+        <input name="search" type="search" placeholder="Search" />
+        <input type="submit" value="Search" />
+      </form>
+
+      <div role="group">
+        <button>Button</button>
+        <button>Button</button>
+        <button>Button</button>
+      </div>
+      <br>
+      <div role="group">
+        <button aria-current="true">Active</button>
+        <button>Button</button>
+        <button>Button</button>
+      </div>
+      <br>
+      <div role="group">
+        <button>Button</button>
+        <button class="secondary">Button</button>
+        <button class="contrast">Button</button>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Kbd -->
+    <section>
+      <a name="kbd">Kbd</a>
+      <br>
+      <kbd>Ctrl + S</kbd>
+    </section>
+    <br><br>
+
+    <!-- Link -->
+    <section>
+      <a name="link">Link</a>
+      <br>
+      <a href="#">Primary</a>
+      <a href="#" class="secondary">Secondary</a>
+      <a href="#" class="contrast">Contrast</a>
+      <br>
+      <a href="#">Regular link</a>
+      <a href="#" aria-current="page">Active link</a>
+      <a href="#">Regular link</a>
+    </section>
+    <br><br>
+
+    <!-- Modal -->
+    <section>
+      <a name="modal">Modal</a>
+      <br>
+      <section id="modal">
+        <button class="contrast" data-target="modal-example" onclick="toggleModal(event)">
+          Launch demo modal
+        </button>
+      </section>
+      <dialog id="modal-example">
+        <article>
+          <header>
+            <button aria-label="Close" rel="prev" data-target="modal-example" onclick="toggleModal(event)"></button>
+            <h3>🗓️ Confirm your action!</h3>
+          </header>
+          <p>
+            Cras sit amet maximus risus. Pellentesque sodales odio sit amet augue finibus
+            pellentesque. Nullam finibus risus non semper euismod.
+          </p>
+          <footer>
+            <button role="button" class="secondary" data-target="modal-example" onclick="toggleModal(event)">
+              Cancel</button><button autofocus data-target="modal-example" onclick="toggleModal(event)">
+              Confirm
+            </button>
+          </footer>
+        </article>
+      </dialog>
+    </section>
+    <br><br>
+
+    <!-- Navbar -->
+    <section>
+      <a name="navbar">Navbar</a>
+      <br>
+      <nav>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+        </ul>
+      </nav>
+      <br>
+      <nav>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="contrast">About</a></li>
+          <li><a href="#" class="contrast">Services</a></li>
+          <li><a href="#" class="contrast">Products</a></li>
+        </ul>
+      </nav>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="#" class="secondary">...</a></li>
+        </ul>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="secondary">...</a></li>
+        </ul>
+      </nav>
+      <br>
+      <nav>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><button class="secondary">Products</button></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><strong>Acme Corp</strong></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="secondary">Services</a></li>
+          <li>
+            <details class="dropdown">
+              <summary>
+                Account
+              </summary>
+              <ul dir="rtl">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <br><br>
+
+    <!-- Progress -->
+    <section>
+      <a name="progress">Progress</a>
+      <br>
+      <progress value="72" max="100"></progress>
+      <br>
+      <progress></progress>
+    </section>
+    <br><br>
+
+    <!-- Spinners -->
+    <section>
+      <a name="spinners">Spinners</a>
+      <br>
+      <article aria-busy="true"></article>
+      <br>
+      <span aria-busy="true">Generating your link...</span>
+      <br><br>
+      <div class="grid" id="buttons">
+        <button aria-busy="true" aria-label="Please wait…"></button>
+        <button aria-busy="true" aria-label="Please wait…" class="secondary"></button>
+        <button aria-busy="true" aria-label="Please wait…" class="contrast"></button>
+      </div>
+      <br>
+      <div class="grid" id="outline-buttons">
+        <button aria-busy="true" class="outline">Please wait…</button>
+        <button aria-busy="true" class="outline secondary">Please wait…</button>
+        <button aria-busy="true" class="outline contrast">Please wait…</button>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Tables -->
+    <section>
+      <a name="tables">Tables</a>
+      <br>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Planet</th>
+            <th scope="col">Diameter (km)</th>
+            <th scope="col">Distance to Sun (AU)</th>
+            <th scope="col">Orbit (days)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Mercury</th>
+            <td>4,880</td>
+            <td>0.39</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <th scope="row">Venus</th>
+            <td>12,104</td>
+            <td>0.72</td>
+            <td>225</td>
+          </tr>
+          <tr>
+            <th scope="row">Earth</th>
+            <td>12,742</td>
+            <td>1.00</td>
+            <td>365</td>
+          </tr>
+          <tr>
+            <th scope="row">Mars</th>
+            <td>6,779</td>
+            <td>1.52</td>
+            <td>687</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row">Average</th>
+            <td>9,126</td>
+            <td>0.91</td>
+            <td>341</td>
+          </tr>
+        </tfoot>
+      </table>
+      <br>
+      <div class="overflow-auto">
+        <table>
+          <thead data-theme="dark">
+            <tr>
+              <th scope="col">Planet</th>
+              <th scope="col">Diam. (km)</th>
+              <th scope="col">Dist. to Sun (AU)</th>
+              <th scope="col">Grav. (m/s²)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Mercury</th>
+              <td>4,880</td>
+              <td>0.39</td>
+              <td>3.7</td>
+            </tr>
+            <tr>
+              <th scope="row">Venus</th>
+              <td>12,104</td>
+              <td>0.72</td>
+              <td>8.9</td>
+            </tr>
+            <tr>
+              <th scope="row">Earth</th>
+              <td>12,742</td>
+              <td>1.00</td>
+              <td>9.8</td>
+            </tr>
+            <tr>
+              <th scope="row">Mars</th>
+              <td>6,779</td>
+              <td>1.52</td>
+              <td>3.7</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">Average</th>
+              <td>9,126</td>
+              <td>0.91</td>
+              <td>6.5</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <br>
+      <div class="overflow-auto">
+        <table class="striped">
+          <thead>
+            <tr>
+              <th scope="col">Planet</th>
+              <th scope="col">Diam. (km)</th>
+              <th scope="col">Dist. to Sun (AU)</th>
+              <th scope="col">Grav. (m/s²)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Mercury</th>
+              <td>4,880</td>
+              <td>0.39</td>
+              <td>3.7</td>
+            </tr>
+            <tr>
+              <th scope="row">Venus</th>
+              <td>12,104</td>
+              <td>0.72</td>
+              <td>8.9</td>
+            </tr>
+            <tr>
+              <th scope="row">Earth</th>
+              <td>12,742</td>
+              <td>1.00</td>
+              <td>9.8</td>
+            </tr>
+            <tr>
+              <th scope="row">Mars</th>
+              <td>6,779</td>
+              <td>1.52</td>
+              <td>3.7</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">Average</th>
+              <td>9,126</td>
+              <td>0.91</td>
+              <td>6.5</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- Tooltips -->
+    <section>
+      <a name="tooltips">Tooltips</a>
+      <br>
+      <p>Tooltip on a <a href="#" data-tooltip="Tooltip">link</a></p>
+      <p>Tooltip on <em data-tooltip="Tooltip">inline element</em></p>
+      <p><button data-tooltip="Tooltip">Tooltip on a button</button></p>
+      <br>
+      <button data-tooltip="Top">Top</button>
+      <button data-tooltip="Right" data-placement="right">Right</button>
+      <button data-tooltip="Bottom" data-placement="bottom">Bottom</button>
+      <button data-tooltip="Left" data-placement="left">Left</button>
+    </section>
+    <br><br>
+
+    <!-- Typography -->
+    <section>
+      <a name="typography">Typography</a>
+      <br>
+      <div class="overflow-auto">
+        <table class="striped" id="responsive-font-sizes">
+          <caption>Responsive font sizes</caption>
+          <thead>
+            <tr>
+              <th>Breakpoint</th>
+              <th><span data-tooltip="Extra small < 576px" data-placement="bottom">xs</span></th>
+              <th><span data-tooltip="Small ≥ 576px" data-placement="bottom">sm</span></th>
+              <th><span data-tooltip="Medium ≥ 768px" data-placement="bottom">md</span></th>
+              <th><span data-tooltip="Large ≥ 1024px" data-placement="bottom">lg</span></th>
+              <th><span data-tooltip="Extra large ≥ 1280px" data-placement="bottom">xl</span></th>
+              <th><span data-tooltip="Extra extra large ≥ 1536px" data-placement="bottom">xxl</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Base</th>
+              <td><span data-tooltip="100% * 16px" data-placement="bottom">16<small>px</small></span></td>
+              <td><span data-tooltip="106.25% * 16px" data-placement="bottom">17<small>px</small></span></td>
+              <td><span data-tooltip="112.5% * 16px" data-placement="bottom">18<small>px</small></span></td>
+              <td><span data-tooltip="118.75% * 16px" data-placement="bottom">19<small>px</small></span></td>
+              <td><span data-tooltip="125% * 16px" data-placement="bottom">20<small>px</small></span></td>
+              <td><span data-tooltip="131.25% * 16px" data-placement="bottom">21<small>px</small></span></td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h1</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><span data-tooltip="100% * 2rem * 16px" data-placement="bottom">32<small>px</small></span></td>
+              <td><span data-tooltip="106.25% * 2rem * 16px" data-placement="bottom">34<small>px</small></span></td>
+              <td><span data-tooltip="112.5% * 2rem * 16px" data-placement="bottom">36<small>px</small></span></td>
+              <td><span data-tooltip="118.75% * 2rem * 16px" data-placement="bottom">38<small>px</small></span></td>
+              <td><span data-tooltip="125% * 2rem * 16px" data-placement="bottom">40<small>px</small></span></td>
+              <td><span data-tooltip="131.25% * 2rem * 16px" data-placement="bottom">42<small>px</small></span></td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h2</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><span data-tooltip="100% * 1.75rem * 16px" data-placement="bottom">28<small>px</small></span></td>
+              <td><span data-tooltip="106.25% * 1.75rem * 16px" data-placement="bottom">29.75<small>px</small></span>
+              </td>
+              <td><span data-tooltip="112.5% * 1.75rem * 16px" data-placement="bottom">31.5<small>px</small></span></td>
+              <td><span data-tooltip="118.75% * 1.75rem * 16px" data-placement="bottom">33.25<small>px</small></span>
+              </td>
+              <td><span data-tooltip="125% * 1.75rem * 16px" data-placement="bottom">35<small>px</small></span></td>
+              <td><span data-tooltip="131.25% * 1.75rem * 16px" data-placement="bottom">36.75<small>px</small></span>
+              </td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h3</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><span data-tooltip="100% * 1.5rem * 16px" data-placement="bottom">24<small>px</small></span></td>
+              <td><span data-tooltip="106.25% * 1.5rem * 16px" data-placement="bottom">25.5<small>px</small></span></td>
+              <td><span data-tooltip="112.5% * 1.5rem * 16px" data-placement="bottom">27<small>px</small></span></td>
+              <td><span data-tooltip="118.75% * 1.5rem * 16px" data-placement="bottom">28.5<small>px</small></span></td>
+              <td><span data-tooltip="125% * 1.5rem * 16px" data-placement="bottom">30<small>px</small></span></td>
+              <td><span data-tooltip="131.25% * 1.5rem * 16px" data-placement="bottom">31.5<small>px</small></span></td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h4</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><span data-tooltip="100% * 1.25rem * 16px" data-placement="bottom">20<small>px</small></span></td>
+              <td><span data-tooltip="106.25% * 1.25rem * 16px" data-placement="bottom">21.25<small>px</small></span>
+              </td>
+              <td><span data-tooltip="112.5% * 1.25rem * 16px" data-placement="bottom">22.5<small>px</small></span></td>
+              <td><span data-tooltip="118.75% * 1.25rem * 16px" data-placement="bottom">23.75<small>px</small></span>
+              </td>
+              <td><span data-tooltip="125% * 1.25rem * 16px" data-placement="bottom">25<small>px</small></span></td>
+              <td><span data-tooltip="131.25% * 1.25rem * 16px" data-placement="bottom">26.25<small>px</small></span>
+              </td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h5</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><span data-tooltip="100% * 1.125rem * 16px" data-placement="bottom">18<small>px</small></span></td>
+              <td><span data-tooltip="106.25% * 1.125rem * 16px" data-placement="bottom">19.125<small>px</small></span>
+              </td>
+              <td><span data-tooltip="112.5% * 1.125rem * 16px" data-placement="bottom">20.25<small>px</small></span>
+              </td>
+              <td><span data-tooltip="118.75% * 1.125rem * 16px" data-placement="bottom">21.375<small>px</small></span>
+              </td>
+              <td><span data-tooltip="125% * 1.125rem * 16px" data-placement="bottom">22.5<small>px</small></span></td>
+              <td><span data-tooltip="131.25% * 1.125rem * 16px" data-placement="bottom">23.625<small>px</small></span>
+              </td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h6</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><span data-tooltip="100% * 1rem * 16px" data-placement="bottom">16<small>px</small></span></td>
+              <td><span data-tooltip="106.25% * 1rem * 16px" data-placement="bottom">17<small>px</small></span></td>
+              <td><span data-tooltip="112.5% * 1rem * 16px" data-placement="bottom">18<small>px</small></span></td>
+              <td><span data-tooltip="118.75% * 1rem * 16px" data-placement="bottom">19<small>px</small></span></td>
+              <td><span data-tooltip="125% * 1rem * 16px" data-placement="bottom">20<small>px</small></span></td>
+              <td><span data-tooltip="131.25% * 1rem * 16px" data-placement="bottom">21<small>px</small></span></td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">small</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><span data-tooltip="100% * 0.875em * 16px" data-placement="bottom">14<small>px</small></span></td>
+              <td><span data-tooltip="106.25% * 0.875em * 16px" data-placement="bottom">14.875<small>px</small></span>
+              </td>
+              <td><span data-tooltip="112.5% * 0.875em * 16px" data-placement="bottom">15.75<small>px</small></span>
+              </td>
+              <td><span data-tooltip="118.75% * 0.875em * 16px" data-placement="bottom">16.625<small>px</small></span>
+              </td>
+              <td><span data-tooltip="125% * 0.875em * 16px" data-placement="bottom">17.5<small>px</small></span></td>
+              <td><span data-tooltip="131.25% * 0.875em * 16px" data-placement="bottom">18.375<small>px</small></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <div class="overflow-auto">
+        <table class="striped" id="responsive-font-sizes">
+          <caption>Responsive font sizes</caption>
+          <thead>
+            <tr>
+              <th>Breakpoint</th>
+              <th><span data-tooltip="Extra small < 576px" data-placement="bottom">xs</span></th>
+              <th><span data-tooltip="Small ≥ 576px" data-placement="bottom">sm</span></th>
+              <th><span data-tooltip="Medium ≥ 768px" data-placement="bottom">md</span></th>
+              <th><span data-tooltip="Large ≥ 1024px" data-placement="bottom">lg</span></th>
+              <th><span data-tooltip="Extra large ≥ 1280px" data-placement="bottom">xl</span></th>
+              <th><span data-tooltip="Extra extra large ≥ 1536px" data-placement="bottom">xxl</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Base</th>
+              <td>100<small>%</small></td>
+              <td>106.25<small>%</small></td>
+              <td>112.5<small>%</small></td>
+              <td>118.75<small>%</small></td>
+              <td>125<small>%</small></td>
+              <td>131.25<small>%</small></td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h1</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><small>x&nbsp;</small>2<small>rem</small></td>
+              <td><small>x&nbsp;</small>2<small>rem</small></td>
+              <td><small>x&nbsp;</small>2<small>rem</small></td>
+              <td><small>x&nbsp;</small>2<small>rem</small></td>
+              <td><small>x&nbsp;</small>2<small>rem</small></td>
+              <td><small>x&nbsp;</small>2<small>rem</small></td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h2</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><small>x&nbsp;</small>1.75<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.75<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.75<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.75<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.75<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.75<small>rem</small></td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h3</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><small>x&nbsp;</small>1.5<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.5<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.5<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.5<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.5<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.5<small>rem</small></td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h4</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><small>x&nbsp;</small>1.25<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.25<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.25<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.25<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.25<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.25<small>rem</small></td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h5</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><small>x&nbsp;</small>1.125<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.125<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.125<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.125<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.125<small>rem</small></td>
+              <td><small>x&nbsp;</small>1.125<small>rem</small></td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">h6</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><small>x&nbsp;</small>1<small>rem</small></td>
+              <td><small>x&nbsp;</small>1<small>rem</small></td>
+              <td><small>x&nbsp;</small>1<small>rem</small></td>
+              <td><small>x&nbsp;</small>1<small>rem</small></td>
+              <td><small>x&nbsp;</small>1<small>rem</small></td>
+              <td><small>x&nbsp;</small>1<small>rem</small></td>
+            </tr>
+            <tr>
+              <th><code
+                  class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">small</span><span class="token tag punctuation">&gt;</span></code>
+              </th>
+              <td><small>x&nbsp;</small>0.875<small>em</small></td>
+              <td><small>x&nbsp;</small>0.875<small>em</small></td>
+              <td><small>x&nbsp;</small>0.875<small>em</small></td>
+              <td><small>x&nbsp;</small>0.875<small>em</small></td>
+              <td><small>x&nbsp;</small>0.875<small>em</small></td>
+              <td><small>x&nbsp;</small>0.875<small>em</small></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+      <br>
+      <hgroup>
+        <h2>Get inspired with CSS</h2>
+        <p>How to use CSS to add glam to your Website?</p>
+      </hgroup>
+      <br>
+      <div class="grid">
+        <div>
+          <p><abbr title="Abbreviation">Abbr.</abbr> <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">abbr</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+          <p><strong>Bold</strong> <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">strong</span><span class="token tag punctuation">&gt;</span></code>
+            <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">b</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+          <p><em>Italic</em> <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">i</span><span class="token tag punctuation">&gt;</span></code>
+            <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">em</span><span class="token tag punctuation">&gt;</span></code>
+            <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">cite</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+          <p><del>Deleted</del> <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">del</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+          <p><ins>Inserted</ins> <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">ins</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+          <p><kbd>Ctrl + S</kbd> <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">kbd</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+        </div>
+        <div>
+          <p><mark>Highlighted</mark> <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">mark</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+          <p><s>Strikethrough</s> <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">s</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+          <p><small>Small </small><code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">small</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+          <p>Text <sub>Sub</sub> <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">sub</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+          <p>Text <sup>Sup</sup> <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">sup</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+          <p><u>Underline</u> <code
+              class="language-html"><span class="token tag punctuation">&lt;</span><span class="token tag">u</span><span class="token tag punctuation">&gt;</span></code>
+          </p>
+        </div>
+      </div>
+      <br>
+      <blockquote>
+        “Design is a funny word. Some people think
+        design means how it looks. But of course, if
+        you dig deeper, it's really how it works.”
+        <footer>
+          <cite>— Steve Jobs</cite>
+        </footer>
+      </blockquote>
+      <br>
+      <p>Paragraph before the horizontal line.</p>
+      <hr />
+      <p>Paragraph after the horizontal line.</p>
+    </section>
+    <br><br>
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <script>
+    /*
+ * Modal
+ *
+ * Pico.css - https://picocss.com
+ * Copyright 2019-2024 - Licensed under MIT
+ */
+
+    // Config
+    const isOpenClass = "modal-is-open";
+    const openingClass = "modal-is-opening";
+    const closingClass = "modal-is-closing";
+    const scrollbarWidthCssVar = "--pico-scrollbar-width";
+    const animationDuration = 400; // ms
+    let visibleModal = null;
+
+    // Toggle modal
+    const toggleModal = (event) => {
+      event.preventDefault();
+      const modal = document.getElementById(event.currentTarget.dataset.target);
+      if (!modal) return;
+      modal && (modal.open ? closeModal(modal) : openModal(modal));
+    };
+
+    // Open modal
+    const openModal = (modal) => {
+      const { documentElement: html } = document;
+      const scrollbarWidth = getScrollbarWidth();
+      if (scrollbarWidth) {
+        html.style.setProperty(scrollbarWidthCssVar, `${scrollbarWidth}px`);
+      }
+      html.classList.add(isOpenClass, openingClass);
+      setTimeout(() => {
+        visibleModal = modal;
+        html.classList.remove(openingClass);
+      }, animationDuration);
+      modal.showModal();
+    };
+
+    // Close modal
+    const closeModal = (modal) => {
+      visibleModal = null;
+      const { documentElement: html } = document;
+      html.classList.add(closingClass);
+      setTimeout(() => {
+        html.classList.remove(closingClass, isOpenClass);
+        html.style.removeProperty(scrollbarWidthCssVar);
+        modal.close();
+      }, animationDuration);
+    };
+
+    // Close with a click outside
+    document.addEventListener("click", (event) => {
+      if (visibleModal === null) return;
+      const modalContent = visibleModal.querySelector("article");
+      const isClickInside = modalContent.contains(event.target);
+      !isClickInside && closeModal(visibleModal);
+    });
+
+    // Close with Esc key
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && visibleModal) {
+        closeModal(visibleModal);
+      }
+    });
+
+    // Get scrollbar width
+    const getScrollbarWidth = () => {
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      return scrollbarWidth;
+    };
+
+    // Is scrollbar visible
+    const isScrollbarVisible = () => {
+      return document.body.scrollHeight > screen.height;
+    };
+
+  </script>
+</body>
+
+</html>

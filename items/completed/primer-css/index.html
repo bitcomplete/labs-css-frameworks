@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primer CSS</title>
+  <link href="./vendor/v21.4.0/primer.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-xl">
+    <h1>Primer CSS (v21.4.0)</h1>
+    <br>
+
+    <!-- Badge / IssueLabel -->
+    <section>
+      <a name="badge" class="h3">Badge / IssueLabel</a>
+      <br>
+      <span class="IssueLabel color-bg-accent-emphasis color-fg-on-emphasis mr-1">Primer</span>
+      <span class="IssueLabel color-bg-danger-emphasis color-fg-on-emphasis mr-1">bug 🐛</span>
+      <span class="IssueLabel color-bg-success-emphasis color-fg-on-emphasis mr-1">help wanted</span>
+      <span class="IssueLabel color-bg-attention-emphasis color-fg-on-emphasis mr-1">🚂 deploy: train</span>
+      <br><br>
+      <span class="IssueLabel color-bg-accent-emphasis color-fg-on-emphasis mr-1 IssueLabel--big">Primer</span>
+      <span class="IssueLabel color-bg-danger-emphasis color-fg-on-emphasis mr-1 IssueLabel--big">bug 🐛</span>
+      <span class="IssueLabel color-bg-success-emphasis color-fg-on-emphasis mr-1 IssueLabel--big">help wanted</span>
+      <span class="IssueLabel color-bg-attention-emphasis color-fg-on-emphasis mr-1 IssueLabel--big">🚂 deploy:
+        train</span>
+    </section>
+    <br><br>
+
+    <!-- Breadcrumbs -->
+    <section>
+      <a name="breadcrumbs" class="h3">Breadcrumbs</a>
+      <br>
+      <a href="#" class="link-mktg arrow-target-mktg text-semibold f3-mktg">Call to action<svg
+          xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16"
+          viewBox="0 0 16 16" fill="none">
+          <path fill="currentColor"
+            d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z">
+          </path>
+          <path stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg></a>
+      <a href="#" class="link-mktg arrow-target-mktg text-semibold f3-mktg">Call to action<svg
+          xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16"
+          viewBox="0 0 16 16" fill="none">
+          <path fill="currentColor"
+            d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z">
+          </path>
+          <path stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg></a>
+      <br>
+      <a href="#" class="link-mktg arrow-target-mktg text-semibold f4-mktg">Call to action<svg
+          xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16"
+          viewBox="0 0 16 16" fill="none">
+          <path fill="currentColor"
+            d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z">
+          </path>
+          <path stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg></a>
+      <a href="#" class="link-mktg arrow-target-mktg text-semibold f4-mktg">Call to action<svg
+          xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16"
+          viewBox="0 0 16 16" fill="none">
+          <path fill="currentColor"
+            d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z">
+          </path>
+          <path stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg></a>
+      <br>
+      <a href="#" class="link-mktg arrow-target-mktg link-emphasis-mktg text-semibold f3-mktg">Call to action<svg
+          xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16"
+          viewBox="0 0 16 16" fill="none">
+          <path fill="currentColor"
+            d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z">
+          </path>
+          <path stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg></a>
+      <br>
+      <a href="#" class="link-mktg arrow-target-mktg text-semibold f3-mktg color-fg-default mr-4">Call to action<svg
+          xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16"
+          viewBox="0 0 16 16" fill="none">
+          <path fill="currentColor"
+            d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z">
+          </path>
+          <path stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg></a>
+      <a href="#" class="link-mktg arrow-target-mktg link-emphasis-mktg text-semibold f4-mktg color-fg-default">Call to
+        action<svg xmlns="http://www.w3.org/2000/svg" class="octicon arrow-symbol-mktg" width="16" height="16"
+          viewBox="0 0 16 16" fill="none">
+          <path fill="currentColor"
+            d="M7.28033 3.21967C6.98744 2.92678 6.51256 2.92678 6.21967 3.21967C5.92678 3.51256 5.92678 3.98744 6.21967 4.28033L7.28033 3.21967ZM11 8L11.5303 8.53033C11.8232 8.23744 11.8232 7.76256 11.5303 7.46967L11 8ZM6.21967 11.7197C5.92678 12.0126 5.92678 12.4874 6.21967 12.7803C6.51256 13.0732 6.98744 13.0732 7.28033 12.7803L6.21967 11.7197ZM6.21967 4.28033L10.4697 8.53033L11.5303 7.46967L7.28033 3.21967L6.21967 4.28033ZM10.4697 7.46967L6.21967 11.7197L7.28033 12.7803L11.5303 8.53033L10.4697 7.46967Z">
+          </path>
+          <path stroke="currentColor" d="M1.75 8H11" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg></a>
+    </section>
+    <br><br>
+
+    <!-- Buttons -->
+    <section>
+      <a name="buttons" class="h3">Buttons</a>
+      <br>
+      <button class="btn mr-2" type="button">
+        Default
+      </button>
+      <button class="btn btn-primary mr-2" type="button">
+        Primary
+      </button>
+      <button class="btn btn-outline mr-2" type="button">
+        Outline
+      </button>
+      <button class="btn btn-danger" type="button">
+        Danger
+      </button>
+      <br><br>
+      <button class="btn mr-2" type="button" aria-selected="true">
+        Default
+      </button>
+      <button class="btn btn-primary mr-2" type="button" aria-selected="true">
+        Primary
+      </button>
+      <button class="btn btn-outline mr-2" type="button" aria-selected="true">
+        Outline
+      </button>
+      <button class="btn btn-danger" type="button" aria-selected="true">
+        Danger
+      </button>
+      <br><br>
+      <button class="btn mr-2" type="button" disabled>
+        Default
+      </button>
+      <button class="btn btn-primary mr-2" type="button" disabled>
+        Primary
+      </button>
+      <button class="btn btn-outline mr-2" type="button" disabled>
+        Outline
+      </button>
+      <button class="btn btn-danger" type="button" disabled>
+        Danger
+      </button>
+      <br><br>
+      <button class="btn-link mr-2" type="button">
+        Link
+      </button>
+      <button class="btn btn-invisible mr-2" type="button">
+        Invisible
+      </button>
+      <span class="hidden-text-expander">
+        <button type="button" class="ellipsis-expander" aria-expanded="false">
+          &hellip;
+        </button>
+      </span>
+      <br><br>
+      <button class="btn btn-sm mr-2" type="button">
+        Small
+      </button>
+      <button class="btn mr-2" type="button">
+        Default
+      </button>
+      <button class="btn btn-large mr-2" type="button">
+        Large
+      </button>
+      <br><br>
+      <button class="btn btn-block mb-2" type="button">
+        Block button
+      </button>
+      <button class="btn btn-sm btn-block" type="button">
+        Small block button
+      </button>
+      <br><br>
+      <button class="btn mr-2" type="button">
+        <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+          <path fill-rule="evenodd"
+            d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z">
+          </path>
+        </svg>
+      </button>
+
+      <button class="btn btn-primary mr-2" type="button">
+        <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+          <path fill-rule="evenodd"
+            d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z">
+          </path>
+        </svg>
+        <span>Clone</span>
+        <span class="dropdown-caret"></span>
+      </button>
+
+      <button class="btn btn-danger mr-2" type="button">
+        <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+          <path fill-rule="evenodd"
+            d="M6.5 1.75a.25.25 0 01.25-.25h2.5a.25.25 0 01.25.25V3h-3V1.75zm4.5 0V3h2.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75zM4.496 6.675a.75.75 0 10-1.492.15l.66 6.6A1.75 1.75 0 005.405 15h5.19c.9 0 1.652-.681 1.741-1.576l.66-6.6a.75.75 0 00-1.492-.149l-.66 6.6a.25.25 0 01-.249.225h-5.19a.25.25 0 01-.249-.225l-.66-6.6z">
+          </path>
+        </svg>
+        <span>Delete</span>
+      </button>
+
+      <button class="btn btn-outline mr-2" type="button">
+        <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+          <path fill-rule="evenodd"
+            d="M1.75 2.5h12.5a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5a.25.25 0 01.25-.25zM14.25 1H1.75A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z">
+          </path>
+        </svg>
+        <span>Open in Desktop</span>
+      </button>
+
+      <button class="btn" type="button" aria-label="Pencil icon">
+        <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+          <path fill-rule="evenodd"
+            d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z">
+          </path>
+        </svg>
+      </button>
+      <br><br>
+
+      <button class="btn-octicon" type="button" aria-label="Desktop icon">
+        <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+          <path fill-rule="evenodd"
+            d="M1.75 2.5h12.5a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5a.25.25 0 01.25-.25zM14.25 1H1.75A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z">
+          </path>
+        </svg>
+      </button>
+
+      <button class="btn-octicon" type="button" aria-label="Pencil icon">
+        <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+          <path fill-rule="evenodd"
+            d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z">
+          </path>
+        </svg>
+      </button>
+
+      <button class="btn-octicon btn-octicon-danger" type="button" aria-label="Trashcan icon">
+        <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+          <path fill-rule="evenodd"
+            d="M6.5 1.75a.25.25 0 01.25-.25h2.5a.25.25 0 01.25.25V3h-3V1.75zm4.5 0V3h2.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75zM4.496 6.675a.75.75 0 10-1.492.15l.66 6.6A1.75 1.75 0 005.405 15h5.19c.9 0 1.652-.681 1.741-1.576l.66-6.6a.75.75 0 00-1.492-.149l-.66 6.6a.25.25 0 01-.249.225h-5.19a.25.25 0 01-.249-.225l-.66-6.6z">
+          </path>
+        </svg>
+      </button>
+
+      <button class="btn-octicon" type="button" aria-label="Kebab icon">
+        <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+          <path
+            d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z">
+          </path>
+        </svg>
+      </button>
+
+      <br><br>
+      <div class="mb-2">
+        <a class="btn btn-sm btn-with-count" href="#" role="button">
+          <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+            <path fill-rule="evenodd"
+              d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z">
+            </path>
+          </svg>
+          <span>Watch</span>
+        </a>
+        <a class="social-count" href="#">
+          6
+        </a>
+      </div>
+      <button class="btn mr-2" type="button">
+        Button <span class="Counter">12</span>
+      </button>
+
+      <button class="btn btn-primary mr-2" type="button">
+        Button <span class="Counter">12</span>
+      </button>
+
+      <button class="btn btn-danger mr-2" type="button">
+        Button <span class="Counter">12</span>
+      </button>
+
+      <button class="btn btn-outline" type="button">
+        Button <span class="Counter">12</span>
+      </button>
+
+    </section>
+    <br><br>
+
+    <!-- Button group -->
+    <section>
+      <a name="button_group" class="h3">Button group</a>
+      <br>
+      <div class="BtnGroup d-block mb-2">
+        <button class="BtnGroup-item btn" type="button">
+          Button
+        </button>
+        <button class="BtnGroup-item btn" type="button">
+          Button
+        </button>
+        <button class="BtnGroup-item btn btn-danger" type="button">
+          Danger
+        </button>
+      </div>
+
+      <div class="BtnGroup d-block mb-2 ml-0">
+        <button class="BtnGroup-item btn btn-outline" type="button">
+          Button
+        </button>
+        <button class="BtnGroup-item btn btn-outline" type="button">
+          Button
+        </button>
+        <button class="BtnGroup-item btn btn-outline" type="button">
+          Button
+        </button>
+      </div>
+
+      <br>
+      <div class="BtnGroup">
+        <button class="BtnGroup-item btn btn-sm" type="button">
+          Button
+        </button>
+        <button class="BtnGroup-item btn btn-sm" type="button">
+          Button
+        </button>
+        <button class="BtnGroup-item btn btn-sm" type="button">
+          Button
+        </button>
+      </div>
+
+      <br><br>
+      <div class="BtnGroup">
+        <button class="btn BtnGroup-item" type="button">
+          Button
+        </button>
+        <form class="BtnGroup-parent">
+          <button class="btn BtnGroup-item" type="button">
+            Button in a form
+          </button>
+        </form>
+        <button class="btn BtnGroup-item" type="button">
+          Button
+        </button>
+        <button class="btn BtnGroup-item" type="button">
+          Button
+        </button>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Close button -->
+    <section>
+      <a name="close_button" class="h3">Close button</a>
+      <br>
+      <button class="close-button" type="button"><svg class="octicon" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16" width="16" height="16">
+          <path fill-rule="evenodd"
+            d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z">
+          </path>
+        </svg></button>
+    </section>
+    <br><br>
+
+    <!-- Collapse / Details -->
+    <section>
+      <a name="collapse" class="h3">Collapse / Details</a>
+      <br>
+      <details class="details-overlay">
+        <summary class="btn">More</summary>
+        <div class="border p-3 mt-2">Hidden text</div>
+      </details>
+      <br>
+      <details class="details-overlay details-overlay-dark">
+        <summary class="btn">More (overlay dark)</summary>
+        <div class="position-relative color-bg-default rounded p-3 mt-2" style="z-index: 112;">Hidden text</div>
+      </details>
+      <br>
+      <details class="details-reset">
+        <summary class="btn">More (caret)<span class="dropdown-caret"></span></summary>
+        <div class="border p-3 mt-2">Hidden text</div>
+      </details>
+      <br>
+      <details>
+        <summary class="btn btn-primary">More (summary)</summary>
+        <div class="border p-3 mt-2">Hidden text</div>
+      </details>
+      <details class="details-reset mt-3">
+        <summary class="btn-link">More (summary)<span class="dropdown-caret"></span></summary>
+        <div class="border p-3 mt-2">Hidden text</div>
+      </details>
+    </section>
+    <br><br>
+
+    <!-- Dropdowns / SelectMenu -->
+    <section>
+      <a name="dropdowns" class="h3">Dropdowns / SelectMenu</a>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 140px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <div class="SelectMenu-list"><button class="SelectMenu-item" role="menuitem">Item 1</button><button
+                class="SelectMenu-item" role="menuitem">Item 2</button><button class="SelectMenu-item"
+                role="menuitem">Item 3</button></div>
+          </div>
+        </div>
+      </details>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 140px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <div class="SelectMenu-list SelectMenu-list--borderless"><button class="SelectMenu-item"
+                role="menuitem">Item 1</button><button class="SelectMenu-item" role="menuitem">Item 2</button><button
+                class="SelectMenu-item" role="menuitem">Item 3</button></div>
+          </div>
+        </div>
+      </details>
+      <br>
+      <div class="d-flex flex-justify-end position-relative">
+        <details class="details-reset details-overlay" style="min-height: 140px;">
+          <summary class="btn" aria-haspopup="true">Choose an item</summary>
+          <div class="SelectMenu right-0">
+            <div class="SelectMenu-modal">
+              <div class="SelectMenu-list"><button class="SelectMenu-item" role="menuitem">Item 1</button><button
+                  class="SelectMenu-item" role="menuitem">Item 2</button><button class="SelectMenu-item"
+                  role="menuitem">Item 3</button></div>
+            </div>
+          </div>
+        </details>
+      </div>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 165px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title">Title</h3><button class="SelectMenu-closeButton" type="button"><svg
+                  class="octicon octicon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                  height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.72 3.72C3.86062 3.57955 4.05125 3.50066 4.25 3.50066C4.44875 3.50066 4.63937 3.57955 4.78 3.72L8 6.94L11.22 3.72C11.2887 3.64631 11.3715 3.58721 11.4635 3.54622C11.5555 3.50523 11.6548 3.48319 11.7555 3.48141C11.8562 3.47963 11.9562 3.49816 12.0496 3.53588C12.143 3.5736 12.2278 3.62974 12.299 3.70096C12.3703 3.77218 12.4264 3.85702 12.4641 3.9504C12.5018 4.04379 12.5204 4.14382 12.5186 4.24452C12.5168 4.34523 12.4948 4.44454 12.4538 4.53654C12.4128 4.62854 12.3537 4.71134 12.28 4.78L9.06 8L12.28 11.22C12.3537 11.2887 12.4128 11.3715 12.4538 11.4635C12.4948 11.5555 12.5168 11.6548 12.5186 11.7555C12.5204 11.8562 12.5018 11.9562 12.4641 12.0496C12.4264 12.143 12.3703 12.2278 12.299 12.299C12.2278 12.3703 12.143 12.4264 12.0496 12.4641C11.9562 12.5018 11.8562 12.5204 11.7555 12.5186C11.6548 12.5168 11.5555 12.4948 11.4635 12.4538C11.3715 12.4128 11.2887 12.3537 11.22 12.28L8 9.06L4.78 12.28C4.63782 12.4125 4.44977 12.4846 4.25547 12.4812C4.06117 12.4777 3.87579 12.399 3.73837 12.2616C3.60096 12.1242 3.52225 11.9388 3.51882 11.7445C3.51539 11.5502 3.58752 11.3622 3.72 11.22L6.94 8L3.72 4.78C3.57955 4.63938 3.50066 4.44875 3.50066 4.25C3.50066 4.05125 3.57955 3.86063 3.72 3.72Z">
+                  </path>
+                </svg></button>
+            </header>
+            <div class="SelectMenu-list"><button class="SelectMenu-item" role="menuitem">Item 1</button><button
+                class="SelectMenu-item" role="menuitem">Item 2</button><button class="SelectMenu-item"
+                role="menuitem">Item 3</button></div>
+          </div>
+        </div>
+      </details>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 200px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <div class="SelectMenu-list"><button class="SelectMenu-item" role="menuitemcheckbox"
+                aria-checked="true"><svg class="SelectMenu-icon SelectMenu-icon--check octicon octicon-check"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z">
+                  </path>
+                </svg>Selected state</button><button class="SelectMenu-item" role="menuitemcheckbox"><svg
+                  class="SelectMenu-icon SelectMenu-icon--check octicon octicon-check"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z">
+                  </path>
+                </svg>Default state</button><button class="SelectMenu-item" role="menuitemcheckbox"
+                aria-checked="true"><svg class="SelectMenu-icon SelectMenu-icon--check octicon octicon-check"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z">
+                  </path>
+                </svg>Selected state</button><button class="SelectMenu-item" role="menuitemcheckbox"><svg
+                  class="SelectMenu-icon SelectMenu-icon--check octicon octicon-check"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z">
+                  </path>
+                </svg>Default state</button><button class="SelectMenu-item" role="menuitemcheckbox"><svg
+                  class="SelectMenu-icon SelectMenu-icon--check octicon octicon-check"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.78 4.22C13.9204 4.36062 13.9993 4.55125 13.9993 4.75C13.9993 4.94875 13.9204 5.13937 13.78 5.28L6.53 12.53C6.38937 12.6704 6.19875 12.7493 6 12.7493C5.80125 12.7493 5.61062 12.6704 5.47 12.53L2.22 9.28C2.08752 9.13782 2.0154 8.94978 2.01882 8.75547C2.02225 8.56117 2.10096 8.37579 2.23838 8.23837C2.37579 8.10096 2.56118 8.02225 2.75548 8.01882C2.94978 8.01539 3.13782 8.08752 3.28 8.22L6 10.94L12.72 4.22C12.8606 4.07955 13.0512 4.00066 13.25 4.00066C13.4487 4.00066 13.6394 4.07955 13.78 4.22Z">
+                  </path>
+                </svg>Default state</button></div>
+          </div>
+        </div>
+      </details>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 290px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title">Title</h3><button class="SelectMenu-closeButton" type="button"><svg
+                  class="octicon octicon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                  height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.72 3.72C3.86062 3.57955 4.05125 3.50066 4.25 3.50066C4.44875 3.50066 4.63937 3.57955 4.78 3.72L8 6.94L11.22 3.72C11.2887 3.64631 11.3715 3.58721 11.4635 3.54622C11.5555 3.50523 11.6548 3.48319 11.7555 3.48141C11.8562 3.47963 11.9562 3.49816 12.0496 3.53588C12.143 3.5736 12.2278 3.62974 12.299 3.70096C12.3703 3.77218 12.4264 3.85702 12.4641 3.9504C12.5018 4.04379 12.5204 4.14382 12.5186 4.24452C12.5168 4.34523 12.4948 4.44454 12.4538 4.53654C12.4128 4.62854 12.3537 4.71134 12.28 4.78L9.06 8L12.28 11.22C12.3537 11.2887 12.4128 11.3715 12.4538 11.4635C12.4948 11.5555 12.5168 11.6548 12.5186 11.7555C12.5204 11.8562 12.5018 11.9562 12.4641 12.0496C12.4264 12.143 12.3703 12.2278 12.299 12.299C12.2278 12.3703 12.143 12.4264 12.0496 12.4641C11.9562 12.5018 11.8562 12.5204 11.7555 12.5186C11.6548 12.5168 11.5555 12.4948 11.4635 12.4538C11.3715 12.4128 11.2887 12.3537 11.22 12.28L8 9.06L4.78 12.28C4.63782 12.4125 4.44977 12.4846 4.25547 12.4812C4.06117 12.4777 3.87579 12.399 3.73837 12.2616C3.60096 12.1242 3.52225 11.9388 3.51882 11.7445C3.51539 11.5502 3.58752 11.3622 3.72 11.22L6.94 8L3.72 4.78C3.57955 4.63938 3.50066 4.44875 3.50066 4.25C3.50066 4.05125 3.57955 3.86063 3.72 3.72Z">
+                  </path>
+                </svg></button>
+            </header>
+            <div class="SelectMenu-list"><button class="SelectMenu-item" role="menuitem">Text only<svg
+                  class="SelectMenu-icon octicon octicon-pin" viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                  aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M10 1.2V2l.5 1L6 6H2.2c-.44 0-.67.53-.34.86L5 10l-4 5 5-4 3.14 3.14a.5.5 0 00.86-.34V10l3-4.5 1 .5h.8c.44 0 .67-.53.34-.86L10.86.86a.5.5 0 00-.86.34z">
+                  </path>
+                </svg>With an icon</button><button class="SelectMenu-item" role="menuitem"><img
+                  class="avatar avatar-small mr-2" src="./vendor/v21.4.0/hubot.png" alt="hubot" height="20"
+                  width="20">With an avatar</button><button class="SelectMenu-item flex-justify-between"
+                role="menuitem">With a status icon<svg width="8" height="16" viewBox="0 0 8 16"
+                  class="octicon octicon-primitive-dot color-green-5 ml-2" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z"></path>
+                </svg></button><button class="SelectMenu-item d-block" role="menuitem">With a <span
+                  class="Label">label</span></button><button class="SelectMenu-item" role="menuitem">With a counter
+                <span class="Counter ml-1">16</span></button><button class="SelectMenu-item d-block" role="menuitem">
+                <h5>With a heading</h5><span>and some longer description</span>
+              </button></div>
+          </div>
+        </div>
+      </details>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 300px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title">Title</h3><button class="SelectMenu-closeButton" type="button"><svg
+                  class="octicon octicon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                  height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.72 3.72C3.86062 3.57955 4.05125 3.50066 4.25 3.50066C4.44875 3.50066 4.63937 3.57955 4.78 3.72L8 6.94L11.22 3.72C11.2887 3.64631 11.3715 3.58721 11.4635 3.54622C11.5555 3.50523 11.6548 3.48319 11.7555 3.48141C11.8562 3.47963 11.9562 3.49816 12.0496 3.53588C12.143 3.5736 12.2278 3.62974 12.299 3.70096C12.3703 3.77218 12.4264 3.85702 12.4641 3.9504C12.5018 4.04379 12.5204 4.14382 12.5186 4.24452C12.5168 4.34523 12.4948 4.44454 12.4538 4.53654C12.4128 4.62854 12.3537 4.71134 12.28 4.78L9.06 8L12.28 11.22C12.3537 11.2887 12.4128 11.3715 12.4538 11.4635C12.4948 11.5555 12.5168 11.6548 12.5186 11.7555C12.5204 11.8562 12.5018 11.9562 12.4641 12.0496C12.4264 12.143 12.3703 12.2278 12.299 12.299C12.2278 12.3703 12.143 12.4264 12.0496 12.4641C11.9562 12.5018 11.8562 12.5204 11.7555 12.5186C11.6548 12.5168 11.5555 12.4948 11.4635 12.4538C11.3715 12.4128 11.2887 12.3537 11.22 12.28L8 9.06L4.78 12.28C4.63782 12.4125 4.44977 12.4846 4.25547 12.4812C4.06117 12.4777 3.87579 12.399 3.73837 12.2616C3.60096 12.1242 3.52225 11.9388 3.51882 11.7445C3.51539 11.5502 3.58752 11.3622 3.72 11.22L6.94 8L3.72 4.78C3.57955 4.63938 3.50066 4.44875 3.50066 4.25C3.50066 4.05125 3.57955 3.86063 3.72 3.72Z">
+                  </path>
+                </svg></button>
+            </header>
+            <div class="SelectMenu-list"><button class="SelectMenu-item" role="menuitem">Item 1</button><button
+                class="SelectMenu-item" role="menuitem">Item 2</button>
+              <div class="SelectMenu-divider">More options</div><button class="SelectMenu-item" role="menuitem">Item
+                3</button><button class="SelectMenu-item" role="menuitem">Item 4</button>
+              <hr class="SelectMenu-divider"><button class="SelectMenu-item" role="menuitem">Item 5</button><button
+                class="SelectMenu-item" role="menuitem">Item 6</button>
+            </div>
+          </div>
+        </div>
+      </details>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 280px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title">Title</h3><button class="SelectMenu-closeButton" type="button"><svg
+                  class="octicon octicon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                  height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.72 3.72C3.86062 3.57955 4.05125 3.50066 4.25 3.50066C4.44875 3.50066 4.63937 3.57955 4.78 3.72L8 6.94L11.22 3.72C11.2887 3.64631 11.3715 3.58721 11.4635 3.54622C11.5555 3.50523 11.6548 3.48319 11.7555 3.48141C11.8562 3.47963 11.9562 3.49816 12.0496 3.53588C12.143 3.5736 12.2278 3.62974 12.299 3.70096C12.3703 3.77218 12.4264 3.85702 12.4641 3.9504C12.5018 4.04379 12.5204 4.14382 12.5186 4.24452C12.5168 4.34523 12.4948 4.44454 12.4538 4.53654C12.4128 4.62854 12.3537 4.71134 12.28 4.78L9.06 8L12.28 11.22C12.3537 11.2887 12.4128 11.3715 12.4538 11.4635C12.4948 11.5555 12.5168 11.6548 12.5186 11.7555C12.5204 11.8562 12.5018 11.9562 12.4641 12.0496C12.4264 12.143 12.3703 12.2278 12.299 12.299C12.2278 12.3703 12.143 12.4264 12.0496 12.4641C11.9562 12.5018 11.8562 12.5204 11.7555 12.5186C11.6548 12.5168 11.5555 12.4948 11.4635 12.4538C11.3715 12.4128 11.2887 12.3537 11.22 12.28L8 9.06L4.78 12.28C4.63782 12.4125 4.44977 12.4846 4.25547 12.4812C4.06117 12.4777 3.87579 12.399 3.73837 12.2616C3.60096 12.1242 3.52225 11.9388 3.51882 11.7445C3.51539 11.5502 3.58752 11.3622 3.72 11.22L6.94 8L3.72 4.78C3.57955 4.63938 3.50066 4.44875 3.50066 4.25C3.50066 4.05125 3.57955 3.86063 3.72 3.72Z">
+                  </path>
+                </svg></button>
+            </header>
+            <div class="SelectMenu-list"><button class="SelectMenu-item" role="menuitem">Item 1</button><button
+                class="SelectMenu-item" role="menuitem">Item 2</button><button class="SelectMenu-item"
+                role="menuitem">Item 3</button><button class="SelectMenu-item" role="menuitem">Item 4</button><button
+                class="SelectMenu-item" role="menuitem">Item 5</button></div>
+            <footer class="SelectMenu-footer">Footer</footer>
+          </div>
+        </div>
+      </details>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 350px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu SelectMenu--hasFilter">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title">Title</h3><button class="SelectMenu-closeButton" type="button"><svg
+                  class="octicon octicon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                  height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.72 3.72C3.86062 3.57955 4.05125 3.50066 4.25 3.50066C4.44875 3.50066 4.63937 3.57955 4.78 3.72L8 6.94L11.22 3.72C11.2887 3.64631 11.3715 3.58721 11.4635 3.54622C11.5555 3.50523 11.6548 3.48319 11.7555 3.48141C11.8562 3.47963 11.9562 3.49816 12.0496 3.53588C12.143 3.5736 12.2278 3.62974 12.299 3.70096C12.3703 3.77218 12.4264 3.85702 12.4641 3.9504C12.5018 4.04379 12.5204 4.14382 12.5186 4.24452C12.5168 4.34523 12.4948 4.44454 12.4538 4.53654C12.4128 4.62854 12.3537 4.71134 12.28 4.78L9.06 8L12.28 11.22C12.3537 11.2887 12.4128 11.3715 12.4538 11.4635C12.4948 11.5555 12.5168 11.6548 12.5186 11.7555C12.5204 11.8562 12.5018 11.9562 12.4641 12.0496C12.4264 12.143 12.3703 12.2278 12.299 12.299C12.2278 12.3703 12.143 12.4264 12.0496 12.4641C11.9562 12.5018 11.8562 12.5204 11.7555 12.5186C11.6548 12.5168 11.5555 12.4948 11.4635 12.4538C11.3715 12.4128 11.2887 12.3537 11.22 12.28L8 9.06L4.78 12.28C4.63782 12.4125 4.44977 12.4846 4.25547 12.4812C4.06117 12.4777 3.87579 12.399 3.73837 12.2616C3.60096 12.1242 3.52225 11.9388 3.51882 11.7445C3.51539 11.5502 3.58752 11.3622 3.72 11.22L6.94 8L3.72 4.78C3.57955 4.63938 3.50066 4.44875 3.50066 4.25C3.50066 4.05125 3.57955 3.86063 3.72 3.72Z">
+                  </path>
+                </svg></button>
+            </header>
+            <form class="SelectMenu-filter"><input class="SelectMenu-input form-control" type="text"
+                placeholder="Filter" aria-label="Filter"></form>
+            <div class="SelectMenu-list" style="max-height: 170px;"><button class="SelectMenu-item" role="menuitem">Item
+                1</button><button class="SelectMenu-item" role="menuitem">Item 2</button><button class="SelectMenu-item"
+                role="menuitem">Item 3</button><button class="SelectMenu-item" role="menuitem">Item 4</button><button
+                class="SelectMenu-item" role="menuitem">Item 5</button><button class="SelectMenu-item"
+                role="menuitem">Item 6</button><button class="SelectMenu-item" role="menuitem">Item 7</button><button
+                class="SelectMenu-item" role="menuitem">Item 8</button><button class="SelectMenu-item"
+                role="menuitem">Item 9</button><button class="SelectMenu-item" role="menuitem">Item 10</button><button
+                class="SelectMenu-item" role="menuitem">Item 11</button><button class="SelectMenu-item"
+                role="menuitem">Item 12</button><button class="SelectMenu-item" role="menuitem">Item 13</button><button
+                class="SelectMenu-item" role="menuitem">Item 14</button><button class="SelectMenu-item"
+                role="menuitem">Item 15</button><button class="SelectMenu-item" role="menuitem">Item 16</button><button
+                class="SelectMenu-item" role="menuitem">Item 17</button><button class="SelectMenu-item"
+                role="menuitem">Item 18</button><button class="SelectMenu-item" role="menuitem">Item 19</button><button
+                class="SelectMenu-item" role="menuitem">Item 20</button><button class="SelectMenu-item"
+                role="menuitem">Item 21</button><button class="SelectMenu-item" role="menuitem">Item 22</button><button
+                class="SelectMenu-item" role="menuitem">Item 23</button><button class="SelectMenu-item"
+                role="menuitem">Item 24</button><button class="SelectMenu-item" role="menuitem">Item 25</button></div>
+            <footer class="SelectMenu-footer">Showing 25 of 25</footer>
+          </div>
+        </div>
+      </details>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 360px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu SelectMenu--hasFilter">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title">Title</h3><button class="SelectMenu-closeButton" type="button"><svg
+                  class="octicon octicon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                  height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.72 3.72C3.86062 3.57955 4.05125 3.50066 4.25 3.50066C4.44875 3.50066 4.63937 3.57955 4.78 3.72L8 6.94L11.22 3.72C11.2887 3.64631 11.3715 3.58721 11.4635 3.54622C11.5555 3.50523 11.6548 3.48319 11.7555 3.48141C11.8562 3.47963 11.9562 3.49816 12.0496 3.53588C12.143 3.5736 12.2278 3.62974 12.299 3.70096C12.3703 3.77218 12.4264 3.85702 12.4641 3.9504C12.5018 4.04379 12.5204 4.14382 12.5186 4.24452C12.5168 4.34523 12.4948 4.44454 12.4538 4.53654C12.4128 4.62854 12.3537 4.71134 12.28 4.78L9.06 8L12.28 11.22C12.3537 11.2887 12.4128 11.3715 12.4538 11.4635C12.4948 11.5555 12.5168 11.6548 12.5186 11.7555C12.5204 11.8562 12.5018 11.9562 12.4641 12.0496C12.4264 12.143 12.3703 12.2278 12.299 12.299C12.2278 12.3703 12.143 12.4264 12.0496 12.4641C11.9562 12.5018 11.8562 12.5204 11.7555 12.5186C11.6548 12.5168 11.5555 12.4948 11.4635 12.4538C11.3715 12.4128 11.2887 12.3537 11.22 12.28L8 9.06L4.78 12.28C4.63782 12.4125 4.44977 12.4846 4.25547 12.4812C4.06117 12.4777 3.87579 12.399 3.73837 12.2616C3.60096 12.1242 3.52225 11.9388 3.51882 11.7445C3.51539 11.5502 3.58752 11.3622 3.72 11.22L6.94 8L3.72 4.78C3.57955 4.63938 3.50066 4.44875 3.50066 4.25C3.50066 4.05125 3.57955 3.86063 3.72 3.72Z">
+                  </path>
+                </svg></button>
+            </header>
+            <form class="SelectMenu-filter"><input class="SelectMenu-input form-control" type="text"
+                placeholder="Filter" aria-label="Filter"></form>
+            <nav class="SelectMenu-tabs"><button class="SelectMenu-tab" aria-selected="true">Branches</button><button
+                class="SelectMenu-tab">Tags</button></nav>
+            <div class="SelectMenu-list"><button class="SelectMenu-item" role="menuitem">Branch 1</button><button
+                class="SelectMenu-item" role="menuitem">Branch 2</button><button class="SelectMenu-item"
+                role="menuitem">Branch 3</button><button class="SelectMenu-item" role="menuitem">Branch
+                4</button><button class="SelectMenu-item" role="menuitem">Branch 5</button></div>
+            <div class="SelectMenu-list" hidden=""><button class="SelectMenu-item" role="menuitem">Tag 1</button><button
+                class="SelectMenu-item" role="menuitem">Tag 2</button><button class="SelectMenu-item"
+                role="menuitem">Tag 3</button></div>
+            <footer class="SelectMenu-footer">Showing 5 of 5</footer>
+          </div>
+        </div>
+      </details>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 220px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title">Title</h3><button class="SelectMenu-closeButton" type="button"><svg
+                  class="octicon octicon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                  height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.72 3.72C3.86062 3.57955 4.05125 3.50066 4.25 3.50066C4.44875 3.50066 4.63937 3.57955 4.78 3.72L8 6.94L11.22 3.72C11.2887 3.64631 11.3715 3.58721 11.4635 3.54622C11.5555 3.50523 11.6548 3.48319 11.7555 3.48141C11.8562 3.47963 11.9562 3.49816 12.0496 3.53588C12.143 3.5736 12.2278 3.62974 12.299 3.70096C12.3703 3.77218 12.4264 3.85702 12.4641 3.9504C12.5018 4.04379 12.5204 4.14382 12.5186 4.24452C12.5168 4.34523 12.4948 4.44454 12.4538 4.53654C12.4128 4.62854 12.3537 4.71134 12.28 4.78L9.06 8L12.28 11.22C12.3537 11.2887 12.4128 11.3715 12.4538 11.4635C12.4948 11.5555 12.5168 11.6548 12.5186 11.7555C12.5204 11.8562 12.5018 11.9562 12.4641 12.0496C12.4264 12.143 12.3703 12.2278 12.299 12.299C12.2278 12.3703 12.143 12.4264 12.0496 12.4641C11.9562 12.5018 11.8562 12.5204 11.7555 12.5186C11.6548 12.5168 11.5555 12.4948 11.4635 12.4538C11.3715 12.4128 11.2887 12.3537 11.22 12.28L8 9.06L4.78 12.28C4.63782 12.4125 4.44977 12.4846 4.25547 12.4812C4.06117 12.4777 3.87579 12.399 3.73837 12.2616C3.60096 12.1242 3.52225 11.9388 3.51882 11.7445C3.51539 11.5502 3.58752 11.3622 3.72 11.22L6.94 8L3.72 4.78C3.57955 4.63938 3.50066 4.44875 3.50066 4.25C3.50066 4.05125 3.57955 3.86063 3.72 3.72Z">
+                  </path>
+                </svg></button>
+            </header>
+            <div class="SelectMenu-list">
+              <div class="SelectMenu-message color-bg-danger color-fg-danger">Message goes here</div><button
+                class="SelectMenu-item" role="menuitem">Item 1</button><button class="SelectMenu-item"
+                role="menuitem">Item 2</button><button class="SelectMenu-item" role="menuitem">Item 3</button>
+            </div>
+          </div>
+        </div>
+      </details>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 200px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title">Title</h3><button class="SelectMenu-closeButton" type="button"><svg
+                  class="octicon octicon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                  height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.72 3.72C3.86062 3.57955 4.05125 3.50066 4.25 3.50066C4.44875 3.50066 4.63937 3.57955 4.78 3.72L8 6.94L11.22 3.72C11.2887 3.64631 11.3715 3.58721 11.4635 3.54622C11.5555 3.50523 11.6548 3.48319 11.7555 3.48141C11.8562 3.47963 11.9562 3.49816 12.0496 3.53588C12.143 3.5736 12.2278 3.62974 12.299 3.70096C12.3703 3.77218 12.4264 3.85702 12.4641 3.9504C12.5018 4.04379 12.5204 4.14382 12.5186 4.24452C12.5168 4.34523 12.4948 4.44454 12.4538 4.53654C12.4128 4.62854 12.3537 4.71134 12.28 4.78L9.06 8L12.28 11.22C12.3537 11.2887 12.4128 11.3715 12.4538 11.4635C12.4948 11.5555 12.5168 11.6548 12.5186 11.7555C12.5204 11.8562 12.5018 11.9562 12.4641 12.0496C12.4264 12.143 12.3703 12.2278 12.299 12.299C12.2278 12.3703 12.143 12.4264 12.0496 12.4641C11.9562 12.5018 11.8562 12.5204 11.7555 12.5186C11.6548 12.5168 11.5555 12.4948 11.4635 12.4538C11.3715 12.4128 11.2887 12.3537 11.22 12.28L8 9.06L4.78 12.28C4.63782 12.4125 4.44977 12.4846 4.25547 12.4812C4.06117 12.4777 3.87579 12.399 3.73837 12.2616C3.60096 12.1242 3.52225 11.9388 3.51882 11.7445C3.51539 11.5502 3.58752 11.3622 3.72 11.22L6.94 8L3.72 4.78C3.57955 4.63938 3.50066 4.44875 3.50066 4.25C3.50066 4.05125 3.57955 3.86063 3.72 3.72Z">
+                  </path>
+                </svg></button>
+            </header>
+            <div class="SelectMenu-list">
+              <div class="SelectMenu-loading"><svg width="32 " height="32" viewBox="0 0 16 16"
+                  class="octicon octicon-octoface anim-pulse" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z">
+                  </path>
+                </svg></div>
+            </div>
+            <footer class="SelectMenu-footer">Loading...</footer>
+          </div>
+        </div>
+      </details>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 190px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <div class="SelectMenu-list"><button class="SelectMenu-item" role="menuitem">Item 1</button><button
+                class="SelectMenu-item" role="menuitem" disabled="">Item 2 (disabled)</button><a class="SelectMenu-item"
+                role="menuitem" href="#">Item 3</a><a class="SelectMenu-item" role="menuitem" aria-disabled="true">Item
+                4 (disabled)</a></div>
+          </div>
+        </div>
+      </details>
+      <br>
+      <details class="details-reset details-overlay" style="min-height: 280px;">
+        <summary class="btn" aria-haspopup="true">Choose an item</summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title">Title</h3><button class="SelectMenu-closeButton" type="button"><svg
+                  class="octicon octicon-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                  height="16">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.72 3.72C3.86062 3.57955 4.05125 3.50066 4.25 3.50066C4.44875 3.50066 4.63937 3.57955 4.78 3.72L8 6.94L11.22 3.72C11.2887 3.64631 11.3715 3.58721 11.4635 3.54622C11.5555 3.50523 11.6548 3.48319 11.7555 3.48141C11.8562 3.47963 11.9562 3.49816 12.0496 3.53588C12.143 3.5736 12.2278 3.62974 12.299 3.70096C12.3703 3.77218 12.4264 3.85702 12.4641 3.9504C12.5018 4.04379 12.5204 4.14382 12.5186 4.24452C12.5168 4.34523 12.4948 4.44454 12.4538 4.53654C12.4128 4.62854 12.3537 4.71134 12.28 4.78L9.06 8L12.28 11.22C12.3537 11.2887 12.4128 11.3715 12.4538 11.4635C12.4948 11.5555 12.5168 11.6548 12.5186 11.7555C12.5204 11.8562 12.5018 11.9562 12.4641 12.0496C12.4264 12.143 12.3703 12.2278 12.299 12.299C12.2278 12.3703 12.143 12.4264 12.0496 12.4641C11.9562 12.5018 11.8562 12.5204 11.7555 12.5186C11.6548 12.5168 11.5555 12.4948 11.4635 12.4538C11.3715 12.4128 11.2887 12.3537 11.22 12.28L8 9.06L4.78 12.28C4.63782 12.4125 4.44977 12.4846 4.25547 12.4812C4.06117 12.4777 3.87579 12.399 3.73837 12.2616C3.60096 12.1242 3.52225 11.9388 3.51882 11.7445C3.51539 11.5502 3.58752 11.3622 3.72 11.22L6.94 8L3.72 4.78C3.57955 4.63938 3.50066 4.44875 3.50066 4.25C3.50066 4.05125 3.57955 3.86063 3.72 3.72Z">
+                  </path>
+                </svg></button>
+            </header>
+            <div class="SelectMenu-list">
+              <div class="SelectMenu-blankslate"><svg width="24 " height="32" viewBox="0 0 12 16"
+                  class="octicon octicon-repo color-gray-3" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z">
+                  </path>
+                </svg>
+                <h4 class="my-2">No repositories</h4>
+                <p class="mb-3 color-fg-muted">We didn’t find any matching repositories that you can commit to.</p>
+                <button type="button" class="btn btn-sm btn-primary">Create a repository</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </details>
+    </section>
+    <br><br>
+
+    <!-- Forms -->
+    <section>
+      <a name="forms" class="h3">Forms</a>
+      <br>
+      <div>
+        <button class="btn" type="button">
+          Button
+        </button>
+        <button class="btn" type="button" aria-expanded="false" aria-haspopup="true">
+          Select menu
+          <span class="dropdown-caret"></span>
+        </button>
+        <input class="form-control" type="text" placeholder="Standard input" aria-label="Repository description" />
+        <input class="form-control input-monospace" type="text" placeholder="Monospace input" aria-label="SHA" />
+        <select class="form-select" aria-label="Important decision">
+          <option>Select</option>
+          <option value="option 2">Option 2</option>
+        </select>
+      </div>
+      <div>
+        <button class="btn btn-sm" type="button">
+          Small button
+        </button>
+        <button class="btn btn-sm" type="button" aria-expanded="false" aria-haspopup="true">
+          Select menu
+          <span class="dropdown-caret"></span>
+        </button>
+        <input class="form-control input-sm" type="text" placeholder="Small input"
+          aria-label="Repository description" />
+        <select class="form-select select-sm" aria-label="Important decision">
+          <option>Select</option>
+          <option value="option 1">Option 1</option>
+        </select>
+      </div>
+      <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input" disabled />
+
+      <br>
+
+      <form>
+        <label htmlFor="name">Name</label>
+        <input class="form-control" type="text" id="name" />
+
+        <label htmlFor="email">Email address</label>
+        <input class="form-control" type="email" id="email" />
+
+        <label>
+          {' '}
+          <input type="checkbox" /> Remember me{' '}
+        </label>
+
+        <label>
+          {' '}
+          <input type="radio" id="potato" name="radio-group-example" checked /> Potato{' '}
+        </label>
+        <label>
+          {' '}
+          <input type="radio" id="tomato" name="radio-group-example" /> Tomato{' '}
+        </label>
+
+        <button class="btn" type="submit">
+          Submit
+        </button>
+      </form>
+
+      <br>
+
+      <form>
+        <input class="form-control input-sm" type="text" placeholder="Small input" aria-label="Small input" />
+      </form>
+      <form>
+        <input class="form-control input-lg" type="text" placeholder="Large input" aria-label="Large input" />
+      </form>
+      <form>
+        <input class="form-control input-block" type="text" placeholder="Full-width input"
+          aria-label="Full-width input" />
+      </form>
+
+      <br>
+
+      <form>
+        <div class="input-group">
+          <input class="form-control" type="text" placeholder="Username" aria-label="Username" />
+          <span class="input-group-button">
+            <button class="btn" type="button" aria-label="Copy to clipboard">
+              <svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z">
+                </path>
+              </svg>
+            </button>
+          </span>
+        </div>
+      </form>
+
+      <br>
+
+      <form>
+        <input class="form-control" type="text" placeholder="Default input" aria-label="Default input" />
+        <input class="form-control input-contrast" type="text" placeholder="Input with contrast"
+          aria-label="Input with contrast" />
+      </form>
+
+      <br>
+
+      <form>
+        <input class="form-control input-hide-webkit-autofill"
+          placeholder="Hide Webkit's contact autofill on this input" type="text"
+          aria-label="Hide Webkit's contact autofill on this input" />
+      </form>
+
+      <br>
+
+      <form>
+        <select class="form-select" aria-label="Preference">
+          <option>Choose an option</option>
+          <option>Git</option>
+          <option>Subversion</option>
+          <option>Social Coding</option>
+          <option>Beets</option>
+          <option>Bears</option>
+          <option>Battlestar Galactica</option>
+        </select>
+      </form>
+
+      <br>
+
+      <select class="form-select select-sm" aria-label="Preference">
+        <option>Choose an option</option>
+        <option>Git</option>
+        <option>Subversion</option>
+        <option>Social Coding</option>
+        <option>Beets</option>
+        <option>Bears</option>
+        <option>Battlestar Galactica</option>
+      </select>
+
+      <button class="btn btn-sm ml-1"> Small button</button>
+
+      <br>
+
+      <form>
+        <div class="form-group">
+          <div class="form-group-header">
+            <label htmlFor="example-text">Example Text</label>
+          </div>
+          <div class="form-group-body">
+            <input class="form-control" type="text" value="Example Value" id="example-text" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-group-header">
+            <label htmlFor="example-select">Example Select</label>
+          </div>
+          <div class="form-group-body">
+            <select class="form-select" id="example-select">
+              <option>Choose an option</option>
+              <option>Git</option>
+              <option>Subversion</option>
+              <option>Social Coding</option>
+              <option>Beets</option>
+              <option>Bears</option>
+              <option>Battlestar Galactica</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-group-header">
+            <label htmlFor="example-textarea">Example Textarea</label>
+          </div>
+          <div class="form-group-body">
+            <textarea class="form-control" id="example-textarea"></textarea>
+          </div>
+        </div>
+      </form>
+
+      <br>
+
+      <form class="pb-6">
+        <div class="form-group successed">
+          <div class="form-group-header">
+            <label htmlFor="username-input">Username</label>
+          </div>
+          <div class="form-group-body">
+            <input class="form-control" type="text" value="monalisa" id="username-input"
+              aria-describedby="username-input-validation" />
+          </div>
+          <p class="note success" id="username-input-validation">
+            monalisa is available
+          </p>
+        </div>
+      </form>
+
+      <br>
+
+      <form class="pb-6">
+        <div class="form-group errored">
+          <div class="form-group-header">
+            <label htmlFor="username-input">Username</label>
+          </div>
+          <div class="form-group-body">
+            <input class="form-control" type="text" value="monalisa" id="username-input"
+              aria-describedby="username-input-validation" />
+          </div>
+          <p class="note error" id="username-input-validation">
+            monalisa is not available. monalisa-beep, monalisa-cyber, or monalisa87 are available.
+          </p>
+        </div>
+      </form>
+
+      <br>
+
+      <form class="pb-6">
+        <div class="form-group warn">
+          <div class="form-group-header">
+            <label htmlFor="username-input">Username</label>
+          </div>
+          <div class="form-group-body">
+            <input class="form-control" type="text" value="monalisa-monalisa-monalisa-monalisa-" id="username-input"
+              aria-describedby="username-input-validation" />
+          </div>
+          <p class="note warning" id="username-input-validation">
+            36 of maximum 39 characters entered.
+          </p>
+        </div>
+      </form>
+
+      <br>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">
+          Save changes
+        </button>
+        <button type="button" class="btn">
+          Cancel
+        </button>
+      </div>
+
+      <br>
+
+      <form>
+        <div class="form-checkbox">
+          <label>
+            <input type="checkbox" checked aria-describedby="help-text-for-checkbox" />
+            Available for hire
+          </label>
+          <p class="note" id="help-text-for-checkbox">
+            This will do insanely <strong>awesome</strong> and <strong>amazing</strong> things!
+          </p>
+        </div>
+      </form>
+      <form>
+        <div class="form-checkbox">
+          <label>
+            <input type="checkbox" checked />
+            <em class="highlight">Available for hire</em>
+          </label>
+        </div>
+      </form>
+
+      <br>
+
+      <form>
+        <div class="form-checkbox">
+          <label>
+            <input type="radio" name="hireme" />
+            Not available for hire
+          </label>
+        </div>
+        <div class="form-checkbox">
+          <label aria-live="polite">
+            <input type="radio" class="form-checkbox-details-trigger" name="hireme" />
+            Available for hire
+            <span class="form-checkbox-details text-normal">
+              <span class="d-block mb-1">Available hours per week</span>
+              <input type="text" name="" class="form-control input-contrast" size="3" />
+              <span class="text-small color-fg-muted pl-2">hours per week</span>
+            </span>
+          </label>
+        </div>
+      </form>
+
+      <br>
+
+      <form>
+        <div class="radio-group">
+          <input class="radio-input" id="option-a" type="radio" name="options" />
+          <label class="radio-label" htmlFor="option-a">
+            Option A
+          </label>
+          <input class="radio-input" id="option-b" type="radio" name="options" />
+          <label class="radio-label" htmlFor="option-b">
+            Option B
+          </label>
+          <input class="radio-input" id="option-c" type="radio" name="options" />
+          <label class="radio-label" htmlFor="option-c">
+            Option C
+          </label>
+        </div>
+      </form>
+
+      <br>
+
+      <form>
+        <div class="radio-group">
+          <input class="radio-input" id="option-a" type="radio" name="options" />
+          <label class="radio-label" htmlFor="option-a">
+            <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd"
+                d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z">
+              </path>
+            </svg>
+            Option A
+          </label>
+          <input class="radio-input" id="option-b" type="radio" name="options" />
+          <label class="radio-label" htmlFor="option-b">
+            <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd"
+                d="M11.013 1.427a1.75 1.75 0 012.474 0l1.086 1.086a1.75 1.75 0 010 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 01-.927-.928l.929-3.25a1.75 1.75 0 01.445-.758l8.61-8.61zm1.414 1.06a.25.25 0 00-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 000-.354l-1.086-1.086zM11.189 6.25L9.75 4.81l-6.286 6.287a.25.25 0 00-.064.108l-.558 1.953 1.953-.558a.249.249 0 00.108-.064l6.286-6.286z">
+              </path>
+            </svg>
+            Option B
+          </label>
+          <input class="radio-input" id="option-c" type="radio" name="options" disabled />
+          <label class="radio-label" htmlFor="option-c">
+            <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd"
+                d="M6.5 1.75a.25.25 0 01.25-.25h2.5a.25.25 0 01.25.25V3h-3V1.75zm4.5 0V3h2.25a.75.75 0 010 1.5H2.75a.75.75 0 010-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75zM4.496 6.675a.75.75 0 10-1.492.15l.66 6.6A1.75 1.75 0 005.405 15h5.19c.9 0 1.652-.681 1.741-1.576l.66-6.6a.75.75 0 00-1.492-.149l-.66 6.6a.25.25 0 01-.249.225h-5.19a.25.25 0 01-.249-.225l-.66-6.6z">
+              </path>
+            </svg>
+            Option C
+          </label>
+        </div>
+      </form>
+    </section>
+    <br><br>
+
+    <!-- List group / FilterList -->
+    <section>
+      <a name="list-group" class="h3">List group / FilterList</a>
+      <br>
+      <ul class="filter-list">
+        <li><a class="filter-item" href="#" aria-current="">First filter<span class="count">21</span></a></li>
+        <li><a class="filter-item" href="#">Second filter<span class="count">3</span></a></li>
+        <li><a class="filter-item" href="#">Third filter</a></li>
+      </ul>
+    </section>
+    <br><br>
+
+    <!-- Navbar / Header -->
+    <section>
+      <a name="navbar" class="h3">Navbar / Header</a>
+      <br>
+      <div class="Header">
+        <div class="Header-item">
+          <a href="#" class="Header-link f4 d-flex flex-items-center">
+            <svg height="32" class="octicon octicon-mark-github mr-2" viewBox="0 0 16 16" version="1.1" width="32"
+              aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+              </path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+        <div class="Header-item">
+          <input type="search" class="form-control Header-input" />
+        </div>
+        <div class="Header-item Header-item--full">Menu</div>
+        <div class="Header-item mr-0">
+          <img class="avatar" height="20" alt="@octocat" src="./vendor/v21.4.0/583231.png" width="20" />
+        </div>
+      </div>
+
+      <br>
+
+      <div class="Header">
+        <div class="Header-item">Text item</div>
+
+        <div class="Header-item">
+          <input class="form-control Header-input" type="text" />
+        </div>
+
+        <div class="Header-item">
+          <img class="avatar" height="20" alt="@octocat" src="./vendor/v21.4.0/583231.png" width="20" />
+        </div>
+      </div>
+
+      <br>
+
+      <div class="Header">
+        <div class="Header-item">Item 1</div>
+
+        <div class="Header-item Header-item--full border">Item 2</div>
+
+        <div class="Header-item mr-0 ">Item 3</div>
+      </div>
+
+      <br>
+
+      <div class="Header">
+        <div class="Header-item">
+          <a href="#" class="Header-link">
+            About
+          </a>
+        </div>
+        <div class="Header-item">
+          <a href="#" class="Header-link">
+            Releases
+          </a>
+        </div>
+        <div class="Header-item">
+          <a href="#" class="Header-link">
+            Team
+          </a>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Navs and Tabs -->
+    <section>
+      <a name="navs_and_tabs" class="h3">Navs</a>
+      <br>
+      <nav class="SideNav border" style="max-width: 360px;">
+        <a class="SideNav-item" href="#">
+          Account
+        </a>
+        <a class="SideNav-item" href="#" aria-current="page">
+          Profile
+        </a>
+        <a class="SideNav-item" href="#">
+          Emails
+        </a>
+        <a class="SideNav-item" href="#">
+          Notifications
+        </a>
+      </nav>
+
+      <br><br>
+
+      <nav class="SideNav border" style="max-width: 360px;">
+        <a class="SideNav-item" href="#">
+          Text only
+        </a>
+        <a class="SideNav-item" href="#">
+          <img class="avatar avatar-small mr-2" src="./vendor/v21.4.0/hubot.png" alt="hubot" height="20" width="20" />
+          With an avatar
+        </a>
+        <a class="SideNav-item" href="#">
+          <svg class="SideNav-icon octicon octicon-octoface" version="1.1" width="16" height="16" viewBox="0 0 16 16"
+            aria-hidden="true">
+            {' '}
+            <path fill-rule="evenodd"
+              d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z" />
+            {' '}
+          </svg>
+          With an icon
+        </a>
+        <a class="SideNav-item d-flex flex-items-center flex-justify-between" href="#">
+          With a status icon
+          <svg version="1.1" width="8" height="16" viewBox="0 0 8 16"
+            class="octicon octicon-primitive-dot color-green-5 ml-2 float-right" aria-hidden="true">
+            <path fill-rule="evenodd" d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" />
+          </svg>
+        </a>
+        <a class="SideNav-item d-flex flex-items-center flex-justify-between" href="#">
+          With a label <span class="Label">label</span>
+        </a>
+        <a class="SideNav-item d-flex flex-items-center flex-justify-between" href="#">
+          With a counter <span class="Counter ml-1">16</span>
+        </a>
+        <a class="SideNav-item" href="#">
+          <h5>With a heading</h5>
+          <span>and some longer description</span>
+        </a>
+      </nav>
+
+      <br><br>
+
+      <aside class="color-bg-subtle border p-3" style="max-width: 360px;">
+        <h5 class="color-fg-muted mb-2 pb-1 border-bottom">Menu</h5>
+        <nav class="SideNav">
+          <a class="SideNav-subItem" href="#">
+            Account
+          </a>
+          <a class="SideNav-subItem" href="#" aria-current="page">
+            Profile
+          </a>
+          <a class="SideNav-subItem" href="#">
+            Emails
+          </a>
+          <a class="SideNav-subItem" href="#">
+            Notifications
+          </a>
+        </nav>
+      </aside>
+
+      <br><br>
+
+      <nav class="subnav" aria-label="Repository">
+        <a class="subnav-item" href="#" aria-current="page">
+          Item 1
+        </a>
+        <a class="subnav-item" href="#">
+          Item 2
+        </a>
+        <a class="subnav-item" href="#">
+          Item 3
+        </a>
+      </nav>
+
+      <br>
+
+      <div class="subnav">
+        <nav class="subnav-links" aria-label="Repository">
+          <a class="subnav-item" href="#" aria-current="page">
+            Item 1
+          </a>
+          <a class="subnav-item" href="#">
+            Item 2
+          </a>
+          <a class="subnav-item" href="#">
+            Item 3
+          </a>
+        </nav>
+        <div class="subnav-search float-left">
+          <input type="search" name="name" class="form-control subnav-search-input" value="" aria-label="Search site" />
+          <svg class="subnav-search-icon octicon octicon-search" width="16" height="16" viewBox="0 0 16 16"
+            aria-hidden="true">
+            {' '}
+            <path fill-rule="evenodd"
+              d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z" />
+            {' '}
+          </svg>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="subnav">
+        <nav class="subnav-links">
+          <a class="subnav-item" href="#" aria-current="page">
+            Item 1
+          </a>
+          <a class="subnav-item" href="#">
+            Item 2
+          </a>
+          <a class="subnav-item" href="#">
+            Item 3
+          </a>
+        </nav>
+      </div>
+      <div class="subnav">
+        <div class="float-left subnav-search-context">
+          <button class="btn" type="button" name="button" aria-expanded="false" aria-haspopup="true">
+            Filters
+            <span class="dropdown-caret"></span>
+          </button>
+        </div>
+        <div class="subnav-search float-left">
+          <input type="search" name="name" class="form-control subnav-search-input" value="" aria-label="Search site" />
+          <svg class="subnav-search-icon octicon octicon-search" width="16" height="16" viewBox="0 0 16 16"
+            aria-hidden="true">
+            {' '}
+            <path fill-rule="evenodd"
+              d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z" />
+            {' '}
+          </svg>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Pagination -->
+    <section>
+      <a name="pagination" class="h3">Pagination</a>
+      <br>
+      <nav class="paginate-container" aria-label="Pagination">
+        <div class="pagination">
+          <span class="previous_page" aria-disabled="true">
+            Previous
+          </span>
+          <a class="next_page" rel="next" href="#url" aria-label="Next Page">
+            Next
+          </a>
+        </div>
+      </nav>
+
+      <br>
+
+      <nav class="paginate-container" aria-label="Pagination">
+        <div class="pagination">
+          <span class="previous_page" aria-disabled="true">
+            Previous
+          </span>
+          <em aria-current="page">1</em>
+          <a href="#url" aria-label="Page 2">
+            2
+          </a>
+          <a href="#url" aria-label="Page 3">
+            3
+          </a>
+          <span class="gap">…</span>
+          <a href="#url" aria-label="Page 8">
+            8
+          </a>
+          <a href="#url" aria-label="Page 9">
+            9
+          </a>
+          <a href="#url" aria-label="Page 10">
+            10
+          </a>
+          <a class="next_page" rel="next" href="#url" aria-label="Next Page">
+            Next
+          </a>
+        </div>
+      </nav>
+    </section>
+    <br><br>
+
+    <!-- Spinners / Loaders -->
+    <section>
+      <a name="spinners" class="h3">Spinners / Loaders</a>
+      <br>
+      <h2>
+        <span>Loading</span>
+        <span class="AnimatedEllipsis"></span>
+      </h2>
+      <span class="branch-name mt-2">
+        <span>Loading</span>
+        <span class="AnimatedEllipsis"></span>
+      </span>
+      <span class="Label mt-3">
+        <span>Loading</span>
+        <span class="AnimatedEllipsis"></span>
+      </span>
+      <button class="btn mt-3" aria-disabled="true">
+        <span>Loading</span>
+        <span class="AnimatedEllipsis"></span>
+      </button>
+    </section>
+    <br><br>
+
+    <!-- Tables -->
+    <section>
+      <a name="tables" class="h3">Tables</a>
+      <br>
+      <div class="d-table col-12">
+        <div class="col-4 d-table-cell border p-2">Bacon ipsum dolor amet leberkas pork pig kielbasa shankle ribeye
+          meatball, salami alcatra venison.</div>
+        <div class="col-4 d-table-cell border p-2">Pork chop cupim cow turkey frankfurter, landjaeger fatback hamburger
+          meatball salami spare ribs. Rump tenderloin salami, hamburger frankfurter landjaeger andouille.</div>
+        <div class="col-4 d-table-cell border p-2">Brisket tongue frankfurter cupim strip steak rump picanha pancetta
+          pork pig kevin pastrami biltong. Shankle venison meatball swine sausage ground round. Tail pork loin ribeye
+          kielbasa short ribs pork chop.</div>
+      </div>
+
+      <br>
+
+      <div class="d-table col-12">
+        <div class="col-4 d-table-cell border">.col-4 .d-table-cell</div>
+        <div class="col-4 d-table-cell border">.col-4 .d-table-cell</div>
+        <div class="col-2 d-table-cell border">.col-2 .d-table-cell</div>
+      </div>
+
+      <br>
+
+      <div class="d-table table-fixed width-full">
+        <div class="d-table-cell border">.d-table-cell</div>
+        <div class="d-table-cell col-10 border">d-table-cell .col-10</div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Toasts -->
+    <section>
+      <a name="toasts" class="h3">Toasts</a>
+      <br>
+      <div class="p-1">
+        <div class="Toast">
+          <span class="Toast-icon">
+            <svg width="14" height="16" viewBox="0 0 14 16" class="octicon octicon-info" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z" />
+            </svg>
+          </span>
+          <span class="Toast-content">Toast message goes here</span>
+        </div>
+      </div>
+
+      <div class="p-1">
+        <div class="Toast Toast--success">
+          <span class="Toast-icon">
+            <svg width="12" height="16" viewBox="0 0 12 16" class="octicon octicon-check" aria-hidden="true">
+              <path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z" />
+            </svg>
+          </span>
+          <span class="Toast-content">Success message goes here.</span>
+        </div>
+      </div>
+
+      <div class="p-1">
+        <div class="Toast Toast--warning">
+          <span class="Toast-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-alert" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z" />
+            </svg>
+          </span>
+          <span class="Toast-content">Warning message goes here.</span>
+        </div>
+      </div>
+
+      <div class="p-1">
+        <div class="Toast Toast--error">
+          <span class="Toast-icon">
+            <svg width="14" height="16" viewBox="0 0 14 16" class="octicon octicon-stop" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M10 1H4L0 5v6l4 4h6l4-4V5l-4-4zm3 9.5L9.5 14h-5L1 10.5v-5L4.5 2h5L13 5.5v5zM6 4h2v5H6V4zm0 6h2v2H6v-2z" />
+            </svg>
+          </span>
+          <span class="Toast-content">Error message goes here</span>
+        </div>
+      </div>
+
+      <div class="p-1">
+        <div class="Toast">
+          <span class="Toast-icon">
+            <svg width="14" height="16" viewBox="0 0 14 16" class="octicon octicon-info" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z" />
+            </svg>
+          </span>
+          <span class="Toast-content">This toast is dismissable.</span>
+          <button class="Toast-dismissButton">
+            <svg width="12" height="16" viewBox="0 0 12 16" class="octicon octicon-x" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="p-1">
+        <div class="Toast">
+          <span class="Toast-icon">
+            <svg width="14" height="16" viewBox="0 0 14 16" class="octicon octicon-info" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z" />
+            </svg>
+          </span>
+          <span class="Toast-content">
+            Toast message goes here<a href="#">Action.</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="p-1">
+        <div class="Toast Toast--animateIn">
+          <span class="Toast-icon">
+            <svg width="14" height="16" viewBox="0 0 14 16" class="octicon octicon-info" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z" />
+            </svg>
+          </span>
+          <span class="Toast-content">Toast message goes here.</span>
+        </div>
+      </div>
+
+      <div class="p-1">
+        <div class="Toast Toast--loading">
+          <span class="Toast-icon">
+            <svg class="Toast--spinner" viewBox="0 0 32 32" width="18" height="18">
+              <path fill="#959da5"
+                d="M16 0 A16 16 0 0 0 16 32 A16 16 0 0 0 16 0 M16 4 A12 12 0 0 1 16 28 A12 12 0 0 1 16 4" />
+              <path fill="#ffffff" d="M16 0 A16 16 0 0 1 32 16 L28 16 A12 12 0 0 0 16 4z"></path>
+            </svg>
+          </span>
+          <span class="Toast-content">Toast message goes here.</span>
+        </div>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Tooltips -->
+    <section>
+      <a name="tooltips" class="h3">Tooltips</a>
+      <br>
+      <div class="d-flex flex-justify-center pt-4">
+        <button type="button" class="tooltipped tooltipped-nw m-2 p-2 border"
+          aria-label="This is the tooltip on the North West side.">
+          .tooltipped-nw
+        </button>
+        <button type="button" class="tooltipped tooltipped-n m-2 p-2 border"
+          aria-label="This is the tooltip on the North side.">
+          .tooltipped-n
+        </button>
+        <button type="button" class="tooltipped tooltipped-ne m-2 p-2 border"
+          aria-label="This is the tooltip on the North East side.">
+          .tooltipped-ne
+        </button>
+      </div>
+      <div class="d-flex flex-justify-center">
+        <button type="button" class="tooltipped tooltipped-w m-2 p-2 border"
+          aria-label="This is the tooltip on the West side.">
+          .tooltipped-w
+        </button>
+        <button type="button" class="tooltipped tooltipped-e m-2 p-2 border"
+          aria-label="This is the tooltip on the East side.">
+          .tooltipped-e
+        </button>
+      </div>
+      <div class="d-flex flex-justify-center pb-4">
+        <button type="button" class="tooltipped tooltipped-sw m-2 p-2 border"
+          aria-label="This is the tooltip on the South West side.">
+          .tooltipped-sw
+        </button>
+        <button type="button" class="tooltipped tooltipped-s m-2 p-2 border"
+          aria-label="This is the tooltip on the South side.">
+          .tooltipped-s
+        </button>
+        <button type="button" class="tooltipped tooltipped-se m-2 p-2 border"
+          aria-label="This is the tooltip on the South East side.">
+          .tooltipped-se
+        </button>
+      </div>
+
+      <br>
+
+      <div class="d-flex flex-justify-center">
+        <button type="button" class="tooltipped tooltipped-sw tooltipped-align-right-1 m-2 p-2 border"
+          aria-label="Tooltipped SE and aligned right.">
+          .tooltipped-sw .tooltipped-align-right-1
+        </button>
+        <button type="button" class="tooltipped tooltipped-se tooltipped-align-left-1 m-2 p-2 border"
+          aria-label="Tooltipped SW and aligned left.">
+          .tooltipped-se .tooltipped-align-left-1
+        </button>
+      </div>
+      <div class="d-flex flex-justify-center pb-4">
+        <button type="button" class="tooltipped tooltipped-sw tooltipped-align-right-2 m-2 p-2 border"
+          aria-label="Tooltipped SE and aligned right.">
+          .tooltipped-sw .tooltipped-align-right-2
+        </button>
+        <button type="button" class="tooltipped tooltipped-se tooltipped-align-left-2 m-2 p-2 border"
+          aria-label="Tooltipped SW and aligned left.">
+          .tooltipped-se .tooltipped-align-left-2
+        </button>
+      </div>
+
+      <br>
+
+      <div class="d-flex flex-justify-center pt-6">
+        <button type="button" class="tooltipped tooltipped-n tooltipped-multiline m-2 p-2 border"
+          aria-label="This is the tooltip with multiple lines. This is the tooltip with multiple lines.">
+          .tooltipped-multiline
+        </button>
+      </div>
+
+      <br>
+
+      <div class="d-flex flex-justify-center pt-4">
+        <button type="button" class="tooltipped tooltipped-n tooltipped-no-delay m-2 p-2 border"
+          aria-label="This is the tooltip on the no delay side.">
+          .tooltipped-no-delay
+        </button>
+      </div>
+    </section>
+    <br><br>
+
+    <!-- Typography -->
+    <section>
+      <a name="typography" class="h3">Typography</a>
+      <br>
+      <div>
+        <p class="h1">Pizza .h1</p>
+        <p class="h2">Pizza .h2</p>
+        <p class="h3">Pizza .h3</p>
+        <p class="h4">Pizza .h4</p>
+        <p class="h5">Pizza .h5</p>
+        <p class="h6">Pizza .h6</p>
+      </div>
+      <br>
+      <h2 class="h1">Looks like a heading 1, semantically a heading 2</h2>
+      <br>
+      <div>
+        <p class="f1">Focaccia .f1</p>
+        <p class="f2">Focaccia .f2</p>
+        <p class="f3">Focaccia .f3</p>
+        <p class="f4">Focaccia .f4</p>
+        <p class="f5">Focaccia .f5</p>
+        <p class="f6">Focaccia .f6</p>
+      </div>
+      <br>
+      <div>
+        <h1 class="f00-light">Potato chips .f00-light</h1>
+        <h1 class="f0-light">Potato chips .f0-light</h1>
+        <h1 class="f1-light">Potato chips .f1-light</h1>
+        <h1 class="f2-light">Potato chips .f2-light</h1>
+        <h1 class="f3-light">Potato chips .f3-light</h1>
+      </div>
+      <br>
+      <div>
+        <p class="lh-default">.lh-default Bacon ipsum dolor amet tri-tip chicken kielbasa, cow swine beef corned beef
+          ground round prosciutto hamburger porchetta sausage alcatra tail. Jowl chuck biltong flank meatball, beef
+          short ribs. Jowl tenderloin ground round, short loin tri-tip ribeye picanha filet mignon pig chicken kielbasa
+          t-bone fatback. Beef ribs meatball chicken corned beef salami.</p>
+        <p class="lh-condensed">.lh-condensed Bacon ipsum dolor amet tri-tip chicken kielbasa, cow swine beef corned
+          beef ground round prosciutto hamburger porchetta sausage alcatra tail. Jowl chuck biltong flank meatball, beef
+          short ribs. Jowl tenderloin ground round, short loin tri-tip ribeye picanha filet mignon pig chicken kielbasa
+          t-bone fatback. Beef ribs meatball chicken corned beef salami.</p>
+        <p class="lh-condensed-ultra">.lh-condensed-ultra Bacon ipsum dolor amet tri-tip chicken kielbasa, cow swine
+          beef corned beef ground round prosciutto hamburger porchetta sausage alcatra tail. Jowl chuck biltong flank
+          meatball, beef short ribs. Jowl tenderloin ground round, short loin tri-tip ribeye picanha filet mignon pig
+          chicken kielbasa t-bone fatback. Beef ribs meatball chicken corned beef salami.</p>
+      </div>
+      <br>
+      <div>
+        <p class="text-normal">.text-normal</p>
+        <p class="text-italic">.text-italic</p>
+        <p class="text-bold">.text-bold</p>
+        <p class="text-semibold">.text-semibold</p>
+        <p class="text-light">.text-light</p>
+        <p class="text-uppercase">.text-uppercase</p>
+        <p class="no-wrap">.no-wrap</p>
+        <p class="ws-normal">.ws-normal</p>
+        <p class="text-underline">.text-underline</p>
+        <p class="no-underline">.no-underline</p>
+        <p class="text-emphasized">.text-emphasized</p>
+        <p class="text-small">.text-small</p>
+        <p class="lead">.lead Bacon ipsum dolor amet tri-tip chicken kielbasa, cow swine beef corned beef ground round
+          prosciutto hamburger porchetta sausage alcatra tail.</p>
+        <p class="text-mono">.text-mono</p>
+        <p class="user-select-none">.user-select-none</p>
+        <p class="text-capitalize">.text-capitalize</p>
+      </div>
+      <br>
+      <div>
+        <p class="wb-break-word p-2 color-bg-subtle col-3 border-right">.wb-break-word will only break long words that
+          exceed the line length, such as supercalifragilisticexpialidocious. Long words like "exceedingly" will simply
+          break to the next line.</p>
+        <p class="wb-break-all p-2 color-bg-subtle col-3 border-right">.wb-break-all will break any word that meets the
+          end its line, and should be used sparingly. As you can see here, it's not particularly nice to read text that
+          breaks in weird places.</p>
+      </div>
+      <br>
+      <div>
+        <p class="text-left">.text-left</p>
+        <p class="text-center">.text-center</p>
+        <p class="text-right">.text-right</p>
+      </div>
+      <br>
+      <p class="text-left text-sm-center text-lg-right">Left in a small viewport, centered in mid-sized viewports, and
+        right aligned in larger viewports</p>
+      <br>
+      <ul class="list-style-none">
+        <li>First list item</li>
+        <li>Second list item</li>
+        <li>Third list item</li>
+      </ul>
+    </section>
+    <br><br>
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+
+</html>
