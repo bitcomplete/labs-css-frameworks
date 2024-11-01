@@ -36,11 +36,162 @@
                     "label": "Badges",
                     "comment": null,
                     "see": null
+                },
+                {
+                    "key": "breadcrumbs",
+                    "label": "Breadcrumbs",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "buttons",
+                    "label": "Buttons",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "button_group",
+                    "label": "Button group",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "cards",
+                    "label": "Cards",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "carousel",
+                    "label": "Carousel",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "close_button",
+                    "label": "Close Button",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "collapse",
+                    "label": "Collapse",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "dropdowns",
+                    "label": "Dropdowns",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "forms",
+                    "label": "Forms",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "link",
+                    "label": "Link",
+                    "comment": "Colored links, Stretched link",
+                    "see": null
+                },
+                {
+                    "key": "list_group",
+                    "label": "List group",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "modal",
+                    "label": "Modal",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navbar",
+                    "label": "Navbar",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navs_and_tabs",
+                    "label": "Navs & tabs",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "offcanvas",
+                    "label": "Offcanvas",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "pagination",
+                    "label": "Pagination",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "placeholders",
+                    "label": "Placeholders",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "popovers",
+                    "label": "Popovers",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "progress",
+                    "label": "Progress",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "scrollspy",
+                    "label": "Scrollspy",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "spinners",
+                    "label": "Spinners",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tables",
+                    "label": "Tables",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "toasts",
+                    "label": "Toasts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tooltips",
+                    "label": "Tooltips",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "typography",
+                    "label": "Typography",
+                    "comment": null,
+                    "see": null
                 }
             ],
             "licenseKey": "mit",
             "licenseName": "MIT",
-            "releaseDate": null,
+            "releaseDate": "2024-02-20",
+            "originalReleaseDate": "2022-08-19",
             "publisher": "Twitter"
         }
     },
@@ -57,11 +208,11 @@
         "attributes": {
             "directorySlug": "bootswatch",
             "ranking": {
-                "amongAll": 2
+                "amongAll": 6
             }
         },
         "properties": {
-            "version": null,
+            "version": "5.3.3",
             "components": [
                 {
                     "key": "accordions",
@@ -80,12 +231,163 @@
                     "label": "Badges",
                     "comment": null,
                     "see": null
+                },
+                {
+                    "key": "breadcrumbs",
+                    "label": "Breadcrumbs",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "buttons",
+                    "label": "Buttons",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "button_group",
+                    "label": "Button group",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "cards",
+                    "label": "Cards",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "carousel",
+                    "label": "Carousel",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "close_button",
+                    "label": "Close Button",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "collapse",
+                    "label": "Collapse",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "dropdowns",
+                    "label": "Dropdowns",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "forms",
+                    "label": "Forms",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "link",
+                    "label": "Link",
+                    "comment": "Colored links, Stretched link",
+                    "see": null
+                },
+                {
+                    "key": "list_group",
+                    "label": "List group",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "modal",
+                    "label": "Modal",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navbar",
+                    "label": "Navbar",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navs_and_tabs",
+                    "label": "Navs & tabs",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "offcanvas",
+                    "label": "Offcanvas",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "pagination",
+                    "label": "Pagination",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "placeholders",
+                    "label": "Placeholders",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "popovers",
+                    "label": "Popovers",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "progress",
+                    "label": "Progress",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "scrollspy",
+                    "label": "Scrollspy",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "spinners",
+                    "label": "Spinners",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tables",
+                    "label": "Tables",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "toasts",
+                    "label": "Toasts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tooltips",
+                    "label": "Tooltips",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "typography",
+                    "label": "Typography",
+                    "comment": null,
+                    "see": null
                 }
             ],
             "licenseKey": "mit",
             "licenseName": "MIT",
-            "releaseDate": null,
-            "publisher": "Bootswatch"
+            "releaseDate": "2024-02-20",
+            "originalReleaseDate": "2015-06-23",
+            "publisher": "Thomas Park"
         }
     },
     {
@@ -101,35 +403,114 @@
         "attributes": {
             "directorySlug": "bulma",
             "ranking": {
-                "amongAll": 3
+                "amongAll": 2
             }
         },
         "properties": {
-            "version": null,
+            "version": "1.0.2",
             "components": [
                 {
-                    "key": "accordions",
-                    "label": "Accordions",
-                    "comment": null,
-                    "see": null
-                },
-                {
                     "key": "alerts",
-                    "label": "Alerts",
-                    "comment": null,
+                    "label": "Alerts / Notification",
+                    "comment": "Notification",
                     "see": null
                 },
                 {
                     "key": "badges",
-                    "label": "Badges",
+                    "label": "Badges / Tags",
+                    "comment": "Tag",
+                    "see": null
+                },
+                {
+                    "key": "breadcrumbs",
+                    "label": "Breadcrumbs",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "buttons",
+                    "label": "Buttons",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "button_group",
+                    "label": "Button group",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "cards",
+                    "label": "Cards",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "close_button",
+                    "label": "Close Button / Delete",
+                    "comment": "Delete",
+                    "see": null
+                },
+                {
+                    "key": "dropdowns",
+                    "label": "Dropdowns",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "forms",
+                    "label": "Forms",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "modal",
+                    "label": "Modal",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navbar",
+                    "label": "Navbar",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navs_and_tabs",
+                    "label": "Navs & tabs",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "pagination",
+                    "label": "Pagination",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "progress",
+                    "label": "Progress",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tables",
+                    "label": "Tables",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "typography",
+                    "label": "Typography",
                     "comment": null,
                     "see": null
                 }
             ],
             "licenseKey": "mit",
             "licenseName": "MIT",
-            "releaseDate": null,
-            "publisher": "Bulma"
+            "releaseDate": "2024-07-25",
+            "originalReleaseDate": "2017-10-10",
+            "publisher": "Jeremy Thomas"
         }
     },
     {
@@ -145,11 +526,11 @@
         "attributes": {
             "directorySlug": "daisy-ui-4",
             "ranking": {
-                "amongAll": 4
+                "amongAll": 3
             }
         },
         "properties": {
-            "version": null,
+            "version": "4.12.14",
             "components": [
                 {
                     "key": "accordions",
@@ -164,16 +545,245 @@
                     "see": null
                 },
                 {
+                    "key": "avatar",
+                    "label": "Avatar",
+                    "comment": null,
+                    "see": null
+                },
+                {
                     "key": "badges",
                     "label": "Badges",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "bottom_navigation",
+                    "label": "Bottom Navigation",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "breadcrumbs",
+                    "label": "Breadcrumbs",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "buttons",
+                    "label": "Buttons",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "cards",
+                    "label": "Cards",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "carousel",
+                    "label": "Carousel",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "chat_bubble",
+                    "label": "Chat bubble",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "collapse",
+                    "label": "Collapse",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "countdown",
+                    "label": "Countdown",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "diff",
+                    "label": "Diff",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "divider",
+                    "label": "Divider",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "dropdowns",
+                    "label": "Dropdowns",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "footer",
+                    "label": "Footer",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "forms",
+                    "label": "Forms",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "hero",
+                    "label": "Hero",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "indicator",
+                    "label": "Indicator",
+                    "comment": "This is very similar to badge in other frameworks, but supports more types of elements",
+                    "see": null
+                },
+                {
+                    "key": "join",
+                    "label": "Join (group items)",
+                    "comment": "Join can be used to group buttons, inputs, or any other element.",
+                    "see": null
+                },
+                {
+                    "key": "kbd",
+                    "label": "Kbd",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "link",
+                    "label": "Link",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "list_group",
+                    "label": "List group / Menu",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "mask",
+                    "label": "Mask",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "mockup",
+                    "label": "Mockup",
+                    "comment": "Browser, Code, Phone, Window",
+                    "see": null
+                },
+                {
+                    "key": "modal",
+                    "label": "Modal",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navbar",
+                    "label": "Navbar",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navs_and_tabs",
+                    "label": "Tabs",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "offcanvas",
+                    "label": "Offcanvas / Drawer",
+                    "comment": "Drawer",
+                    "see": null
+                },
+                {
+                    "key": "pagination",
+                    "label": "Pagination",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "placeholders",
+                    "label": "Placeholders / Skeleton",
+                    "comment": "Skeleton",
+                    "see": null
+                },
+                {
+                    "key": "progress",
+                    "label": "Progress",
+                    "comment": "Progress, Radial progress",
+                    "see": null
+                },
+                {
+                    "key": "spinners",
+                    "label": "Spinners / Loading",
+                    "comment": "Loading",
+                    "see": null
+                },
+                {
+                    "key": "stack",
+                    "label": "Stack",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "stat",
+                    "label": "Stat",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "steps",
+                    "label": "Steps",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "swap",
+                    "label": "Swap",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tables",
+                    "label": "Tables",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "timeline",
+                    "label": "Timeline",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "toasts",
+                    "label": "Toasts",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tooltips",
+                    "label": "Tooltips",
                     "comment": null,
                     "see": null
                 }
             ],
             "licenseKey": "mit",
             "licenseName": "MIT",
-            "releaseDate": null,
-            "publisher": "Daisy UI"
+            "releaseDate": "2024-10-28",
+            "originalReleaseDate": "2020-12-07",
+            "publisher": "Pouya Saadeghi"
         }
     },
     {
@@ -189,11 +799,11 @@
         "attributes": {
             "directorySlug": "foundation-for-sites",
             "ranking": {
-                "amongAll": 5
+                "amongAll": 4
             }
         },
         "properties": {
-            "version": null,
+            "version": "6.9.0",
             "components": [
                 {
                     "key": "accordions",
@@ -203,8 +813,14 @@
                 },
                 {
                     "key": "alerts",
-                    "label": "Alerts",
-                    "comment": null,
+                    "label": "Alerts / Callout",
+                    "comment": "Callout is combination of panels and alerts.",
+                    "see": null
+                },
+                {
+                    "key": "avatar",
+                    "label": "Avatar / Thumbnail",
+                    "comment": "Thumbnail",
                     "see": null
                 },
                 {
@@ -212,12 +828,121 @@
                     "label": "Badges",
                     "comment": null,
                     "see": null
+                },
+                {
+                    "key": "breadcrumbs",
+                    "label": "Breadcrumbs",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "buttons",
+                    "label": "Buttons",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "button_group",
+                    "label": "Button group",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "cards",
+                    "label": "Cards",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "carousel",
+                    "label": "Carousel / Orbit",
+                    "comment": "Orbit - requires Motion UI to work properly.",
+                    "see": null
+                },
+                {
+                    "key": "close_button",
+                    "label": "Close Button",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "dropdowns",
+                    "label": "Dropdowns",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "forms",
+                    "label": "Forms",
+                    "comment": "Merged \"Slider\" into Forms",
+                    "see": null
+                },
+                {
+                    "key": "modal",
+                    "label": "Modal / Reveal",
+                    "comment": "Reveal",
+                    "see": null
+                },
+                {
+                    "key": "navbar",
+                    "label": "Navbar / Top Bar",
+                    "comment": "Top bar",
+                    "see": null
+                },
+                {
+                    "key": "navs_and_tabs",
+                    "label": "Navs & tabs",
+                    "comment": "Menu, Dropdown Menu, Drilldown Menu, Accordion Menu, Responsive Menu, Tab",
+                    "see": null
+                },
+                {
+                    "key": "offcanvas",
+                    "label": "Offcanvas",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "pagination",
+                    "label": "Pagination",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "progress",
+                    "label": "Progress",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "swap",
+                    "label": "Swap / Switch",
+                    "comment": "Switch",
+                    "see": null
+                },
+                {
+                    "key": "tables",
+                    "label": "Tables",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tooltips",
+                    "label": "Tooltips",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "typography",
+                    "label": "Typography",
+                    "comment": null,
+                    "see": null
                 }
             ],
             "licenseKey": "mit",
             "licenseName": "MIT",
-            "releaseDate": null,
-            "publisher": "Foundation for Sites"
+            "releaseDate": "2024-09-28",
+            "originalReleaseDate": "2015-05-01",
+            "publisher": "Foundation Community"
         }
     },
     {
@@ -233,11 +958,11 @@
         "attributes": {
             "directorySlug": "metro-ui",
             "ranking": {
-                "amongAll": 6
+                "amongAll": 9
             }
         },
         "properties": {
-            "version": null,
+            "version": "5.0.11",
             "components": [
                 {
                     "key": "accordions",
@@ -246,9 +971,9 @@
                     "see": null
                 },
                 {
-                    "key": "alerts",
-                    "label": "Alerts",
-                    "comment": null,
+                    "key": "avatar",
+                    "label": "Avatar / Gravatar",
+                    "comment": "Gravatar",
                     "see": null
                 },
                 {
@@ -256,12 +981,289 @@
                     "label": "Badges",
                     "comment": null,
                     "see": null
+                },
+                {
+                    "key": "bottom_navigation",
+                    "label": "Bottom Navigation",
+                    "comment": "Bottom navigation, Bottom sheet",
+                    "see": null
+                },
+                {
+                    "key": "breadcrumbs",
+                    "label": "Breadcrumbs",
+                    "comment": "Part of Buttons",
+                    "see": null
+                },
+                {
+                    "key": "buttons",
+                    "label": "Buttons",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "button_group",
+                    "label": "Button group",
+                    "comment": "Part of Buttons",
+                    "see": null
+                },
+                {
+                    "key": "calendar",
+                    "label": "Calendar",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "cards",
+                    "label": "Cards",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "carousel",
+                    "label": "Carousel",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "chat",
+                    "label": "Chat",
+                    "comment": "You can find chat bubble inside Chat, but it cannot work without Chat.",
+                    "see": null
+                },
+                {
+                    "key": "collapse",
+                    "label": "Collapse",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "color_selector",
+                    "label": "Color selector",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "counter",
+                    "label": "Counter",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "countdown",
+                    "label": "Countdown",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "cube",
+                    "label": "Cube",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "description_list",
+                    "label": "Description list",
+                    "comment": "Inside Typography",
+                    "see": null
+                },
+                {
+                    "key": "diff",
+                    "label": "Diff / Image compare",
+                    "comment": "Image compare",
+                    "see": null
+                },
+                {
+                    "key": "draggable",
+                    "label": "Draggable",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "dropdowns",
+                    "label": "Dropdowns",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "filter",
+                    "label": "Filter / List",
+                    "comment": "List (supports sort and filter)",
+                    "see": null
+                },
+                {
+                    "key": "forms",
+                    "label": "Forms",
+                    "comment": "Forms, Checkbox, File input, Input, Input material, Keypad, Rating, Radio, Slider, Double slider, Spinner, Switch, Tag input, Textarea, Calendar picker, Date picker, Time picker",
+                    "see": null
+                },
+                {
+                    "key": "gradient_box",
+                    "label": "Gradient box",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "image_magnifier",
+                    "label": "Image magnifier",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "kbd",
+                    "label": "Kbd",
+                    "comment": "Inside Typography",
+                    "see": null
+                },
+                {
+                    "key": "lightbox",
+                    "label": "Lightbox",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "list_group",
+                    "label": "List group",
+                    "comment": "Lists, TreeView, ListView",
+                    "see": null
+                },
+                {
+                    "key": "marquee",
+                    "label": "Marquee",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "mockup",
+                    "label": "Mockup / Windows",
+                    "comment": "Windows",
+                    "see": null
+                },
+                {
+                    "key": "modal",
+                    "label": "Modal",
+                    "comment": "Dialogs, Info Box",
+                    "see": null
+                },
+                {
+                    "key": "navbar",
+                    "label": "Navbar",
+                    "comment": "App Bar, Ribbon menu, Side Navigation, NavView",
+                    "see": null
+                },
+                {
+                    "key": "navs_and_tabs",
+                    "label": "Navs & Tabs",
+                    "comment": "Menu, Tabs, Material Tabs",
+                    "see": null
+                },
+                {
+                    "key": "offcanvas",
+                    "label": "Offcanvas",
+                    "comment": "Charms, Side Bar",
+                    "see": null
+                },
+                {
+                    "key": "pagination",
+                    "label": "Pagination",
+                    "comment": "Part of Buttons",
+                    "see": null
+                },
+                {
+                    "key": "panel",
+                    "label": "Panel",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "popovers",
+                    "label": "Popovers",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "progress",
+                    "label": "Progress",
+                    "comment": "Donut, Progress",
+                    "see": null
+                },
+                {
+                    "key": "sortable",
+                    "label": "Sortable / Drag Items",
+                    "comment": "Drag Items",
+                    "see": null
+                },
+                {
+                    "key": "sorter",
+                    "label": "Sorter",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "spinners",
+                    "label": "Spinners",
+                    "comment": "Activities",
+                    "see": null
+                },
+                {
+                    "key": "splitter",
+                    "label": "Splitter",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "steps",
+                    "label": "Steps",
+                    "comment": "Stepper, Master, Wizard",
+                    "see": null
+                },
+                {
+                    "key": "streamer",
+                    "label": "Streamer",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tables",
+                    "label": "Tables",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tile",
+                    "label": "Tiles",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "toasts",
+                    "label": "Toasts",
+                    "comment": "Toasts, Notify system",
+                    "see": null
+                },
+                {
+                    "key": "tokenizer",
+                    "label": "Tokenizer",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tooltips",
+                    "label": "Tooltips / Hints",
+                    "comment": "Hints",
+                    "see": null
+                },
+                {
+                    "key": "typography",
+                    "label": "Typography",
+                    "comment": null,
+                    "see": null
                 }
             ],
             "licenseKey": "mit",
             "licenseName": "MIT",
-            "releaseDate": null,
-            "publisher": "Metro UI"
+            "releaseDate": "2024-09-24",
+            "originalReleaseDate": "2015-04-30",
+            "publisher": "Serhii Pimenov"
         }
     },
     {
@@ -281,7 +1283,7 @@
             }
         },
         "properties": {
-            "version": null,
+            "version": "2.0.6",
             "components": [
                 {
                     "key": "accordions",
@@ -290,22 +1292,107 @@
                     "see": null
                 },
                 {
-                    "key": "alerts",
-                    "label": "Alerts",
+                    "key": "breadcrumbs",
+                    "label": "Breadcrumbs",
+                    "comment": "Part of Nav",
+                    "see": null
+                },
+                {
+                    "key": "buttons",
+                    "label": "Buttons",
                     "comment": null,
                     "see": null
                 },
                 {
-                    "key": "badges",
-                    "label": "Badges",
+                    "key": "button_group",
+                    "label": "Button group",
+                    "comment": "Part of Buttons, and part of Group",
+                    "see": null
+                },
+                {
+                    "key": "cards",
+                    "label": "Cards",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "dropdowns",
+                    "label": "Dropdowns",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "forms",
+                    "label": "Forms",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "join",
+                    "label": "Join / Group",
+                    "comment": "Group",
+                    "see": null
+                },
+                {
+                    "key": "kbd",
+                    "label": "Kbd",
+                    "comment": "Inside Typography",
+                    "see": null
+                },
+                {
+                    "key": "link",
+                    "label": "Link",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "modal",
+                    "label": "Modal",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navbar",
+                    "label": "Navbar",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "progress",
+                    "label": "Progress",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "spinners",
+                    "label": "Spinners / Loading",
+                    "comment": "Loading",
+                    "see": null
+                },
+                {
+                    "key": "tables",
+                    "label": "Tables",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tooltips",
+                    "label": "Tooltips",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "typography",
+                    "label": "Typography",
                     "comment": null,
                     "see": null
                 }
             ],
             "licenseKey": "mit",
             "licenseName": "MIT",
-            "releaseDate": null,
-            "publisher": "Pico"
+            "releaseDate": "2024-03-03",
+            "originalReleaseDate": "2019-12-11",
+            "publisher": "Lucas Larroche"
         }
     },
     {
@@ -325,31 +1412,116 @@
             }
         },
         "properties": {
-            "version": null,
+            "version": "21.4.0",
             "components": [
                 {
-                    "key": "accordions",
-                    "label": "Accordions",
-                    "comment": null,
-                    "see": null
-                },
-                {
-                    "key": "alerts",
-                    "label": "Alerts",
-                    "comment": null,
-                    "see": null
-                },
-                {
                     "key": "badges",
-                    "label": "Badges",
+                    "label": "Badges / IssueLabel",
+                    "comment": "(Deprecated) IssueLabel",
+                    "see": null
+                },
+                {
+                    "key": "breadcrumbs",
+                    "label": "Breadcrumbs / Marketing",
+                    "comment": "(Deprecated) Marketing",
+                    "see": null
+                },
+                {
+                    "key": "buttons",
+                    "label": "Buttons",
+                    "comment": "(Deprecated)",
+                    "see": null
+                },
+                {
+                    "key": "button_group",
+                    "label": "Button group",
+                    "comment": "(Deprecated) Part of Button",
+                    "see": null
+                },
+                {
+                    "key": "close_button",
+                    "label": "Close Button",
+                    "comment": "(Deprecated) Part of Button",
+                    "see": null
+                },
+                {
+                    "key": "collapse",
+                    "label": "Collapse / Details",
+                    "comment": "Details",
+                    "see": null
+                },
+                {
+                    "key": "dropdowns",
+                    "label": "Dropdowns / SelectMenu",
+                    "comment": "(Deprecated) SelectMenu",
+                    "see": null
+                },
+                {
+                    "key": "forms",
+                    "label": "Forms",
+                    "comment": "(Deprecated)",
+                    "see": null
+                },
+                {
+                    "key": "list_group",
+                    "label": "List group / FilterList",
+                    "comment": "(Deprecated) Looks similar to FilterList",
+                    "see": null
+                },
+                {
+                    "key": "navbar",
+                    "label": "Navbar / Header",
+                    "comment": "(Deprecated) Header",
+                    "see": null
+                },
+                {
+                    "key": "navs_and_tabs",
+                    "label": "Navs",
+                    "comment": "(Deprecated) SideNav, SubNav",
+                    "see": null
+                },
+                {
+                    "key": "pagination",
+                    "label": "Pagination",
+                    "comment": "(Deprecated)",
+                    "see": null
+                },
+                {
+                    "key": "spinners",
+                    "label": "Spinners / Loaders",
+                    "comment": "(Deprecated) Loaders",
+                    "see": null
+                },
+                {
+                    "key": "tables",
+                    "label": "Tables",
+                    "comment": "Found in Grid and Layout",
+                    "see": null
+                },
+                {
+                    "key": "toasts",
+                    "label": "Toasts",
+                    "comment": "(Deprecated)",
+                    "see": null
+                },
+                {
+                    "key": "tooltips",
+                    "label": "Tooltips",
+                    "comment": "(Deprecated)",
+                    "see": null
+                },
+                {
+                    "key": "typography",
+                    "label": "Typography",
                     "comment": null,
                     "see": null
                 }
             ],
             "licenseKey": "mit",
             "licenseName": "MIT",
-            "releaseDate": null,
-            "publisher": "Prime CSS"
+            "releaseDate": "2024-09-25",
+            "originalReleaseDate": "2019-02-07",
+            "publisher": "Github"
         }
     },
     {
@@ -365,11 +1537,11 @@
         "attributes": {
             "directorySlug": "ui-kit",
             "ranking": {
-                "amongAll": 9
+                "amongAll": 5
             }
         },
         "properties": {
-            "version": null,
+            "version": "3.21.13",
             "components": [
                 {
                     "key": "accordions",
@@ -388,11 +1560,240 @@
                     "label": "Badges",
                     "comment": null,
                     "see": null
+                },
+                {
+                    "key": "breadcrumbs",
+                    "label": "Breadcrumbs",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "buttons",
+                    "label": "Buttons",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "button_group",
+                    "label": "Button group",
+                    "comment": "Part of Buttons",
+                    "see": null
+                },
+                {
+                    "key": "cards",
+                    "label": "Cards",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "carousel",
+                    "label": "Carousel",
+                    "comment": "Dotnav, Slidenav, Slider, Slideshow",
+                    "see": null
+                },
+                {
+                    "key": "close_button",
+                    "label": "Close Button / Close",
+                    "comment": "Close",
+                    "see": null
+                },
+                {
+                    "key": "collapse",
+                    "label": "Collapse / Toggle",
+                    "comment": "Toggle",
+                    "see": null
+                },
+                {
+                    "key": "comment",
+                    "label": "Comment",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "countdown",
+                    "label": "Countdown",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "description_list",
+                    "label": "Description List",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "divider",
+                    "label": "Divider",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "dropdowns",
+                    "label": "Dropdowns",
+                    "comment": "Drop, Dropbar, Dropdown, Dropnav",
+                    "see": null
+                },
+                {
+                    "key": "filter",
+                    "label": "Filter",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "forms",
+                    "label": "Forms",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "indicator",
+                    "label": "Indicator / Label",
+                    "comment": "Label",
+                    "see": null
+                },
+                {
+                    "key": "inverse",
+                    "label": "Inverse",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "lightbox",
+                    "label": "Lightbox",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "link",
+                    "label": "Link",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "marker",
+                    "label": "Marker",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "modal",
+                    "label": "Modal",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navbar",
+                    "label": "Navbar",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navs_and_tabs",
+                    "label": "Navs & tabs",
+                    "comment": "Iconnav, Nav, Tab, Thumbnav, Subnav",
+                    "see": null
+                },
+                {
+                    "key": "offcanvas",
+                    "label": "Offcanvas",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "pagination",
+                    "label": "Pagination",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "parallax",
+                    "label": "Parallax",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "placeholders",
+                    "label": "Placeholders",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "progress",
+                    "label": "Progress",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "scroll",
+                    "label": "Scroll / Totop",
+                    "comment": "Scroll, Totop",
+                    "see": null
+                },
+                {
+                    "key": "scrollspy",
+                    "label": "Scrollspy",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "sortable",
+                    "label": "Sortable",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "spinners",
+                    "label": "Spinners",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "sticky",
+                    "label": "Sticky",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tables",
+                    "label": "Tables",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tile",
+                    "label": "Tiles",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "toasts",
+                    "label": "Toasts / Notification",
+                    "comment": "Notification",
+                    "see": null
+                },
+                {
+                    "key": "tooltips",
+                    "label": "Tooltips",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "transition",
+                    "label": "Transition",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "typography",
+                    "label": "Typography",
+                    "comment": "Article, Base, Heading, Leader, List, Text",
+                    "see": null
                 }
             ],
             "licenseKey": "mit",
             "licenseName": "MIT",
-            "releaseDate": null,
+            "releaseDate": "2024-09-26",
+            "originalReleaseDate": "2015-04-01",
             "publisher": "UI Kit"
         }
     },
@@ -413,7 +1814,7 @@
             }
         },
         "properties": {
-            "version": null,
+            "version": "3.9.0",
             "components": [
                 {
                     "key": "accordions",
@@ -424,19 +1825,152 @@
                 {
                     "key": "alerts",
                     "label": "Alerts",
-                    "comment": null,
+                    "comment": "Alert, Site alert",
                     "see": null
                 },
                 {
                     "key": "badges",
-                    "label": "Badges",
+                    "label": "Badges / Tags",
+                    "comment": "Tag",
+                    "see": null
+                },
+                {
+                    "key": "banner",
+                    "label": "Banner",
                     "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "breadcrumbs",
+                    "label": "Breadcrumbs",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "buttons",
+                    "label": "Buttons",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "button_group",
+                    "label": "Button group",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "cards",
+                    "label": "Cards",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "description_list",
+                    "label": "Description list / Collection",
+                    "comment": "Collection",
+                    "see": null
+                },
+                {
+                    "key": "data_visualizations",
+                    "label": "Data visualizations",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "footer",
+                    "label": "Footer",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "forms",
+                    "label": "Forms",
+                    "comment": "Form, Character count, Checkbox, Combo box, Date picker, Date range picker, File input, Input mask, Input prefix or suffix, Memorable date, Radio buttons, Range slider, Search, Select, Text input, Time picker, Validation",
+                    "see": null
+                },
+                {
+                    "key": "identifier",
+                    "label": "Identifier",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "language_selector",
+                    "label": "Language selector",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "link",
+                    "label": "Link",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "list_group",
+                    "label": "List group / Icon list",
+                    "comment": "Icon list",
+                    "see": null
+                },
+                {
+                    "key": "modal",
+                    "label": "Modal",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "navbar",
+                    "label": "Navbar / Header",
+                    "comment": "Header",
+                    "see": null
+                },
+                {
+                    "key": "navs_and_tabs",
+                    "label": "Navs & tabs",
+                    "comment": "Side navigation, In-page navigation",
+                    "see": null
+                },
+                {
+                    "key": "pagination",
+                    "label": "Pagination",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "steps",
+                    "label": "Steps",
+                    "comment": "Process list, Step indicator",
+                    "see": null
+                },
+                {
+                    "key": "summary_box",
+                    "label": "Summary box",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tables",
+                    "label": "Tables",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "tooltips",
+                    "label": "Tooltips",
+                    "comment": null,
+                    "see": null
+                },
+                {
+                    "key": "typography",
+                    "label": "Typography",
+                    "comment": "Typography, List, Prose",
                     "see": null
                 }
             ],
             "licenseKey": "mit",
             "licenseName": "MIT",
-            "releaseDate": null,
+            "releaseDate": "2024-10-05",
+            "originalReleaseDate": "2016-03-09",
             "publisher": "United States Web Design System"
         }
     }
