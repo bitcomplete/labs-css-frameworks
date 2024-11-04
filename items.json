@@ -481,6 +481,12 @@
                     "see": "Form"
                 },
                 {
+                    "key": "message",
+                    "label": "Message",
+                    "comment": null,
+                    "see": "Message"
+                },
+                {
                     "key": "modal",
                     "label": "Modal",
                     "comment": null,
