@@ -2,11 +2,6 @@
     {
         "id": "id:item:v2024.11.01:bootstrap",
         "slug": "bootstrap",
-        "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
-        "githubStars": "170.5k",
-        "githubLink": "https://github.com/twbs/bootstrap",
-        "npmLink": "https://www.npmjs.com/package/bootstrap",
-        "websiteLink": "https://getbootstrap.com/",
         "active": true,
         "labels": {
             "primary": "Bootstrap",
@@ -23,6 +18,11 @@
         },
         "properties": {
             "version": "5.3.3",
+            "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
+            "githubStars": "170.5k",
+            "githubLink": "https://github.com/twbs/bootstrap",
+            "npmLink": "https://www.npmjs.com/package/bootstrap",
+            "websiteLink": "https://getbootstrap.com/",
             "components": [
                 {
                     "key": "accordions",
@@ -204,11 +204,6 @@
     {
         "id": "id:item:v2024.11.01:bootswatch",
         "slug": "bootswatch",
-        "description": "Themes for Bootstrap",
-        "githubStars": "14.6k",
-        "githubLink": "https://github.com/thomaspark/bootswatch",
-        "npmLink": "https://www.npmjs.com/package/bootswatch",
-        "websiteLink": "https://bootswatch.com/",
         "active": true,
         "labels": {
             "primary": "Bootswatch",
@@ -224,6 +219,11 @@
         },
         "properties": {
             "version": "5.3.3",
+            "description": "Themes for Bootstrap",
+            "githubStars": "14.6k",
+            "githubLink": "https://github.com/thomaspark/bootswatch",
+            "npmLink": "https://www.npmjs.com/package/bootswatch",
+            "websiteLink": "https://bootswatch.com/",
             "components": [
                 {
                     "key": "accordions",
@@ -405,11 +405,6 @@
     {
         "id": "id:item:v2024.11.01:bulma",
         "slug": "bulma",
-        "description": "Modern CSS framework based on Flexbox",
-        "githubStars": "49.4k",
-        "githubLink": "https://github.com/jgthms/bulma",
-        "npmLink": "https://www.npmjs.com/package/bulma",
-        "websiteLink": "https://bulma.io/",
         "active": true,
         "labels": {
             "primary": "Bulma",
@@ -425,6 +420,11 @@
         },
         "properties": {
             "version": "1.0.2",
+            "description": "Modern CSS framework based on Flexbox",
+            "githubStars": "49.4k",
+            "githubLink": "https://github.com/jgthms/bulma",
+            "npmLink": "https://www.npmjs.com/package/bulma",
+            "websiteLink": "https://bulma.io/",
             "components": [
                 {
                     "key": "alerts",
@@ -540,11 +540,6 @@
     {
         "id": "id:item:v2024.11.01:daisy-ui",
         "slug": "daisy-ui",
-        "description": "🌼 🌼 🌼 🌼 🌼  The most popular, free and open-source Tailwind CSS component library",
-        "githubStars": "33.9k",
-        "githubLink": "https://github.com/saadeghi/daisyui",
-        "npmLink": "https://www.npmjs.com/package/daisyui",
-        "websiteLink": "https://daisyui.com/",
         "active": true,
         "labels": {
             "primary": "Daisy UI",
@@ -560,6 +555,11 @@
         },
         "properties": {
             "version": "4.12.14",
+            "description": "🌼 🌼 🌼 🌼 🌼  The most popular, free and open-source Tailwind CSS component library",
+            "githubStars": "33.9k",
+            "githubLink": "https://github.com/saadeghi/daisyui",
+            "npmLink": "https://www.npmjs.com/package/daisyui",
+            "websiteLink": "https://daisyui.com/",
             "components": [
                 {
                     "key": "accordions",
@@ -819,11 +819,6 @@
     {
         "id": "id:item:v2024.11.01:foundation-for-sites",
         "slug": "foundation-for-sites",
-        "description": "The most advanced responsive front-end framework in the world. Quickly create prototypes and production code for sites that work on any kind of device.",
-        "githubStars": "29.7k",
-        "githubLink": "https://github.com/foundation/foundation-sites",
-        "npmLink": "https://www.npmjs.com/package/foundation-sites",
-        "websiteLink": "https://get.foundation/sites",
         "active": true,
         "labels": {
             "primary": "Foundation for Sites",
@@ -839,6 +834,11 @@
         },
         "properties": {
             "version": "6.9.0",
+            "description": "The most advanced responsive front-end framework in the world. Quickly create prototypes and production code for sites that work on any kind of device.",
+            "githubStars": "29.7k",
+            "githubLink": "https://github.com/foundation/foundation-sites",
+            "npmLink": "https://www.npmjs.com/package/foundation-sites",
+            "websiteLink": "https://get.foundation/sites",
             "components": [
                 {
                     "key": "accordions",
@@ -984,11 +984,6 @@
     {
         "id": "id:item:v2024.11.01:metro-ui",
         "slug": "metro-ui",
-        "description": "Impressive component library for expressive web development! Build responsive projects on the web with the first front-end component library in Metro Style. And now there are even more opportunities every day!",
-        "githubStars": "7k",
-        "githubLink": "https://github.com/olton/Metro-UI-CSS",
-        "npmLink": "https://www.npmjs.com/package/@olton/metroui",
-        "websiteLink": "https://metroui.org.ua/",
         "active": true,
         "labels": {
             "primary": "Metro UI",
@@ -1004,6 +999,11 @@
         },
         "properties": {
             "version": "5.0.11",
+            "description": "Impressive component library for expressive web development! Build responsive projects on the web with the first front-end component library in Metro Style. And now there are even more opportunities every day!",
+            "githubStars": "7k",
+            "githubLink": "https://github.com/olton/Metro-UI-CSS",
+            "npmLink": "https://www.npmjs.com/package/@olton/metroui",
+            "websiteLink": "https://metroui.org.ua/",
             "components": [
                 {
                     "key": "accordions",
@@ -1311,11 +1311,6 @@
     {
         "id": "id:item:v2024.11.01:pico",
         "slug": "pico",
-        "description": "Minimal CSS Framework for semantic HTML",
-        "githubStars": "13.7k",
-        "githubLink": "https://github.com/picocss/pico",
-        "npmLink": "https://www.npmjs.com/package/@picocss/pico",
-        "websiteLink": "https://picocss.com/",
         "active": true,
         "labels": {
             "primary": "Pico",
@@ -1331,6 +1326,11 @@
         },
         "properties": {
             "version": "2.0.6",
+            "description": "Minimal CSS Framework for semantic HTML",
+            "githubStars": "13.7k",
+            "githubLink": "https://github.com/picocss/pico",
+            "npmLink": "https://www.npmjs.com/package/@picocss/pico",
+            "websiteLink": "https://picocss.com/",
             "components": [
                 {
                     "key": "accordions",
@@ -1446,11 +1446,6 @@
     {
         "id": "id:item:v2024.11.01:primer-css",
         "slug": "primer-css",
-        "description": "Primer is GitHub's design system. This is the CSS implementation",
-        "githubStars": "12.6k",
-        "githubLink": "https://github.com/primer/css",
-        "npmLink": "https://www.npmjs.com/package/@primer/css",
-        "websiteLink": "https://primer.style/css/storybook/",
         "active": true,
         "labels": {
             "primary": "Prime CSS",
@@ -1466,6 +1461,11 @@
         },
         "properties": {
             "version": "21.4.0",
+            "description": "Primer is GitHub's design system. This is the CSS implementation",
+            "githubStars": "12.6k",
+            "githubLink": "https://github.com/primer/css",
+            "npmLink": "https://www.npmjs.com/package/@primer/css",
+            "websiteLink": "https://primer.style/css/storybook/",
             "components": [
                 {
                     "key": "badges",
@@ -1581,11 +1581,6 @@
     {
         "id": "id:item:v2024.11.01:ui-kit",
         "slug": "ui-kit",
-        "description": "A lightweight and modular front-end framework for developing fast and powerful web interfaces",
-        "githubStars": "18.3k",
-        "githubLink": "https://github.com/uikit/uikit",
-        "npmLink": "https://www.npmjs.com/package/uikit",
-        "websiteLink": "https://getuikit.com/",
         "active": true,
         "labels": {
             "primary": "UI Kit",
@@ -1601,6 +1596,11 @@
         },
         "properties": {
             "version": "3.21.13",
+            "description": "A lightweight and modular front-end framework for developing fast and powerful web interfaces",
+            "githubStars": "18.3k",
+            "githubLink": "https://github.com/uikit/uikit",
+            "npmLink": "https://www.npmjs.com/package/uikit",
+            "websiteLink": "https://getuikit.com/",
             "components": [
                 {
                     "key": "accordions",
@@ -1860,11 +1860,6 @@
     {
         "id": "id:item:v2024.11.01:united-states-web-design-system",
         "slug": "united-states-web-design-system",
-        "description": "The U.S. Web Design System helps the federal government build fast, accessible, mobile-friendly websites.",
-        "githubStars": "6.8k",
-        "githubLink": "https://github.com/uswds/uswds",
-        "npmLink": "https://www.npmjs.com/package/uswds",
-        "websiteLink": "https://designsystem.digital.gov/",
         "active": true,
         "labels": {
             "primary": "United States Web Design System",
@@ -1880,6 +1875,11 @@
         },
         "properties": {
             "version": "3.9.0",
+            "description": "The U.S. Web Design System helps the federal government build fast, accessible, mobile-friendly websites.",
+            "githubStars": "6.8k",
+            "githubLink": "https://github.com/uswds/uswds",
+            "npmLink": "https://www.npmjs.com/package/uswds",
+            "websiteLink": "https://designsystem.digital.gov/",
             "components": [
                 {
                     "key": "accordions",
