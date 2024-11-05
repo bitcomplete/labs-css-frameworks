@@ -19,7 +19,7 @@
         "properties": {
             "version": "5.3.3",
             "description": "The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web.",
-            "githubStars": "170.5k",
+            "githubStars": 170500,
             "githubLink": "https://github.com/twbs/bootstrap",
             "npmLink": "https://www.npmjs.com/package/bootstrap",
             "websiteLink": "https://getbootstrap.com/",
@@ -220,7 +220,7 @@
         "properties": {
             "version": "5.3.3",
             "description": "Themes for Bootstrap",
-            "githubStars": "14.6k",
+            "githubStars": 14600,
             "githubLink": "https://github.com/thomaspark/bootswatch",
             "npmLink": "https://www.npmjs.com/package/bootswatch",
             "websiteLink": "https://bootswatch.com/",
@@ -421,7 +421,7 @@
         "properties": {
             "version": "1.0.2",
             "description": "Modern CSS framework based on Flexbox",
-            "githubStars": "49.4k",
+            "githubStars": 49400,
             "githubLink": "https://github.com/jgthms/bulma",
             "npmLink": "https://www.npmjs.com/package/bulma",
             "websiteLink": "https://bulma.io/",
@@ -562,7 +562,7 @@
         "properties": {
             "version": "4.12.14",
             "description": "🌼 🌼 🌼 🌼 🌼  The most popular, free and open-source Tailwind CSS component library",
-            "githubStars": "33.9k",
+            "githubStars": 33900,
             "githubLink": "https://github.com/saadeghi/daisyui",
             "npmLink": "https://www.npmjs.com/package/daisyui",
             "websiteLink": "https://daisyui.com/",
@@ -841,7 +841,7 @@
         "properties": {
             "version": "6.9.0",
             "description": "The most advanced responsive front-end framework in the world. Quickly create prototypes and production code for sites that work on any kind of device.",
-            "githubStars": "29.7k",
+            "githubStars": 29700,
             "githubLink": "https://github.com/foundation/foundation-sites",
             "npmLink": "https://www.npmjs.com/package/foundation-sites",
             "websiteLink": "https://get.foundation/sites",
@@ -1006,7 +1006,7 @@
         "properties": {
             "version": "5.0.11",
             "description": "Impressive component library for expressive web development! Build responsive projects on the web with the first front-end component library in Metro Style. And now there are even more opportunities every day!",
-            "githubStars": "7k",
+            "githubStars": 7000,
             "githubLink": "https://github.com/olton/Metro-UI-CSS",
             "npmLink": "https://www.npmjs.com/package/@olton/metroui",
             "websiteLink": "https://metroui.org.ua/",
@@ -1333,7 +1333,7 @@
         "properties": {
             "version": "2.0.6",
             "description": "Minimal CSS Framework for semantic HTML",
-            "githubStars": "13.7k",
+            "githubStars": 13700,
             "githubLink": "https://github.com/picocss/pico",
             "npmLink": "https://www.npmjs.com/package/@picocss/pico",
             "websiteLink": "https://picocss.com/",
@@ -1468,7 +1468,7 @@
         "properties": {
             "version": "21.4.0",
             "description": "Primer is GitHub's design system. This is the CSS implementation",
-            "githubStars": "12.6k",
+            "githubStars": 12600,
             "githubLink": "https://github.com/primer/css",
             "npmLink": "https://www.npmjs.com/package/@primer/css",
             "websiteLink": "https://primer.style/css/storybook/",
@@ -1603,7 +1603,7 @@
         "properties": {
             "version": "3.21.13",
             "description": "A lightweight and modular front-end framework for developing fast and powerful web interfaces",
-            "githubStars": "18.3k",
+            "githubStars": 18300,
             "githubLink": "https://github.com/uikit/uikit",
             "npmLink": "https://www.npmjs.com/package/uikit",
             "websiteLink": "https://getuikit.com/",
@@ -1882,7 +1882,7 @@
         "properties": {
             "version": "3.9.0",
             "description": "The U.S. Web Design System helps the federal government build fast, accessible, mobile-friendly websites.",
-            "githubStars": "6.8k",
+            "githubStars": 6800,
             "githubLink": "https://github.com/uswds/uswds",
             "npmLink": "https://www.npmjs.com/package/uswds",
             "websiteLink": "https://designsystem.digital.gov/",
